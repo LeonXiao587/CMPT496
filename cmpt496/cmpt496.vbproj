@@ -73,10 +73,64 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Billing_lease.Designer.vb">
+      <DependentUpon>Billing_lease.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Billing_lease.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Email.Designer.vb">
+      <DependentUpon>Email.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Email.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
     <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management.Designer.vb">
+      <DependentUpon>Management.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Management.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parking.Designer.vb">
+      <DependentUpon>Parking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Parking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Renting.Designer.vb">
+      <DependentUpon>Renting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Renting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Room_view.Designer.vb">
+      <DependentUpon>Room_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Room_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.vb">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Sqlcon.vb" />
@@ -95,16 +149,52 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Unit_view.Designer.vb">
+      <DependentUpon>Unit_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Unit_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Billing_lease.resx">
+      <DependentUpon>Billing_lease.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Email.resx">
+      <DependentUpon>Email.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management.resx">
+      <DependentUpon>Management.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parking.resx">
+      <DependentUpon>Parking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Renting.resx">
+      <DependentUpon>Renting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Room_view.resx">
+      <DependentUpon>Room_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit_view.resx">
+      <DependentUpon>Unit_view.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
