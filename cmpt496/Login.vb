@@ -8,8 +8,8 @@
             SQL.DBDS.Clear()
         End If
         If Len(username.Text) <> 0! Or Len(password.Text) <> 0! Then
-            SQL.ExecQuery("SELECT Count(Username) As userCount FROM Manager WHERE Username COLLATE Latin1_General_CS_AS='" & username.Text &
-            "' AND Passward COLLATE Latin1_General_CS_AS ='" & password.Text & "'")
+            SQL.ExecQuery("SELECT Count(Username) As userCount FROM Management WHERE Username COLLATE Latin1_General_CS_AS='" & username.Text &
+            "' AND SigninPassword COLLATE Latin1_General_CS_AS ='" & password.Text & "'")
             If SQL.DBDS.Tables(0).Rows(0).Item("userCount") = 1 Then
                 '
                 Return True
@@ -24,7 +24,7 @@
     Private Sub MLOGIN_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If SQL.HasConnection = True Then
             If MLog() = True Then
-                SQL.ExecQuery("SELECT * FROM Manager WHERE Username='" & username.Text & "'")
+                SQL.ExecQuery("SELECT * FROM Management WHERE Username='" & username.Text & "'")
                 empname = SQL.DBDS.Tables(0).Rows(0)("Lname").ToString
                 MsgBox("Login as successful!")
                 Main.Show()

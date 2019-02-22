@@ -5,7 +5,7 @@ Public Class Sqlcon
     'DESKTOP-1NVLP4D  Leon Desktop
     '0O0              Yuhang's Desktop
     'DESKTOP-4M90S2P\LEONXIAO  leon laptop
-    Private DBCon As New SqlConnection("Server=tcp:apamanagement.database.windows.net,1433;Initial Catalog=496;Persist Security Info=False;User ID={leonxiao};Password={CMPT496a};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
+    Private DBCon As New SqlConnection("Server=tcp:apamanagement.database.windows.net,1433;Initial Catalog=496;Persist Security Info=False;User ID=leonxiao;Password=CMPT496a;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
     Private DBCmd As SqlCommand
     Public DBDA As SqlDataAdapter
     Public DBDT As DataTable
