@@ -40,7 +40,11 @@
         password.Clear()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub username_TextChanged(sender As Object, e As EventArgs) Handles username.TextChanged
+
+    End Sub
+
+    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
 
     End Sub
 End Class

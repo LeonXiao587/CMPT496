@@ -22,6 +22,7 @@ Partial Class Main
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -37,16 +38,17 @@ Partial Class Main
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(420, 51)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(421, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 12)
+        Me.Label1.Size = New System.Drawing.Size(152, 55)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "A.M.S"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(408, 366)
+        Me.Label2.Location = New System.Drawing.Point(381, 430)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 12)
         Me.Label2.TabIndex = 2
@@ -54,61 +56,62 @@ Partial Class Main
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(696, 66)
+        Me.Button1.Location = New System.Drawing.Point(787, 56)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(112, 46)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "New User"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(366, 139)
+        Me.Button2.Location = New System.Drawing.Point(493, 129)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(150, 50)
+        Me.Button2.Size = New System.Drawing.Size(261, 71)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Renting"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(363, 207)
+        Me.Button3.Location = New System.Drawing.Point(493, 221)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(150, 50)
+        Me.Button3.Size = New System.Drawing.Size(261, 71)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Billing"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(363, 280)
+        Me.Button4.Location = New System.Drawing.Point(493, 319)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(150, 50)
+        Me.Button4.Size = New System.Drawing.Size(261, 71)
         Me.Button4.TabIndex = 6
         Me.Button4.Text = "Management"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(786, 66)
+        Me.Button5.Location = New System.Drawing.Point(72, 56)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.Size = New System.Drawing.Size(112, 46)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "Sign Out"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(318, 66)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(187, 129)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(245, 50)
+        Me.PictureBox1.Size = New System.Drawing.Size(259, 261)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(408, 393)
+        Me.LinkLabel1.Location = New System.Drawing.Point(520, 430)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(53, 12)
         Me.LinkLabel1.TabIndex = 9

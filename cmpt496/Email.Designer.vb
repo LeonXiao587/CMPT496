@@ -36,7 +36,7 @@ Partial Class Email
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(380, 53)
+        Me.Label1.Location = New System.Drawing.Point(401, 34)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 12)
         Me.Label1.TabIndex = 0
@@ -44,7 +44,7 @@ Partial Class Email
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(81, 88)
+        Me.Button1.Location = New System.Drawing.Point(73, 53)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 1
@@ -53,7 +53,7 @@ Partial Class Email
         '
         'Main
         '
-        Me.Main.Location = New System.Drawing.Point(722, 53)
+        Me.Main.Location = New System.Drawing.Point(723, 53)
         Me.Main.Name = "Main"
         Me.Main.Size = New System.Drawing.Size(75, 23)
         Me.Main.TabIndex = 2
@@ -80,7 +80,7 @@ Partial Class Email
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(313, 115)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(320, 117)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
         Me.DateTimePicker1.TabIndex = 5
