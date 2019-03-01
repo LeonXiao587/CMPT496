@@ -9,7 +9,7 @@
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
+        Me.Close()
         login.Show()
     End Sub
 End Class
