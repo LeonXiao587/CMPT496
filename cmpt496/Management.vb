@@ -1,5 +1,5 @@
 ﻿Public Class Management
-    Private Sub Main_Click(sender As Object, e As EventArgs) Handles Main.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
         Main.Show()
     End Sub

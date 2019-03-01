@@ -22,7 +22,7 @@ Partial Class Billing_lease
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Main = New System.Windows.Forms.Button()
+        Me.Button0 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -37,14 +37,14 @@ Partial Class Billing_lease
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Main
+        'Button0
         '
-        Me.Main.Location = New System.Drawing.Point(65, 90)
-        Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(75, 23)
-        Me.Main.TabIndex = 15
-        Me.Main.Text = "Main"
-        Me.Main.UseVisualStyleBackColor = True
+        Me.Button0.Location = New System.Drawing.Point(65, 90)
+        Me.Button0.Name = "Button0"
+        Me.Button0.Size = New System.Drawing.Size(75, 23)
+        Me.Button0.TabIndex = 15
+        Me.Button0.Text = "Main"
+        Me.Button0.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -104,13 +104,13 @@ Partial Class Billing_lease
         '
         'ComboBox1
         '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(138, 139)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(116, 20)
         Me.ComboBox1.TabIndex = 19
-        Me.ComboBox1.Text = "Select Location"
         '
         'DateTimePicker1
         '
@@ -162,7 +162,7 @@ Partial Class Billing_lease
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Main)
+        Me.Controls.Add(Me.Button0)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Billing_lease"
         Me.Text = "Billing_lease"
@@ -172,7 +172,7 @@ Partial Class Billing_lease
 
     End Sub
 
-    Friend WithEvents Main As Button
+    Friend WithEvents Button0 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox

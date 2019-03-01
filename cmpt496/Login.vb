@@ -39,12 +39,4 @@
         username.Clear()
         password.Clear()
     End Sub
-
-    Private Sub username_TextChanged(sender As Object, e As EventArgs) Handles username.TextChanged
-
-    End Sub
-
-    Private Sub password_TextChanged(sender As Object, e As EventArgs) Handles password.TextChanged
-
-    End Sub
 End Class

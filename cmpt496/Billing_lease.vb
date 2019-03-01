@@ -1,11 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Billing_lease
+    'Public SQL As New Sqlcon
 
-    Private Sub Main_Click(sender As Object, e As EventArgs) Handles Main.Click
-        Me.Close()
-        Main.Show()
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         LoadGrid()
@@ -66,5 +63,29 @@ Public Class Billing_lease
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Close()
         Payment.Show()
+    End Sub
+
+
+    Private Sub Billing_lease_Load(sender As Object, e As EventArgs)
+        'Dim connection As New SqlConnection("Server=tcp:apamanagement.database.windows.net,1433;Initial Catalog=496;Persist Security Info=False;User ID=leonxiao;Password=CMPT496a;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
+
+        'Dim command As New SqlCommand("select * from Lease", connection)
+
+        'Dim adapter As New SqlDataAdapter(command)
+
+        'Dim table As New DataTable()
+
+        'adapter.Fill(table)
+
+        'ComboBox1.DataSource = table
+
+        'ComboBox1.DisplayMember = "LeaseID"
+        'ComboBox1.ValueMember = "Id"
+
+    End Sub
+
+    Private Sub Button0_Click(sender As Object, e As EventArgs) Handles Button0.Click
+        Me.Close()
+        Main.Show()
     End Sub
 End Class

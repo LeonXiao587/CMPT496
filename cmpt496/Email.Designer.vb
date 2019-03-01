@@ -24,7 +24,7 @@ Partial Class Email
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Main = New System.Windows.Forms.Button()
+        Me.Main0 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -51,14 +51,14 @@ Partial Class Email
         Me.Button1.Text = "Billing"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Main
+        'Main0
         '
-        Me.Main.Location = New System.Drawing.Point(723, 53)
-        Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(75, 23)
-        Me.Main.TabIndex = 2
-        Me.Main.Text = "Main"
-        Me.Main.UseVisualStyleBackColor = True
+        Me.Main0.Location = New System.Drawing.Point(723, 53)
+        Me.Main0.Name = "Main0"
+        Me.Main0.Size = New System.Drawing.Size(75, 23)
+        Me.Main0.TabIndex = 2
+        Me.Main0.Text = "Main"
+        Me.Main0.UseVisualStyleBackColor = True
         '
         'Button3
         '
@@ -114,7 +114,7 @@ Partial Class Email
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Main)
+        Me.Controls.Add(Me.Main0)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Email"
@@ -127,7 +127,7 @@ Partial Class Email
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Main As Button
+    Friend WithEvents Main0 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker

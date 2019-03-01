@@ -6,7 +6,7 @@ Public Class Email
         Billing_lease.Show()
     End Sub
 
-    Private Sub Main_Click(sender As Object, e As EventArgs) Handles Main.Click
+    Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
         Me.Close()
         Main.Show()
     End Sub
@@ -37,4 +37,5 @@ Public Class Email
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 
     End Sub
+
 End Class

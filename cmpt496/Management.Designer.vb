@@ -22,7 +22,6 @@ Partial Class Management
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Main = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -30,17 +29,9 @@ Partial Class Management
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Main
-        '
-        Me.Main.Location = New System.Drawing.Point(66, 69)
-        Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(75, 23)
-        Me.Main.TabIndex = 4
-        Me.Main.Text = "Main"
-        Me.Main.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -106,18 +97,27 @@ Partial Class Management
         Me.Button2.Text = "Remove"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(78, 49)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Main"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Management
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Main)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Management"
         Me.Text = "Management"
@@ -126,8 +126,6 @@ Partial Class Management
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Main As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
@@ -135,4 +133,5 @@ Partial Class Management
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

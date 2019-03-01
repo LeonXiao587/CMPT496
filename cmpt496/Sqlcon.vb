@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports cmpt496
 
 Public Class Sqlcon
     'DESKTOP-UUM78C3 Williams Desktop
@@ -62,4 +63,8 @@ Public Class Sqlcon
         Dim NewParam As New SqlParameter(Name, Value)
         Params.Add(NewParam)
     End Sub
+
+    'Public Shared Widening Operator CType(v As Sqlcon) As Sqlcon
+    'Throw New NotImplementedException()
+    'End Operator
 End Class

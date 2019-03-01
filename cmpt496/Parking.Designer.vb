@@ -29,7 +29,7 @@ Partial Class Parking
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Main = New System.Windows.Forms.Button()
+        Me.Main0 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,14 +98,14 @@ Partial Class Parking
         Me.Button2.Text = "Edit"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Main
+        'Main0
         '
-        Me.Main.Location = New System.Drawing.Point(678, 48)
-        Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(75, 23)
-        Me.Main.TabIndex = 13
-        Me.Main.Text = "Main"
-        Me.Main.UseVisualStyleBackColor = True
+        Me.Main0.Location = New System.Drawing.Point(678, 48)
+        Me.Main0.Name = "Main0"
+        Me.Main0.Size = New System.Drawing.Size(75, 23)
+        Me.Main0.TabIndex = 13
+        Me.Main0.Text = "Main"
+        Me.Main0.UseVisualStyleBackColor = True
         '
         'Button1
         '
@@ -137,7 +137,7 @@ Partial Class Parking
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Main)
+        Me.Controls.Add(Me.Main0)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Parking"
@@ -156,7 +156,7 @@ Partial Class Parking
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Main As Button
+    Friend WithEvents Main0 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
 End Class

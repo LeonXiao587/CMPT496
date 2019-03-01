@@ -4,7 +4,7 @@
         Unit_view.Show()
     End Sub
 
-    Private Sub Main_Click(sender As Object, e As EventArgs) Handles Main.Click
+    Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
         Me.Hide()
         Main.Show()
     End Sub

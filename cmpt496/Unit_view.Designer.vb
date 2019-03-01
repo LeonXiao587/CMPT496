@@ -24,7 +24,7 @@ Partial Class Unit_view
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Main = New System.Windows.Forms.Button()
+        Me.Main0 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -51,14 +51,14 @@ Partial Class Unit_view
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Unit View"
         '
-        'Main
+        'Main0
         '
-        Me.Main.Location = New System.Drawing.Point(706, 39)
-        Me.Main.Name = "Main"
-        Me.Main.Size = New System.Drawing.Size(75, 23)
-        Me.Main.TabIndex = 2
-        Me.Main.Text = "Main"
-        Me.Main.UseVisualStyleBackColor = True
+        Me.Main0.Location = New System.Drawing.Point(706, 39)
+        Me.Main0.Name = "Main0"
+        Me.Main0.Size = New System.Drawing.Size(75, 23)
+        Me.Main0.TabIndex = 2
+        Me.Main0.Text = "Main"
+        Me.Main0.UseVisualStyleBackColor = True
         '
         'PictureBox1
         '
@@ -105,7 +105,7 @@ Partial Class Unit_view
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Main)
+        Me.Controls.Add(Me.Main0)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Unit_view"
@@ -119,7 +119,7 @@ Partial Class Unit_view
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Main As Button
+    Friend WithEvents Main0 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
