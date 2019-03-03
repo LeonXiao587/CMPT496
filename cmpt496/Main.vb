@@ -4,15 +4,10 @@
     'Private toolstripstatuslabel1 As Object
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If SQL.HasConnection = True Then
-            login.Show()
-            login.username.Clear()
-            login.password.Clear()
-            Me.Hide()
-        End If
+
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Renting.Show()
     End Sub
@@ -61,5 +56,20 @@
 
 
 
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Renting.Show()
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        If SQL.HasConnection = True Then
+            login.Show()
+            login.username.Clear()
+            login.password.Clear()
+            Me.Close()
+            login.Show()
+        End If
     End Sub
 End Class
