@@ -1,0 +1,1 @@
+select distinct Stalltype from Parking
