@@ -31,17 +31,14 @@ Public Class Billing_lease
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         DateTimePicker1.Refresh()
         TextBox1.Clear()
         ComboBox1.Refresh()
         ComboBox2.Refresh()
         ComboBox3.Refresh()
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        TextBox1.Clear()
-
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -56,17 +53,13 @@ Public Class Billing_lease
         Email.Show()
     End Sub
 
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
-
-    End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Me.Close()
         Payment.Show()
     End Sub
 
 
-    Private Sub Billing_lease_Load(sender As Object, e As EventArgs)
+    Private Sub Billing_lease_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Dim connection As New SqlConnection("Server=tcp:apamanagement.database.windows.net,1433;Initial Catalog=496;Persist Security Info=False;User ID=leonxiao;Password=CMPT496a;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
 
         'Dim command As New SqlCommand("select * from Lease", connection)
@@ -81,6 +74,18 @@ Public Class Billing_lease
 
         'ComboBox1.DisplayMember = "LeaseID"
         'ComboBox1.ValueMember = "Id"
+
+        login.SQL.ExecQuery("select * from Lease")
+        For i = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
+            ComboBox1.Items.Add(login.SQL.DBDS.Tables(0).Rows(i)(0).ToString)
+        Next
+        'login.SQL.ExecQuery("select * from Lease")
+        For i = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
+            ComboBox2.Items.Add(login.SQL.DBDS.Tables(0).Rows(i)(2).ToString)
+        Next
+        For i = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
+            ComboBox3.Items.Add(login.SQL.DBDS.Tables(0).Rows(i)(1).ToString)
+        Next
 
     End Sub
 

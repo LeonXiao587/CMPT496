@@ -90,7 +90,7 @@ Partial Class Billing_lease
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(140, 20)
         Me.ComboBox3.TabIndex = 21
-        Me.ComboBox3.Text = "Select Room#"
+        Me.ComboBox3.Text = "Select Tenant#"
         '
         'ComboBox2
         '
@@ -104,13 +104,13 @@ Partial Class Billing_lease
         '
         'ComboBox1
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(138, 139)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(116, 20)
         Me.ComboBox1.TabIndex = 19
+        Me.ComboBox1.Text = "Select Lease#"
         '
         'DateTimePicker1
         '

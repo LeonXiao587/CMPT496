@@ -3,10 +3,6 @@
     'Private statusstrip1 As Object
     'Private toolstripstatuslabel1 As Object
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Renting.Show()
@@ -32,12 +28,11 @@
         Process.Start("http://www.google.ca")
     End Sub
 
-    Private Sub ToolStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
-
-    End Sub
-
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        'Button1.FlatStyle = FlatStyle.Flat
+        'Button1.FlatAppearance.BorderColor = BackColor
+        'Button1.FlatAppearance.MouseOverBackColor = BackColor
+        'Button1.FlatAppearance.MouseDownBackColor = BackColor
         'statusstrip1.ShowItemToolTips = True
 
         'toolstripstatuslabel1.ToolTipText = "This will display when you hover the mouse over it"
@@ -52,11 +47,7 @@
     'Private Sub Form_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
     '    Label2.Caption = "label2"
     'End Sub
-    Private Sub Label2_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
 
-
-
-    End Sub
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()

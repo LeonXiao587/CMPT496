@@ -106,6 +106,7 @@ Partial Class login
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(68, 21)
         Me.password.TabIndex = 9
+        Me.password.UseSystemPasswordChar = True
         '
         'login
         '
