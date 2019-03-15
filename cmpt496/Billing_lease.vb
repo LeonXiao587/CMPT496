@@ -5,36 +5,67 @@ Public Class Billing_lease
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        'Dim Lease As Integer
+        'Dim Unit As Integer
+        'Dim Tenant As Integer
+
+        'Dim f As String
+        'Dim t As String
+
+        'f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+        't = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+
+
+        'Lease = ComboBox1.SelectedItem
+        'Unit = ComboBox2.SelectedItem
+        'Tenant = ComboBox3.SelectedItem
+        'login.SQL.ExecQuery("select * from Lease")
+
         LoadGrid()
     End Sub
 
     Private Sub LoadGrid()
-        Dim idsearch As Integer
-        idsearch = 0
-        Dim searchstr As String
-        searchstr = TextBox1.Text.ToString
-        If (IsNumeric(TextBox1.Text)) Then
-            idsearch = TextBox1.Text
-        End If
+        'Dim idsearch As Integer
+        'idsearch = 0
+        'Dim searchstr As String
+        'searchstr = TextBox1.Text.ToString
+        'If (IsNumeric(TextBox1.Text)) Then
+        'idsearch = TextBox1.Text
+        'End If
 
-        Dim t As String
-        Dim cbox1 = ComboBox1
-        Dim cbox2 = ComboBox2
-        Dim cbox3 = ComboBox3
-
-
-        t = Replace(DateTimePicker1.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-
+        'Dim t As String
+        'Dim cbox1 = ComboBox1
+        'Dim cbox2 = ComboBox2
+        'Dim cbox3 = ComboBox3
+        't = Replace(DateTimePicker1.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
         'ComboBox1
         ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
-        login.SQL.ExecQuery("select * from Lease where LeaseID =" + idsearch.ToString + "," + searchstr)
+        'login.SQL.ExecQuery("select * from Lease where LeaseID =" + idsearch.ToString + "," + searchstr)
+
+        Dim Lease As Integer
+        Dim Unit As Integer
+        Dim Tenant As Integer
+
+        Dim f As String
+        Dim t As String
+
+        f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+        t = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+
+
+        Lease = ComboBox1.SelectedItem
+        Unit = ComboBox2.SelectedItem
+        Tenant = ComboBox3.SelectedItem
+        login.SQL.ExecQuery("select * from Lease")
+
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        DateTimePicker1.Refresh()
+        StartDate.Refresh()
         TextBox1.Clear()
         ComboBox1.Refresh()
         ComboBox2.Refresh()

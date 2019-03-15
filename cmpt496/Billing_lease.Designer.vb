@@ -30,10 +30,11 @@ Partial Class Billing_lease
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.StartDate = New System.Windows.Forms.DateTimePicker()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.EndDate = New System.Windows.Forms.DateTimePicker()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,9 +87,9 @@ Partial Class Billing_lease
         '
         Me.ComboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(446, 139)
+        Me.ComboBox3.Location = New System.Drawing.Point(389, 141)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(140, 20)
+        Me.ComboBox3.Size = New System.Drawing.Size(108, 20)
         Me.ComboBox3.TabIndex = 21
         Me.ComboBox3.Text = "Select Tenant#"
         '
@@ -96,9 +97,9 @@ Partial Class Billing_lease
         '
         Me.ComboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(281, 139)
+        Me.ComboBox2.Location = New System.Drawing.Point(247, 140)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(129, 20)
+        Me.ComboBox2.Size = New System.Drawing.Size(108, 20)
         Me.ComboBox2.TabIndex = 20
         Me.ComboBox2.Text = "Select Unit #"
         '
@@ -106,18 +107,18 @@ Partial Class Billing_lease
         '
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(138, 139)
+        Me.ComboBox1.Location = New System.Drawing.Point(119, 139)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(116, 20)
+        Me.ComboBox1.Size = New System.Drawing.Size(108, 20)
         Me.ComboBox1.TabIndex = 19
         Me.ComboBox1.Text = "Select Lease#"
         '
-        'DateTimePicker1
+        'StartDate
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(606, 136)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(148, 21)
-        Me.DateTimePicker1.TabIndex = 22
+        Me.StartDate.Location = New System.Drawing.Point(511, 141)
+        Me.StartDate.Name = "StartDate"
+        Me.StartDate.Size = New System.Drawing.Size(108, 21)
+        Me.StartDate.TabIndex = 22
         '
         'DataGridView1
         '
@@ -147,6 +148,13 @@ Partial Class Billing_lease
         Me.Button4.Text = "Payment"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'EndDate
+        '
+        Me.EndDate.Location = New System.Drawing.Point(643, 141)
+        Me.EndDate.Name = "EndDate"
+        Me.EndDate.Size = New System.Drawing.Size(108, 21)
+        Me.EndDate.TabIndex = 26
+        '
         'Billing_lease
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -155,15 +163,16 @@ Partial Class Billing_lease
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button0)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.EndDate)
+        Me.Controls.Add(Me.StartDate)
+        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Billing_lease"
         Me.Text = "Billing_lease"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -180,8 +189,9 @@ Partial Class Billing_lease
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents StartDate As DateTimePicker
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents EndDate As DateTimePicker
 End Class

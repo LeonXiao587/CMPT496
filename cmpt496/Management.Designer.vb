@@ -23,13 +23,14 @@ Partial Class Management
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.View = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,32 +43,25 @@ Partial Class Management
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Management"
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(352, 116)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(157, 20)
-        Me.ComboBox1.TabIndex = 5
-        Me.ComboBox1.Text = "Select Schedules V/I"
-        '
         'ComboBox2
         '
         Me.ComboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(169, 116)
+        Me.ComboBox2.Location = New System.Drawing.Point(308, 116)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(144, 20)
+        Me.ComboBox2.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox2.TabIndex = 5
-        Me.ComboBox2.Text = "Select Staff"
+        Me.ComboBox2.Text = "Select Building"
         '
-        'DateTimePicker1
+        'ComboBox1
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(543, 115)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(170, 21)
-        Me.DateTimePicker1.TabIndex = 6
+        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(158, 116)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(144, 20)
+        Me.ComboBox1.TabIndex = 5
+        Me.ComboBox1.Text = "Select Staff"
         '
         'DataGridView1
         '
@@ -106,18 +100,38 @@ Partial Class Management
         Me.Button3.Text = "Main"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Location = New System.Drawing.Point(471, 116)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(157, 20)
+        Me.ComboBox3.TabIndex = 11
+        Me.ComboBox3.Text = "Select Name"
+        '
+        'View
+        '
+        Me.View.Location = New System.Drawing.Point(653, 113)
+        Me.View.Name = "View"
+        Me.View.Size = New System.Drawing.Size(75, 23)
+        Me.View.TabIndex = 12
+        Me.View.Text = "View"
+        Me.View.UseVisualStyleBackColor = True
+        '
         'Management
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.View)
+        Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Management"
         Me.Text = "Management"
@@ -127,11 +141,12 @@ Partial Class Management
 
     End Sub
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents View As Button
 End Class
