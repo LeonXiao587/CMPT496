@@ -62,7 +62,7 @@ Partial Class Main
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(769, 37)
+        Me.Button1.Location = New System.Drawing.Point(783, 78)
         Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 31)
