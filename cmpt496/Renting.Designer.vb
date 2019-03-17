@@ -25,15 +25,11 @@ Partial Class Renting
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Bedroom = New System.Windows.Forms.ComboBox()
-        Me.parking = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Bathroom = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ParkingList = New System.Windows.Forms.ListBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.price = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,7 +42,8 @@ Partial Class Renting
         Me.Button3 = New System.Windows.Forms.Button()
         Me.doornumber = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -62,7 +59,7 @@ Partial Class Renting
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(76, 42)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(137, 40)
         Me.Button1.TabIndex = 1
@@ -72,27 +69,17 @@ Partial Class Renting
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(181, 162)
+        Me.Label3.Location = New System.Drawing.Point(178, 115)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(87, 21)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Bedroom"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(778, 195)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(142, 21)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Parking Type"
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(508, 176)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Button2.Location = New System.Drawing.Point(591, 129)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(5)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(137, 40)
         Me.Button2.TabIndex = 7
@@ -105,38 +92,16 @@ Partial Class Renting
         Me.Bedroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bedroom.FormattingEnabled = True
         Me.Bedroom.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.Bedroom.Location = New System.Drawing.Point(185, 187)
-        Me.Bedroom.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Bedroom.Location = New System.Drawing.Point(182, 140)
+        Me.Bedroom.Margin = New System.Windows.Forms.Padding(5)
         Me.Bedroom.Name = "Bedroom"
         Me.Bedroom.Size = New System.Drawing.Size(91, 29)
         Me.Bedroom.TabIndex = 8
-        '
-        'parking
-        '
-        Me.parking.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.parking.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.parking.FormattingEnabled = True
-        Me.parking.Items.AddRange(New Object() {"Not Needed"})
-        Me.parking.Location = New System.Drawing.Point(781, 220)
-        Me.parking.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.parking.Name = "parking"
-        Me.parking.Size = New System.Drawing.Size(130, 29)
-        Me.parking.TabIndex = 9
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(917, 140)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(352, 322)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 21
-        Me.ListBox1.Items.AddRange(New Object() {"None"})
         Me.ListBox1.Location = New System.Drawing.Point(182, 269)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.ListBox1.Name = "ListBox1"
@@ -149,8 +114,8 @@ Partial Class Renting
         Me.Bathroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bathroom.FormattingEnabled = True
         Me.Bathroom.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.Bathroom.Location = New System.Drawing.Point(304, 187)
-        Me.Bathroom.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Bathroom.Location = New System.Drawing.Point(301, 140)
+        Me.Bathroom.Margin = New System.Windows.Forms.Padding(5)
         Me.Bathroom.Name = "Bathroom"
         Me.Bathroom.Size = New System.Drawing.Size(91, 29)
         Me.Bathroom.TabIndex = 14
@@ -158,23 +123,12 @@ Partial Class Renting
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(300, 162)
+        Me.Label2.Location = New System.Drawing.Point(297, 115)
         Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(98, 21)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Bathroom"
-        '
-        'ParkingList
-        '
-        Me.ParkingList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ParkingList.FormattingEnabled = True
-        Me.ParkingList.ItemHeight = 21
-        Me.ParkingList.Location = New System.Drawing.Point(781, 311)
-        Me.ParkingList.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
-        Me.ParkingList.Name = "ParkingList"
-        Me.ParkingList.Size = New System.Drawing.Size(130, 149)
-        Me.ParkingList.TabIndex = 15
         '
         'Label5
         '
@@ -286,12 +240,22 @@ Partial Class Renting
         Me.Label11.TabIndex = 52
         Me.Label11.Text = "Door Number"
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(898, 245)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 33
+        Me.DataGridView1.Size = New System.Drawing.Size(631, 238)
+        Me.DataGridView1.TabIndex = 54
+        '
         'Renting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1283, 681)
+        Me.ClientSize = New System.Drawing.Size(1665, 681)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.doornumber)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button3)
@@ -304,22 +268,18 @@ Partial Class Renting
         Me.Controls.Add(Me.sq)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ParkingList)
         Me.Controls.Add(Me.Bathroom)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.parking)
         Me.Controls.Add(Me.Bedroom)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5)
         Me.Name = "Renting"
         Me.Text = "Renting"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -328,15 +288,11 @@ Partial Class Renting
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Bedroom As ComboBox
-    Friend WithEvents parking As ComboBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Bathroom As ComboBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents ParkingList As ListBox
     Friend WithEvents Label5 As Label
     Friend WithEvents price As Label
     Friend WithEvents Label6 As Label
@@ -349,4 +305,5 @@ Partial Class Renting
     Friend WithEvents Button3 As Button
     Friend WithEvents doornumber As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

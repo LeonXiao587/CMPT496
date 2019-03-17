@@ -28,7 +28,7 @@
                 SQL.ExecQuery("SELECT * FROM Management WHERE Username='" & username.Text & "'")
                 empname = SQL.DBDS.Tables(0).Rows(0)("Lname").ToString
                 BuildingNUm = SQL.DBDS.Tables(0).Rows(0)("BID").ToString
-                MsgBox("Login as successful!")
+                'MsgBox("Login as successful!")
                 Main.Show()
                 Me.Hide()
                 idshow = username.Text
