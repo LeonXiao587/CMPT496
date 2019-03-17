@@ -2,6 +2,7 @@
     Public SQL As New Sqlcon
     Public idshow As String
     Public empname As String
+    Public BuildingNUm As Integer
 
     Private Function MLog() As Boolean
         If SQL.DBDS IsNot Nothing Then
@@ -26,11 +27,13 @@
             If MLog() = True Then
                 SQL.ExecQuery("SELECT * FROM Management WHERE Username='" & username.Text & "'")
                 empname = SQL.DBDS.Tables(0).Rows(0)("Lname").ToString
+                BuildingNUm = SQL.DBDS.Tables(0).Rows(0)("BID").ToString
                 MsgBox("Login as successful!")
                 Main.Show()
                 Me.Hide()
                 idshow = username.Text
                 Main.Label2.Text = "Manager:" & empname
+                Main.Building.Text = BuildingNUm
             End If
         End If
     End Sub
