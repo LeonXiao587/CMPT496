@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Renting
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,10 @@ Partial Class Renting
     '注意: 以下过程是 Windows 窗体设计器所必需的
     '可以使用 Windows 窗体设计器修改它。  
     '不要使用代码编辑器修改它。
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Renting))
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Bedroom = New System.Windows.Forms.ComboBox()
@@ -40,48 +40,38 @@ Partial Class Renting
         Me.sq = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.doornumber = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(397, 61)
+        Me.Label1.Location = New System.Drawing.Point(433, 59)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 21)
+        Me.Label1.Size = New System.Drawing.Size(94, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Renting"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(76, 42)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(5)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(137, 40)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Main"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(178, 115)
+        Me.Label3.Location = New System.Drawing.Point(194, 131)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(87, 21)
+        Me.Label3.Size = New System.Drawing.Size(94, 24)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Bedroom"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(591, 129)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button2.Location = New System.Drawing.Point(645, 147)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(137, 40)
+        Me.Button2.Size = New System.Drawing.Size(149, 46)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "View"
         Me.Button2.UseVisualStyleBackColor = True
@@ -92,20 +82,20 @@ Partial Class Renting
         Me.Bedroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bedroom.FormattingEnabled = True
         Me.Bedroom.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.Bedroom.Location = New System.Drawing.Point(182, 140)
-        Me.Bedroom.Margin = New System.Windows.Forms.Padding(5)
+        Me.Bedroom.Location = New System.Drawing.Point(199, 160)
+        Me.Bedroom.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Bedroom.Name = "Bedroom"
-        Me.Bedroom.Size = New System.Drawing.Size(91, 29)
+        Me.Bedroom.Size = New System.Drawing.Size(99, 32)
         Me.Bedroom.TabIndex = 8
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 21
-        Me.ListBox1.Location = New System.Drawing.Point(182, 269)
+        Me.ListBox1.ItemHeight = 24
+        Me.ListBox1.Location = New System.Drawing.Point(51, 57)
         Me.ListBox1.Margin = New System.Windows.Forms.Padding(4, 3, 4, 3)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(209, 214)
+        Me.ListBox1.Size = New System.Drawing.Size(228, 244)
         Me.ListBox1.TabIndex = 12
         '
         'Bathroom
@@ -114,179 +104,171 @@ Partial Class Renting
         Me.Bathroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bathroom.FormattingEnabled = True
         Me.Bathroom.Items.AddRange(New Object() {"1", "2", "3", "4"})
-        Me.Bathroom.Location = New System.Drawing.Point(301, 140)
-        Me.Bathroom.Margin = New System.Windows.Forms.Padding(5)
+        Me.Bathroom.Location = New System.Drawing.Point(328, 160)
+        Me.Bathroom.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Bathroom.Name = "Bathroom"
-        Me.Bathroom.Size = New System.Drawing.Size(91, 29)
+        Me.Bathroom.Size = New System.Drawing.Size(99, 32)
         Me.Bathroom.TabIndex = 14
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(297, 115)
+        Me.Label2.Location = New System.Drawing.Point(324, 131)
         Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(98, 21)
+        Me.Label2.Size = New System.Drawing.Size(106, 24)
         Me.Label2.TabIndex = 13
         Me.Label2.Text = "Bathroom"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(178, 245)
+        Me.Label5.Location = New System.Drawing.Point(-446, 95)
         Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 21)
+        Me.Label5.Size = New System.Drawing.Size(142, 24)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Unit Number"
         '
         'price
         '
         Me.price.AutoSize = True
-        Me.price.Location = New System.Drawing.Point(564, 448)
+        Me.price.Location = New System.Drawing.Point(467, 262)
         Me.price.Name = "price"
-        Me.price.Size = New System.Drawing.Size(164, 21)
+        Me.price.Size = New System.Drawing.Size(178, 24)
         Me.price.TabIndex = 50
         Me.price.Text = "______________"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(443, 448)
+        Me.Label6.Location = New System.Drawing.Point(335, 262)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 21)
+        Me.Label6.Size = New System.Drawing.Size(130, 24)
         Me.Label6.TabIndex = 49
-        Me.Label6.Text = "Price"
+        Me.Label6.Text = "Price    $"
         '
         'patio
         '
         Me.patio.AutoSize = True
-        Me.patio.Location = New System.Drawing.Point(564, 391)
+        Me.patio.Location = New System.Drawing.Point(467, 194)
         Me.patio.Name = "patio"
-        Me.patio.Size = New System.Drawing.Size(164, 21)
+        Me.patio.Size = New System.Drawing.Size(178, 24)
         Me.patio.TabIndex = 48
         Me.patio.Text = "______________"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(443, 391)
+        Me.Label7.Location = New System.Drawing.Point(335, 194)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(65, 21)
+        Me.Label7.Size = New System.Drawing.Size(70, 24)
         Me.Label7.TabIndex = 47
         Me.Label7.Text = "Patio"
         '
         'den
         '
         Me.den.AutoSize = True
-        Me.den.Location = New System.Drawing.Point(564, 340)
+        Me.den.Location = New System.Drawing.Point(468, 127)
         Me.den.Name = "den"
-        Me.den.Size = New System.Drawing.Size(164, 21)
+        Me.den.Size = New System.Drawing.Size(178, 24)
         Me.den.TabIndex = 46
         Me.den.Text = "______________"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(456, 340)
+        Me.Label8.Location = New System.Drawing.Point(350, 127)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(43, 21)
+        Me.Label8.Size = New System.Drawing.Size(46, 24)
         Me.Label8.TabIndex = 45
         Me.Label8.Text = "Den"
         '
         'sq
         '
         Me.sq.AutoSize = True
-        Me.sq.Location = New System.Drawing.Point(564, 289)
+        Me.sq.Location = New System.Drawing.Point(466, 57)
         Me.sq.Name = "sq"
-        Me.sq.Size = New System.Drawing.Size(164, 21)
+        Me.sq.Size = New System.Drawing.Size(178, 24)
         Me.sq.TabIndex = 44
         Me.sq.Text = "______________"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(419, 289)
+        Me.Label9.Location = New System.Drawing.Point(308, 57)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(120, 21)
+        Me.Label9.Size = New System.Drawing.Size(130, 24)
         Me.Label9.TabIndex = 43
         Me.Label9.Text = "SquareFeet"
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(216, 511)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(5)
+        Me.Button3.Location = New System.Drawing.Point(394, 590)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(137, 40)
+        Me.Button3.Size = New System.Drawing.Size(149, 46)
         Me.Button3.TabIndex = 51
-        Me.Button3.Text = "Detail"
+        Me.Button3.Text = "Sign"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'doornumber
+        'GroupBox1
         '
-        Me.doornumber.AutoSize = True
-        Me.doornumber.Location = New System.Drawing.Point(564, 245)
-        Me.doornumber.Name = "doornumber"
-        Me.doornumber.Size = New System.Drawing.Size(164, 21)
-        Me.doornumber.TabIndex = 53
-        Me.doornumber.Text = "______________"
+        Me.GroupBox1.Controls.Add(Me.sq)
+        Me.GroupBox1.Controls.Add(Me.ListBox1)
+        Me.GroupBox1.Controls.Add(Me.price)
+        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.Label6)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.patio)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.den)
+        Me.GroupBox1.Location = New System.Drawing.Point(141, 202)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(694, 369)
+        Me.GroupBox1.TabIndex = 52
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Unit Info"
         '
-        'Label11
+        'PictureBox2
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(408, 245)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(131, 21)
-        Me.Label11.TabIndex = 52
-        Me.Label11.Text = "Door Number"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(898, 245)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 33
-        Me.DataGridView1.Size = New System.Drawing.Size(631, 238)
-        Me.DataGridView1.TabIndex = 54
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(58, 47)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(74, 69)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 53
+        Me.PictureBox2.TabStop = False
         '
         'Renting
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1665, 681)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.doornumber)
-        Me.Controls.Add(Me.Label11)
+        Me.ClientSize = New System.Drawing.Size(966, 778)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.price)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.patio)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.den)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.sq)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Bathroom)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Bedroom)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(5)
+        Me.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.Name = "Renting"
         Me.Text = "Renting"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Bedroom As ComboBox
@@ -303,7 +285,6 @@ Partial Class Renting
     Friend WithEvents sq As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents doornumber As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

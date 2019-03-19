@@ -1,6 +1,6 @@
 ﻿Public Class Renting
     Public sql As New Sqlcon
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Main.Show()
 
@@ -13,12 +13,11 @@
         'Next
         login.SQL.ExecQuery("select DoorNumber, Unit.TypeID,Floors,UnitType.Bedrooms, UnitType.Bathrooms,UnitType.Squarefeet,UnitType.Den,UnitType.Patio,UnitType.Price from Unit, UnitType 
                             where Unit.TypeID =UnitType.TypeID and Unit.BID = " + Main.Building.Text.ToString + " and Unit.RentStatus = 'Vacant'")
-        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
         ListBox1.DataSource = login.SQL.DBDS.Tables(0)
         ListBox1.DisplayMember = "DoorNumber"
         ListBox1.ValueMember = "TypeID"
         ListBox1.SelectedIndex = 0
-        doornumber.Text = ListBox1.SelectedValue.ToString
+        'doornumber.Text = ListBox1.SelectedValue.ToString
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -34,12 +33,12 @@
         ListBox1.DisplayMember = "DoorNumber"
         ListBox1.ValueMember = "TypeID"
         ListBox1.SelectedIndex = 0
-        doornumber.Text = ListBox1.SelectedValue.ToString
+        'doornumber.Text = ListBox1.SelectedValue.ToString
     End Sub
 
     'display all information for the selected unit number'
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-        doornumber.Text = ListBox1.SelectedValue.ToString
+        'doornumber.Text = ListBox1.SelectedValue.ToString
         price.Text = login.SQL.DBDS.Tables(0).Rows(ListBox1.SelectedIndex)(8).ToString()
         den.Text = login.SQL.DBDS.Tables(0).Rows(ListBox1.SelectedIndex)(6).ToString()
         If login.SQL.DBDS.Tables(0).Rows(ListBox1.SelectedIndex)(7).ToString() = 0 Then
@@ -51,6 +50,12 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        ContractForm.Show()
+    End Sub
 
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Close()
+        Main.Show()
     End Sub
 End Class
