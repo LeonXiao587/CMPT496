@@ -36,11 +36,6 @@ Partial Class ContractForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.email = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.parking = New System.Windows.Forms.ComboBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,10 +45,10 @@ Partial Class ContractForm
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(56, 49)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.PictureBox2.Location = New System.Drawing.Point(51, 43)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(74, 69)
+        Me.PictureBox2.Size = New System.Drawing.Size(68, 60)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 54
         Me.PictureBox2.TabStop = False
@@ -61,174 +56,124 @@ Partial Class ContractForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(425, 49)
+        Me.Label1.Location = New System.Drawing.Point(390, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(82, 24)
+        Me.Label1.Size = New System.Drawing.Size(76, 21)
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "Unit: "
         '
         'unitlable
         '
         Me.unitlable.AutoSize = True
-        Me.unitlable.Location = New System.Drawing.Point(569, 49)
+        Me.unitlable.Location = New System.Drawing.Point(522, 43)
         Me.unitlable.Name = "unitlable"
-        Me.unitlable.Size = New System.Drawing.Size(82, 24)
+        Me.unitlable.Size = New System.Drawing.Size(76, 21)
         Me.unitlable.TabIndex = 56
         Me.unitlable.Text = "Unit: "
         '
         'phone
         '
         Me.phone.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.phone.Location = New System.Drawing.Point(234, 352)
+        Me.phone.Location = New System.Drawing.Point(215, 289)
         Me.phone.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.phone.Name = "phone"
-        Me.phone.Size = New System.Drawing.Size(314, 35)
+        Me.phone.Size = New System.Drawing.Size(288, 31)
         Me.phone.TabIndex = 66
-        Me.phone.Text = "Enter Phone Number"
         '
         'id
         '
         Me.id.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.id.Location = New System.Drawing.Point(234, 270)
+        Me.id.Location = New System.Drawing.Point(215, 218)
         Me.id.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.id.Name = "id"
-        Me.id.Size = New System.Drawing.Size(314, 35)
+        Me.id.Size = New System.Drawing.Size(288, 31)
         Me.id.TabIndex = 65
-        Me.id.Text = "Enter ID Number"
         '
         'last_name
         '
         Me.last_name.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.last_name.Location = New System.Drawing.Point(234, 180)
+        Me.last_name.Location = New System.Drawing.Point(215, 144)
         Me.last_name.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.last_name.Name = "last_name"
-        Me.last_name.Size = New System.Drawing.Size(314, 35)
+        Me.last_name.Size = New System.Drawing.Size(288, 31)
         Me.last_name.TabIndex = 64
         Me.last_name.Text = "Enter Last Name"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(64, 358)
+        Me.Label9.Location = New System.Drawing.Point(59, 294)
         Me.Label9.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(70, 24)
+        Me.Label9.Size = New System.Drawing.Size(65, 21)
         Me.Label9.TabIndex = 63
         Me.Label9.Text = "Phone"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(43, 276)
+        Me.Label8.Location = New System.Drawing.Point(39, 224)
         Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(118, 24)
+        Me.Label8.Size = New System.Drawing.Size(109, 21)
         Me.Label8.TabIndex = 62
         Me.Label8.Text = "ID Number"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(43, 186)
+        Me.Label7.Location = New System.Drawing.Point(39, 149)
         Me.Label7.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(118, 24)
+        Me.Label7.Size = New System.Drawing.Size(109, 21)
         Me.Label7.TabIndex = 61
         Me.Label7.Text = "Last name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'first_name
         '
         Me.first_name.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.first_name.Location = New System.Drawing.Point(234, 86)
+        Me.first_name.Location = New System.Drawing.Point(215, 75)
         Me.first_name.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.first_name.Name = "first_name"
-        Me.first_name.Size = New System.Drawing.Size(314, 35)
+        Me.first_name.Size = New System.Drawing.Size(288, 31)
         Me.first_name.TabIndex = 60
         Me.first_name.Text = "Enter First Name"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(43, 86)
+        Me.Label6.Location = New System.Drawing.Point(39, 75)
         Me.Label6.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(130, 24)
+        Me.Label6.Size = New System.Drawing.Size(120, 21)
         Me.Label6.TabIndex = 59
         Me.Label6.Text = "First name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'email
         '
         Me.email.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.email.Location = New System.Drawing.Point(234, 442)
+        Me.email.Location = New System.Drawing.Point(215, 359)
         Me.email.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
         Me.email.Name = "email"
-        Me.email.Size = New System.Drawing.Size(314, 35)
+        Me.email.Size = New System.Drawing.Size(288, 31)
         Me.email.TabIndex = 68
         Me.email.Text = "Enter Email Address"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(64, 448)
+        Me.Label2.Location = New System.Drawing.Point(59, 364)
         Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 24)
+        Me.Label2.Size = New System.Drawing.Size(65, 21)
         Me.Label2.TabIndex = 67
         Me.Label2.Text = "Email"
         '
-        'TextBox2
-        '
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox2.Location = New System.Drawing.Point(234, 588)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox2.TabIndex = 70
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(32, 588)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(166, 24)
-        Me.Label3.TabIndex = 69
-        Me.Label3.Text = "Monthly Total"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(53, 514)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(94, 24)
-        Me.Label4.TabIndex = 71
-        Me.Label4.Text = "Parking"
-        '
-        'parking
-        '
-        Me.parking.FormattingEnabled = True
-        Me.parking.Items.AddRange(New Object() {"No", "Covered", "Outside"})
-        Me.parking.Location = New System.Drawing.Point(234, 514)
-        Me.parking.Name = "parking"
-        Me.parking.Size = New System.Drawing.Size(179, 32)
-        Me.parking.TabIndex = 72
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(454, 514)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(94, 24)
-        Me.Label5.TabIndex = 73
-        Me.Label5.Text = "StallID"
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(484, 794)
+        Me.Button1.Location = New System.Drawing.Point(445, 586)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(167, 51)
+        Me.Button1.Size = New System.Drawing.Size(153, 45)
         Me.Button1.TabIndex = 74
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
@@ -237,32 +182,27 @@ Partial Class ContractForm
         '
         Me.GroupBox1.Controls.Add(Me.last_name)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.first_name)
-        Me.GroupBox1.Controls.Add(Me.parking)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label8)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.id)
         Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.phone)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(260, 110)
+        Me.GroupBox1.Location = New System.Drawing.Point(238, 96)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(585, 669)
+        Me.GroupBox1.Size = New System.Drawing.Size(536, 454)
         Me.GroupBox1.TabIndex = 75
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tenant Information"
         '
         'ContractForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 24.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1107, 877)
+        Me.ClientSize = New System.Drawing.Size(1015, 803)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.unitlable)
@@ -291,11 +231,6 @@ Partial Class ContractForm
     Friend WithEvents Label6 As Label
     Friend WithEvents email As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents parking As ComboBox
-    Friend WithEvents Label5 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox1 As GroupBox
 End Class

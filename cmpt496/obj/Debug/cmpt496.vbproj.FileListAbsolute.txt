@@ -65,3 +65,5 @@ C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.exe
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.xml
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.pdb
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.ContractForm.resources
+C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.ContractForm.resources
+C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
