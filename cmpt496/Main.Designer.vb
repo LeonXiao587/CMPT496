@@ -54,7 +54,7 @@ Partial Class Main
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(600, 728)
+        Me.Label2.Location = New System.Drawing.Point(600, 633)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(120, 21)
@@ -63,8 +63,8 @@ Partial Class Main
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1436, 136)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Location = New System.Drawing.Point(1215, 47)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(138, 54)
         Me.Button1.TabIndex = 3
@@ -77,7 +77,7 @@ Partial Class Main
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Default
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Location = New System.Drawing.Point(783, 315)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(180, 52)
         Me.Button3.TabIndex = 5
@@ -90,7 +90,7 @@ Partial Class Main
         Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(81, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Location = New System.Drawing.Point(783, 401)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(180, 52)
         Me.Button4.TabIndex = 6
@@ -101,8 +101,8 @@ Partial Class Main
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(233, 201)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(254, 95)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(466, 452)
         Me.PictureBox1.TabIndex = 8
@@ -111,7 +111,7 @@ Partial Class Main
         'LinkLabel1
         '
         Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(930, 728)
+        Me.LinkLabel1.Location = New System.Drawing.Point(930, 633)
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(98, 21)
@@ -127,7 +127,7 @@ Partial Class Main
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(92, 60)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(68, 60)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -141,7 +141,7 @@ Partial Class Main
         Me.Button2.Cursor = System.Windows.Forms.Cursors.Default
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Location = New System.Drawing.Point(783, 222)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(180, 52)
         Me.Button2.TabIndex = 10
@@ -152,7 +152,7 @@ Partial Class Main
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(325, 728)
+        Me.Label3.Location = New System.Drawing.Point(325, 633)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 21)
@@ -162,7 +162,7 @@ Partial Class Main
         'Building
         '
         Me.Building.AutoSize = True
-        Me.Building.Location = New System.Drawing.Point(436, 728)
+        Me.Building.Location = New System.Drawing.Point(436, 633)
         Me.Building.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Building.Name = "Building"
         Me.Building.Size = New System.Drawing.Size(0, 21)
@@ -173,7 +173,7 @@ Partial Class Main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1712, 894)
+        Me.ClientSize = New System.Drawing.Size(1446, 663)
         Me.Controls.Add(Me.Building)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox2)

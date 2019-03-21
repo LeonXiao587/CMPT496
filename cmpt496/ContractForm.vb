@@ -14,9 +14,14 @@
             pwd = first_name.Text + unitlable.Text
             login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, leaseNumber, Credits,ID) Values (" + phone.Text + ",'" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',NULL,0," + id.Text + ")")
             LeaseForm.Show()
-            Me.Close()
+            Me.Hide()
         End If
 
 
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Close()
+        Renting.Show()
     End Sub
 End Class

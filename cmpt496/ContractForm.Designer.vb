@@ -38,8 +38,10 @@ Partial Class ContractForm
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -56,18 +58,20 @@ Partial Class ContractForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(390, 43)
+        Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(466, 21)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 21)
+        Me.Label1.Size = New System.Drawing.Size(179, 52)
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "Unit: "
         '
         'unitlable
         '
         Me.unitlable.AutoSize = True
-        Me.unitlable.Location = New System.Drawing.Point(522, 43)
+        Me.unitlable.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.unitlable.Location = New System.Drawing.Point(595, 21)
         Me.unitlable.Name = "unitlable"
-        Me.unitlable.Size = New System.Drawing.Size(76, 21)
+        Me.unitlable.Size = New System.Drawing.Size(179, 52)
         Me.unitlable.TabIndex = 56
         Me.unitlable.Text = "Unit: "
         '
@@ -197,12 +201,23 @@ Partial Class ContractForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tenant Information"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(394, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 61)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 82
+        Me.PictureBox1.TabStop = False
+        '
         'ContractForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1015, 803)
+        Me.ClientSize = New System.Drawing.Size(1015, 722)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.unitlable)
@@ -213,6 +228,7 @@ Partial Class ContractForm
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -233,4 +249,5 @@ Partial Class ContractForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
