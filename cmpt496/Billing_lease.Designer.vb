@@ -22,25 +22,26 @@ Partial Class Billing_lease
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button0 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.StartDate = New System.Windows.Forms.DateTimePicker()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.EndDate = New System.Windows.Forms.DateTimePicker()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button0
         '
-        Me.Button0.Location = New System.Drawing.Point(65, 90)
+        Me.Button0.Location = New System.Drawing.Point(61, 76)
         Me.Button0.Name = "Button0"
         Me.Button0.Size = New System.Drawing.Size(75, 23)
         Me.Button0.TabIndex = 15
@@ -50,7 +51,7 @@ Partial Class Billing_lease
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(363, 50)
+        Me.Label1.Location = New System.Drawing.Point(396, 35)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 12)
         Me.Label1.TabIndex = 14
@@ -58,7 +59,7 @@ Partial Class Billing_lease
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(535, 90)
+        Me.Button1.Location = New System.Drawing.Point(606, 78)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 16
@@ -68,71 +69,42 @@ Partial Class Billing_lease
         'TextBox1
         '
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox1.Location = New System.Drawing.Point(296, 92)
+        Me.TextBox1.Location = New System.Drawing.Point(276, 78)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(201, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(258, 21)
         Me.TextBox1.TabIndex = 17
         Me.TextBox1.Text = "Search Text"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(643, 90)
+        Me.Button2.Location = New System.Drawing.Point(616, 123)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 18
         Me.Button2.Text = "Clear"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ComboBox3
-        '
-        Me.ComboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(389, 141)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(108, 20)
-        Me.ComboBox3.TabIndex = 21
-        Me.ComboBox3.Text = "Select Tenant#"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(247, 140)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(108, 20)
-        Me.ComboBox2.TabIndex = 20
-        Me.ComboBox2.Text = "Select Unit #"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(119, 139)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(108, 20)
-        Me.ComboBox1.TabIndex = 19
-        Me.ComboBox1.Text = "Select Lease#"
-        '
         'StartDate
         '
-        Me.StartDate.Location = New System.Drawing.Point(511, 141)
+        Me.StartDate.Location = New System.Drawing.Point(177, 125)
         Me.StartDate.Name = "StartDate"
         Me.StartDate.Size = New System.Drawing.Size(108, 21)
         Me.StartDate.TabIndex = 22
+        Me.ToolTip1.SetToolTip(Me.StartDate, "This Time Picker is used for choosing Lease Start time.")
         '
         'DataGridView1
         '
         Me.DataGridView1.BackgroundColor = System.Drawing.SystemColors.Control
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(170, 187)
+        Me.DataGridView1.Location = New System.Drawing.Point(117, 168)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 23
-        Me.DataGridView1.Size = New System.Drawing.Size(548, 255)
+        Me.DataGridView1.Size = New System.Drawing.Size(636, 274)
         Me.DataGridView1.TabIndex = 23
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(305, 461)
+        Me.Button3.Location = New System.Drawing.Point(230, 461)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(90, 23)
         Me.Button3.TabIndex = 24
@@ -141,7 +113,7 @@ Partial Class Billing_lease
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(511, 461)
+        Me.Button4.Location = New System.Drawing.Point(529, 461)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(88, 23)
         Me.Button4.TabIndex = 25
@@ -150,16 +122,35 @@ Partial Class Billing_lease
         '
         'EndDate
         '
-        Me.EndDate.Location = New System.Drawing.Point(643, 141)
+        Me.EndDate.Location = New System.Drawing.Point(335, 125)
         Me.EndDate.Name = "EndDate"
         Me.EndDate.Size = New System.Drawing.Size(108, 21)
         Me.EndDate.TabIndex = 26
+        Me.ToolTip2.SetToolTip(Me.EndDate, "This Time picker is used for choosing Lease End time.")
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(491, 123)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 27
+        Me.Button5.Text = "Edit"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "Start Date"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "End Date"
         '
         'Billing_lease
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DataGridView1)
@@ -170,9 +161,6 @@ Partial Class Billing_lease
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.EndDate)
         Me.Controls.Add(Me.StartDate)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Billing_lease"
         Me.Text = "Billing_lease"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -186,12 +174,12 @@ Partial Class Billing_lease
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button2 As Button
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents StartDate As DateTimePicker
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents EndDate As DateTimePicker
+    Friend WithEvents Button5 As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
 End Class
