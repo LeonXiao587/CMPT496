@@ -30,12 +30,12 @@ Partial Class Billing_lease
         Me.Button2 = New System.Windows.Forms.Button()
         Me.StartDate = New System.Windows.Forms.DateTimePicker()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.EndDate = New System.Windows.Forms.DateTimePicker()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -77,7 +77,7 @@ Partial Class Billing_lease
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(616, 123)
+        Me.Button2.Location = New System.Drawing.Point(606, 120)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 18
@@ -86,7 +86,7 @@ Partial Class Billing_lease
         '
         'StartDate
         '
-        Me.StartDate.Location = New System.Drawing.Point(177, 125)
+        Me.StartDate.Location = New System.Drawing.Point(192, 125)
         Me.StartDate.Name = "StartDate"
         Me.StartDate.Size = New System.Drawing.Size(108, 21)
         Me.StartDate.TabIndex = 22
@@ -102,18 +102,9 @@ Partial Class Billing_lease
         Me.DataGridView1.Size = New System.Drawing.Size(636, 274)
         Me.DataGridView1.TabIndex = 23
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(230, 461)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(90, 23)
-        Me.Button3.TabIndex = 24
-        Me.Button3.Text = "Show Bill"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(529, 461)
+        Me.Button4.Location = New System.Drawing.Point(398, 461)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(88, 23)
         Me.Button4.TabIndex = 25
@@ -122,7 +113,7 @@ Partial Class Billing_lease
         '
         'EndDate
         '
-        Me.EndDate.Location = New System.Drawing.Point(335, 125)
+        Me.EndDate.Location = New System.Drawing.Point(398, 122)
         Me.EndDate.Name = "EndDate"
         Me.EndDate.Size = New System.Drawing.Size(108, 21)
         Me.EndDate.TabIndex = 26
@@ -130,7 +121,7 @@ Partial Class Billing_lease
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(491, 123)
+        Me.Button5.Location = New System.Drawing.Point(192, 461)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 27
@@ -145,14 +136,23 @@ Partial Class Billing_lease
         '
         Me.ToolTip2.ToolTipTitle = "End Date"
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(606, 461)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 28
+        Me.Button6.Text = "View Lease"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Billing_lease
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox1)
@@ -176,10 +176,10 @@ Partial Class Billing_lease
     Friend WithEvents Button2 As Button
     Friend WithEvents StartDate As DateTimePicker
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents EndDate As DateTimePicker
     Friend WithEvents Button5 As Button
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents Button6 As Button
 End Class

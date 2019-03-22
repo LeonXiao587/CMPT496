@@ -58,8 +58,8 @@ Public Class Billing_lease
         'Lease = ComboBox1.SelectedItem
         'Unit = ComboBox2.SelectedItem
         'Tenant = ComboBox3.SelectedItem
-        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.BID, Tenant.First_name, Tenant.Last_name, Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
-                             From Lease,Tenant,Unit Where Lease.TID=Tenant.TID")
+        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.BID, Unit.UnitID, Tenant.First_name, Tenant.Last_name, Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+                             From Lease,Tenant,Unit Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID")
 
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -75,7 +75,7 @@ Public Class Billing_lease
         'ComboBox3.Refresh()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
         'Dim intResult As Integer
         'intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
         'If intResult = DialogResult.OK Then
@@ -83,8 +83,8 @@ Public Class Billing_lease
         'login.SQL.DBDA.Update(login.SQL.DBDS)
         'MsgBox("Changes updated!")
         'End If
-        Me.Close()
-        Email.Show()
+        'Me.Close()
+        'Email.Show()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
