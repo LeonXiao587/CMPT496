@@ -115,6 +115,12 @@
     <Compile Include="Management.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Map.Designer.vb">
+      <DependentUpon>Map.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Map.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Parking.Designer.vb">
       <DependentUpon>Parking.vb</DependentUpon>
     </Compile>
@@ -189,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Management.resx">
       <DependentUpon>Management.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Map.resx">
+      <DependentUpon>Map.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

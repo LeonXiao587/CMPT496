@@ -39,9 +39,21 @@ Partial Class ContractForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox2
@@ -59,9 +71,9 @@ Partial Class ContractForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(466, 21)
+        Me.Label1.Location = New System.Drawing.Point(624, 51)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 52)
+        Me.Label1.Size = New System.Drawing.Size(178, 51)
         Me.Label1.TabIndex = 55
         Me.Label1.Text = "Unit: "
         '
@@ -69,11 +81,11 @@ Partial Class ContractForm
         '
         Me.unitlable.AutoSize = True
         Me.unitlable.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.unitlable.Location = New System.Drawing.Point(595, 21)
+        Me.unitlable.Location = New System.Drawing.Point(753, 51)
         Me.unitlable.Name = "unitlable"
-        Me.unitlable.Size = New System.Drawing.Size(179, 52)
+        Me.unitlable.Size = New System.Drawing.Size(178, 51)
         Me.unitlable.TabIndex = 56
-        Me.unitlable.Text = "Unit: "
+        Me.unitlable.Text = "Number"
         '
         'phone
         '
@@ -175,11 +187,11 @@ Partial Class ContractForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(445, 586)
+        Me.Button1.Location = New System.Drawing.Point(665, 640)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(153, 45)
         Me.Button1.TabIndex = 74
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Submit"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -194,7 +206,7 @@ Partial Class ContractForm
         Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.phone)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(238, 96)
+        Me.GroupBox1.Location = New System.Drawing.Point(164, 144)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(536, 454)
         Me.GroupBox1.TabIndex = 75
@@ -204,19 +216,134 @@ Partial Class ContractForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(394, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(552, 42)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(64, 61)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 82
         Me.PictureBox1.TabStop = False
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.Label3)
+        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.Label4)
+        Me.GroupBox2.Controls.Add(Me.Label5)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Controls.Add(Me.TextBox3)
+        Me.GroupBox2.Controls.Add(Me.TextBox4)
+        Me.GroupBox2.Controls.Add(Me.TextBox5)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Location = New System.Drawing.Point(780, 144)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(536, 454)
+        Me.GroupBox2.TabIndex = 76
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Other information"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.TextBox1.Location = New System.Drawing.Point(215, 144)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(288, 31)
+        Me.TextBox1.TabIndex = 64
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(21, 75)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(186, 21)
+        Me.Label3.TabIndex = 59
+        Me.Label3.Text = "Previous Address"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.TextBox2.Location = New System.Drawing.Point(215, 75)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(288, 31)
+        Me.TextBox2.TabIndex = 60
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(59, 144)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 21)
+        Me.Label4.TabIndex = 61
+        Me.Label4.Text = "Income"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(39, 224)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(120, 21)
+        Me.Label5.TabIndex = 62
+        Me.Label5.Text = "Occupation"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(59, 292)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(87, 21)
+        Me.Label10.TabIndex = 63
+        Me.Label10.Text = "Company"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.TextBox3.Location = New System.Drawing.Point(215, 218)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(288, 31)
+        Me.TextBox3.TabIndex = 65
+        '
+        'TextBox4
+        '
+        Me.TextBox4.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.TextBox4.Location = New System.Drawing.Point(215, 359)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(288, 31)
+        Me.TextBox4.TabIndex = 68
+        '
+        'TextBox5
+        '
+        Me.TextBox5.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.TextBox5.Location = New System.Drawing.Point(215, 289)
+        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 4, 2, 4)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(288, 31)
+        Me.TextBox5.TabIndex = 66
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(70, 362)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(65, 21)
+        Me.Label11.TabIndex = 67
+        Me.Label11.Text = "Email"
+        '
         'ContractForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1015, 722)
+        Me.ClientSize = New System.Drawing.Size(1461, 722)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button1)
@@ -229,6 +356,8 @@ Partial Class ContractForm
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -250,4 +379,15 @@ Partial Class ContractForm
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label11 As Label
 End Class
