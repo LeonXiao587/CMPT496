@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class TenantInfo
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class TenantInfo
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TenantInfo))
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -45,16 +45,14 @@ Partial Class TenantInfo
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.incomeBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.addressbox = New System.Windows.Forms.TextBox()
         Me.incomeLabel = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.occupationBox3 = New System.Windows.Forms.TextBox()
+        Me.companyBox5 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -285,16 +283,14 @@ Partial Class TenantInfo
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.incomeBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TextBox2)
+        Me.GroupBox2.Controls.Add(Me.addressbox)
         Me.GroupBox2.Controls.Add(Me.incomeLabel)
         Me.GroupBox2.Controls.Add(Me.Label5)
         Me.GroupBox2.Controls.Add(Me.Label10)
-        Me.GroupBox2.Controls.Add(Me.TextBox3)
-        Me.GroupBox2.Controls.Add(Me.TextBox4)
-        Me.GroupBox2.Controls.Add(Me.TextBox5)
-        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.occupationBox3)
+        Me.GroupBox2.Controls.Add(Me.companyBox5)
         Me.GroupBox2.Location = New System.Drawing.Point(851, 165)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(585, 395)
@@ -302,14 +298,14 @@ Partial Class TenantInfo
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Other information"
         '
-        'TextBox1
+        'incomeBox1
         '
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox1.Location = New System.Drawing.Point(235, 142)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox1.TabIndex = 64
+        Me.incomeBox1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.incomeBox1.Location = New System.Drawing.Point(235, 142)
+        Me.incomeBox1.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
+        Me.incomeBox1.Name = "incomeBox1"
+        Me.incomeBox1.Size = New System.Drawing.Size(314, 35)
+        Me.incomeBox1.TabIndex = 64
         '
         'Label3
         '
@@ -321,14 +317,14 @@ Partial Class TenantInfo
         Me.Label3.TabIndex = 59
         Me.Label3.Text = "Previous Address"
         '
-        'TextBox2
+        'addressbox
         '
-        Me.TextBox2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox2.Location = New System.Drawing.Point(235, 86)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox2.TabIndex = 60
+        Me.addressbox.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.addressbox.Location = New System.Drawing.Point(235, 86)
+        Me.addressbox.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
+        Me.addressbox.Name = "addressbox"
+        Me.addressbox.Size = New System.Drawing.Size(314, 35)
+        Me.addressbox.TabIndex = 60
         '
         'incomeLabel
         '
@@ -360,42 +356,23 @@ Partial Class TenantInfo
         Me.Label10.TabIndex = 63
         Me.Label10.Text = "Company"
         '
-        'TextBox3
+        'occupationBox3
         '
-        Me.TextBox3.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox3.Location = New System.Drawing.Point(235, 195)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox3.TabIndex = 65
+        Me.occupationBox3.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.occupationBox3.Location = New System.Drawing.Point(235, 195)
+        Me.occupationBox3.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
+        Me.occupationBox3.Name = "occupationBox3"
+        Me.occupationBox3.Size = New System.Drawing.Size(314, 35)
+        Me.occupationBox3.TabIndex = 65
         '
-        'TextBox4
+        'companyBox5
         '
-        Me.TextBox4.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox4.Location = New System.Drawing.Point(235, 307)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox4.TabIndex = 68
-        '
-        'TextBox5
-        '
-        Me.TextBox5.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.TextBox5.Location = New System.Drawing.Point(235, 250)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(314, 35)
-        Me.TextBox5.TabIndex = 66
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(76, 311)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(7, 0, 7, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(70, 24)
-        Me.Label11.TabIndex = 67
-        Me.Label11.Text = "Email"
+        Me.companyBox5.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.companyBox5.Location = New System.Drawing.Point(235, 250)
+        Me.companyBox5.Margin = New System.Windows.Forms.Padding(2, 5, 2, 5)
+        Me.companyBox5.Name = "companyBox5"
+        Me.companyBox5.Size = New System.Drawing.Size(314, 35)
+        Me.companyBox5.TabIndex = 66
         '
         'TenantInfo
         '
@@ -440,19 +417,17 @@ Partial Class TenantInfo
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents incomeBox1 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents addressbox As TextBox
     Friend WithEvents incomeLabel As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents occupationBox3 As TextBox
+    Friend WithEvents companyBox5 As TextBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label14 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label11 As Label
 End Class

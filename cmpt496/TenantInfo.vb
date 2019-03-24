@@ -17,7 +17,8 @@
             uname = last_name.Text + unitlable.Text
             Dim pwd As String
             pwd = first_name.Text + unitlable.Text
-            login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, leaseNumber, Credits,ID) Values (" + phone.Text + ",'" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',NULL,0," + id.Text + ")")
+            login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values (" + phone.Text + ",'" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")
+            MsgBox("Your Username: " & uname + vbCrLf + "Password: " + pwd)
             LeaseForm.Show()
             Me.Hide()
         End If
