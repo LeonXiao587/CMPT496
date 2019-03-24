@@ -1,3 +1,3 @@
-﻿Public Class Map
+﻿Public Class Mapform
 
 End Class

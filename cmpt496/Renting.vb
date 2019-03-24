@@ -1,5 +1,5 @@
-﻿Public Class Renting
-    Public sql As New Sqlcon
+﻿Imports System.Text
+Public Class Renting
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Main.Show()
@@ -105,6 +105,23 @@
     End Sub
 
     Private Sub Map_Click(sender As Object, e As EventArgs) Handles Map.Click
+        Try
+            Dim queryAddress As New StringBuilder
+            queryAddress.Append("http://maps.google.com/maps?q=")
+            If IsNumeric(BIDLabel.Text) Then
+                login.SQL.ExecQuery("Select * from Building where BID = " + BIDLabel.Text)
+                queryAddress.Append(login.SQL.DBDS.Tables(0).Rows(0)(2).ToString() + "," & "+")
+                queryAddress.Append(login.SQL.DBDS.Tables(0).Rows(0)(1).ToString() + "," & "+ Edmonton")
+            End If
+            Mapform.Show()
+            Mapform.WebBrowser1.Navigate(queryAddress.ToString)
+        Catch ex As Exception
+            MessageBox.Show("Unable to retrive data")
+        End Try
+    End Sub
 
+    Private Sub cmdClose_Click()
+        Me.Close()
+        Main.Show()
     End Sub
 End Class

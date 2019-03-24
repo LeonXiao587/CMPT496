@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Map
+Partial Class Mapform
     Inherits System.Windows.Forms.Form
 
     'Form 重写 Dispose，以清理组件列表。
@@ -31,16 +31,16 @@ Partial Class Map
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(800, 466)
+        Me.WebBrowser1.Size = New System.Drawing.Size(1695, 777)
         Me.WebBrowser1.TabIndex = 0
         '
-        'Map
+        'Mapform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 466)
+        Me.ClientSize = New System.Drawing.Size(1695, 777)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Name = "Map"
+        Me.Name = "Mapform"
         Me.Text = "Map"
         Me.ResumeLayout(False)
 

@@ -42,4 +42,9 @@
         Me.Close()
         ContractForm.Show()
     End Sub
+
+    Private Sub cmdClose_Click()
+        Me.Close()
+        Main.Show()
+    End Sub
 End Class

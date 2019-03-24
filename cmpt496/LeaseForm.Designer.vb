@@ -167,7 +167,7 @@ Partial Class LeaseForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(41, 235)
+        Me.Label2.Location = New System.Drawing.Point(41, 228)
         Me.Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(65, 21)
@@ -209,7 +209,7 @@ Partial Class LeaseForm
         Me.unitlable.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.unitlable.Location = New System.Drawing.Point(600, 55)
         Me.unitlable.Name = "unitlable"
-        Me.unitlable.Size = New System.Drawing.Size(257, 52)
+        Me.unitlable.Size = New System.Drawing.Size(256, 51)
         Me.unitlable.TabIndex = 78
         Me.unitlable.Text = "Unitlable"
         '
@@ -219,7 +219,7 @@ Partial Class LeaseForm
         Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(462, 55)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 52)
+        Me.Label1.Size = New System.Drawing.Size(178, 51)
         Me.Label1.TabIndex = 77
         Me.Label1.Text = "Unit: "
         '

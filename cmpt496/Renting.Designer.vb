@@ -50,17 +50,20 @@ Partial Class Renting
         Me.bathroomLabel12 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.OtherBuild = New System.Windows.Forms.CheckBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(397, 52)
+        Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!)
+        Me.Label1.Location = New System.Drawing.Point(379, 41)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(87, 21)
+        Me.Label1.Size = New System.Drawing.Size(204, 51)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Renting"
         '
@@ -331,12 +334,23 @@ Partial Class Renting
         Me.OtherBuild.Text = "Other Building"
         Me.OtherBuild.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(307, 30)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(64, 61)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 82
+        Me.PictureBox1.TabStop = False
+        '
         'Renting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(867, 681)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.OtherBuild)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -353,6 +367,7 @@ Partial Class Renting
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -385,4 +400,5 @@ Partial Class Renting
     Friend WithEvents Label11 As Label
     Friend WithEvents bathroomLabel12 As Label
     Friend WithEvents Map As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
