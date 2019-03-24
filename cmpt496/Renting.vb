@@ -83,11 +83,11 @@ Public Class Renting
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Me.Hide()
-        ContractForm.Show()
+        TenanInfo.Show()
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Me.Close()
+        Me.Hide()
         Main.Show()
     End Sub
 
