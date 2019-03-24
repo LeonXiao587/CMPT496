@@ -81,10 +81,10 @@
     <Compile Include="Billing_lease.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContractForm.Designer.vb">
-      <DependentUpon>ContractForm.vb</DependentUpon>
+    <Compile Include="TenantInfo.Designer.vb">
+      <DependentUpon>TenantInfo.vb</DependentUpon>
     </Compile>
-    <Compile Include="ContractForm.vb">
+    <Compile Include="TenantInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Email.Designer.vb">
@@ -180,8 +180,8 @@
     <EmbeddedResource Include="Billing_lease.resx">
       <DependentUpon>Billing_lease.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContractForm.resx">
-      <DependentUpon>ContractForm.vb</DependentUpon>
+    <EmbeddedResource Include="TenantInfo.resx">
+      <DependentUpon>TenantInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Email.resx">
       <DependentUpon>Email.vb</DependentUpon>
