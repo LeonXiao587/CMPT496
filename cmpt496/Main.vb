@@ -65,4 +65,13 @@
         End If
     End Sub
 
+    Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
+        Me.Hide()
+        Renting.Show()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        Me.Hide()
+        Renting.Show()
+    End Sub
 End Class

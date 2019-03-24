@@ -24,7 +24,6 @@ C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\cmpt496.exe.config
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\cmpt496.exe
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\cmpt496.pdb
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\cmpt496.xml
-C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.vbprojAssemblyReference.cache
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.Billing_lease.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.Email.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.login.resources
@@ -70,3 +69,7 @@ C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.ContractForm.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Mapform.resources
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.Mapform.resources
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyComplete
