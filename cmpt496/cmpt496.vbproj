@@ -48,7 +48,6 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -80,10 +79,10 @@
     <Compile Include="Billing_lease.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TenanInfo.Designer.vb">
-      <DependentUpon>TenanInfo.vb</DependentUpon>
+    <Compile Include="ContractForm.Designer.vb">
+      <DependentUpon>ContractForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="TenanInfo.vb">
+    <Compile Include="ContractForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Email.Designer.vb">
@@ -179,8 +178,8 @@
     <EmbeddedResource Include="Billing_lease.resx">
       <DependentUpon>Billing_lease.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TenanInfo.resx">
-      <DependentUpon>TenanInfo.vb</DependentUpon>
+    <EmbeddedResource Include="ContractForm.resx">
+      <DependentUpon>ContractForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Email.resx">
       <DependentUpon>Email.vb</DependentUpon>
