@@ -1,0 +1,34 @@
+[History]
+1=#P0#=mb	#P1#=ReDraw	#P2#=TabSwitch/xCheckBox/ReDraw	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20160523100318	#P7#=-2147483640	#P8#=238	.
+2=#P0#=mb	#P1#=y16_Click	#P2#=TabSwitch/xCheckBox/y16_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523100116	#P7#=0	#P8#=1	.
+3=#P0#=mb	#P1#=UserControl_Click	#P2#=TabSwitch/xCheckBox/UserControl_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523095221	#P7#=-2147483640	#P8#=1	.
+4=#P0#=mb	#P1#=UserControl_Resize	#P2#=TabSwitch/xCheckBox/UserControl_Resize	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523094953	#P7#=-2147483640	#P8#=18	.
+5=#P0#=mb	#P1#=Shape	#P2#=TabSwitch/xCheckBox/Shape [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523085043	#P7#=0	#P8#=2	.
+6=#P0#=mb	#P1#=Shape	#P2#=TabSwitch/xCheckBox/Shape [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523085032	#P7#=-2147483640	#P8#=0	.
+7=#P0#=mb	#P1#=UserControl_WriteProperties	#P2#=TabSwitch/xCheckBox/UserControl_WriteProperties	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523085032	#P7#=0	#P8#=11	.
+8=#P0#=mb	#P1#=UserControl_ReadProperties	#P2#=TabSwitch/xCheckBox/UserControl_ReadProperties	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523085016	#P7#=0	#P8#=2	.
+9=#P0#=mb	#P1#=Enabled	#P2#=TabSwitch/xCheckBox/Enabled [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523082300	#P7#=-2147483640	#P8#=0	.
+10=#P0#=mb	#P1#=usePicture	#P2#=TabSwitch/xCheckBox/usePicture [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044742	#P7#=-2147483640	#P8#=0	.
+11=#P0#=mb	#P1#=Picture	#P2#=TabSwitch/xCheckBox/Picture [Set]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044713	#P7#=0	#P8#=4	.
+12=#P0#=mb	#P1#=PicInvalid	#P2#=TabSwitch/xCheckBox/PicInvalid [Set]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044313	#P7#=0	#P8#=11	.
+13=#P0#=mb	#P1#=style	#P2#=TabSwitch/xCheckBox/style [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044256	#P7#=0	#P8#=-4	.
+14=#P0#=mb	#P1#=Picture	#P2#=TabSwitch/xCheckBox/Picture [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044241	#P7#=-2147483640	#P8#=2	.
+15=#P0#=mb	#P1#=BorderWidth	#P2#=TabSwitch/xCheckBox/BorderWidth [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523044153	#P7#=0	#P8#=1	.
+16=#P0#=mb	#P1#=UserControl_MouseMove	#P2#=TabSwitch/xCheckBox/UserControl_MouseMove	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523043614	#P7#=-2147483640	#P8#=9	.
+17=#P0#=mb	#P1#=UserControl_MouseDown	#P2#=TabSwitch/xCheckBox/UserControl_MouseDown	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523035238	#P7#=-2147483640	#P8#=1	.
+18=#P0#=mb	#P1#=UserControl_MouseUp	#P2#=TabSwitch/xCheckBox/UserControl_MouseUp	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523035221	#P7#=0	#P8#=1	.
+19=#P0#=mb	#P1#=CopyScreenBackground	#P2#=TabSwitch/mGradient/CopyScreenBackground	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20160523033401	#P7#=0	#P8#=24	.
+20=#P0#=mb	#P1#=style	#P2#=TabSwitch/xCheckBox/style [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523031206	#P7#=0	#P8#=2	.
+21=#P0#=mb	#P1#=UserControl_DblClick	#P2#=TabSwitch/xCheckBox/UserControl_DblClick	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523030812	#P7#=0	#P8#=2	.
+22=#P0#=mb	#P1#=BackColor	#P2#=TabSwitch/xCheckBox/BackColor [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523030238	#P7#=0	#P8#=-4	.
+23=#P0#=mb	#P1#=TransParent	#P2#=TabSwitch/xCheckBox/TransParent [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523025910	#P7#=0	#P8#=1	.
+24=#P0#=mb	#P1#=TransParent	#P2#=TabSwitch/xCheckBox/TransParent [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523025857	#P7#=0	#P8#=-6	.
+25=#P0#=mb	#P1#=value	#P2#=TabSwitch/xCheckBox/value [Let]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523024041	#P7#=0	#P8#=0	.
+26=#P0#=mb	#P1#=value	#P2#=TabSwitch/xCheckBox/value [Get]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160523024031	#P7#=0	#P8#=0	.
+27=#P0#=mb	#P1#=CopyBackGround	#P2#=TabSwitch/mGradient/CopyBackGround	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20160523022137	#P7#=0	#P8#=2	.
+28=#P0#=mb	#P1#=UserControl_MouseMove	#P2#=TabSwitch/xButton/UserControl_MouseMove	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523015224	#P7#=-2147483640	#P8#=6	.
+29=#P0#=mb	#P1#=UserControl_DblClick	#P2#=TabSwitch/xButton/UserControl_DblClick	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523014414	#P7#=0	#P8#=1	.
+30=#P0#=mb	#P1#=Timer1_Timer	#P2#=TabSwitch/SafeSwitch/Timer1_Timer	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523014321	#P7#=0	#P8#=1	.
+31=#P0#=mb	#P1#=UserControl_InitProperties	#P2#=TabSwitch/xButton/UserControl_InitProperties	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160521004823	#P7#=-2147483640	#P8#=1	.
+32=#P0#=mb	#P1#=ico0	#P2#=TabSwitch/xButton/ico0 [Set]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160521001737	#P7#=-2147483640	#P8#=4	.
+33=#P0#=mb	#P1#=setUnSetIco	#P2#=TabSwitch/xButton/setUnSetIco	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20160521001651	#P7#=0	#P8#=11	.

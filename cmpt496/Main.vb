@@ -49,7 +49,7 @@
     'End Sub
 
 
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) 
         'Me.Hide()
         Renting.Show()
         ' LeaseForm.Show()

@@ -22,12 +22,7 @@ Public Class Renting
         'doornumber.Text = ListBox1.SelectedValue.ToString
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-        LoadList()
-        'login.SQL.ExecQuery("select * from UnitType where TypeID = " + doornumber.Text.ToString)
-        'price.Text = login.SQL.DBDS.Tables(0).Rows(0)(3).ToString()
-    End Sub
     Private Sub LoadList()
         Dim Bedrooms, Bathrooms, Building As String
         If Bedroom.SelectedIndex = 0 Then
@@ -81,11 +76,6 @@ Public Class Renting
         sq.Text = login.SQL.DBDS.Tables(0).Rows(ListBox1.SelectedIndex)(5).ToString()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Hide()
-        TenantInfo.Show()
-    End Sub
-
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.Close()
         Main.Show()
@@ -124,4 +114,24 @@ Public Class Renting
         Me.Close()
         Main.Show()
     End Sub
+
+    Private Sub Filterrect_Click(sender As Object, e As EventArgs) Handles Filterrect.Click
+        LoadList()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        LoadList()
+    End Sub
+
+
+    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
+        Me.Hide()
+        TenantInfo.Show()
+    End Sub
+
+    Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
+        Me.Hide()
+        TenantInfo.Show()
+    End Sub
+
 End Class

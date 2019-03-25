@@ -1,0 +1,11 @@
+[History]
+1=#P0#=mb	#P1#=Label1_Click	#P2#=TabSwitch/Form1/Label1_Click	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523100639	#P7#=0	#P8#=3	.
+2=#P0#=mb	#P1#=UserControl_MouseDown	#P2#=TabSwitch/xCheckBox/UserControl_MouseDown	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523090027	#P7#=0	#P8#=2	.
+3=#P0#=mb	#P1#=UserControl_MouseMove	#P2#=TabSwitch/xCheckBox/UserControl_MouseMove	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523090012	#P7#=0	#P8#=1	.
+4=#P0#=mb	#P1#=RedrawPanel	#P2#=TabSwitch/xFrame/RedrawPanel	#P3#=	#P4#=	#P5#=MembMethodPrivate	#P6#=20160523075520	#P7#=-2147483640	#P8#=6	.
+5=#P0#=mb	#P1#=UserControl_MouseMove	#P2#=TabSwitch/xButton/UserControl_MouseMove	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523015224	#P7#=-2147483640	#P8#=6	.
+6=#P0#=mb	#P1#=UserControl_DblClick	#P2#=TabSwitch/xButton/UserControl_DblClick	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523014414	#P7#=0	#P8#=1	.
+7=#P0#=mb	#P1#=Timer1_Timer	#P2#=TabSwitch/SafeSwitch/Timer1_Timer	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160523014321	#P7#=0	#P8#=1	.
+8=#P0#=mb	#P1#=UserControl_InitProperties	#P2#=TabSwitch/xButton/UserControl_InitProperties	#P3#=	#P4#=	#P5#=MembEventProcPrivate	#P6#=20160521004823	#P7#=-2147483640	#P8#=1	.
+9=#P0#=mb	#P1#=ico0	#P2#=TabSwitch/xButton/ico0 [Set]	#P3#=	#P4#=	#P5#=MembProperty	#P6#=20160521001737	#P7#=-2147483640	#P8#=4	.
+10=#P0#=mb	#P1#=setUnSetIco	#P2#=TabSwitch/xButton/setUnSetIco	#P3#=	#P4#=	#P5#=MembMethodPublic	#P6#=20160521001651	#P7#=0	#P8#=11	.
