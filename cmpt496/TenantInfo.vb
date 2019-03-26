@@ -31,7 +31,7 @@
         Renting.Show()
     End Sub
 
-    Private Sub cmdClose_Click()
+    Private Sub CmdClose_Click()
         Me.Close()
         Main.Show()
     End Sub

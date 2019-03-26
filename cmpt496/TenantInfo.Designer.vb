@@ -319,7 +319,7 @@ Partial Class TenantInfo
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(11, 43)
+        Me.Label3.Location = New System.Drawing.Point(4, 43)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(109, 17)
         Me.Label3.TabIndex = 59
