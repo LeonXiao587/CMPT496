@@ -62,7 +62,6 @@ C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CoreCompileIn
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.exe
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.xml
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.pdb
-C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.ContractForm.resources
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.ContractForm.resources
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
@@ -75,3 +74,7 @@ C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.TenantInfo.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.LeaseForm.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Mapform.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyComplete
+C:\Users\Leon\Desktop\CMPT496\cmpt496\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Leon\Desktop\CMPT496\cmpt496\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.TenantInfo.resources
+C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyComplete

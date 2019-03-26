@@ -25,7 +25,7 @@
         unitlable.Text = Renting.ListBox1.SelectedItem(0).ToString
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub FinishWork()
         Dim startdate As String = DateTimePicker1.Value.Date.ToString("yyyy-MM-dd")
         Dim den As Integer = CInt(Microsoft.VisualBasic.Left(startdate, 4)) + CInt(yearbox.SelectedIndex + 1)
         Dim enddate As String = den.ToString + Microsoft.VisualBasic.Right(startdate, 6)
@@ -54,4 +54,13 @@
         Me.Close()
         Main.Show()
     End Sub
+
+    Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
+        FinishWork()
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        FinishWork()
+    End Sub
+
 End Class

@@ -9,7 +9,7 @@
         unitlable.Text = Renting.ListBox1.SelectedItem(0).ToString
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub SubmitTenant()
         If first_name.Text = "" Or last_name.Text = "" Or phone.Text = "" Or email.Text = "" Or id.Text = "" Then
             MsgBox("Input all fields please!")
         Else
@@ -39,4 +39,13 @@
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
+
+    Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
+        SubmitTenant()
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+        SubmitTenant()
+    End Sub
+
 End Class
