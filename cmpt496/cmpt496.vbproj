@@ -81,6 +81,12 @@
     <Compile Include="Billing_lease.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ManagementOption.Designer.vb">
+      <DependentUpon>ManagementOption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementOption.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TenantInfo.Designer.vb">
       <DependentUpon>TenantInfo.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Billing_lease.resx">
       <DependentUpon>Billing_lease.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementOption.resx">
+      <DependentUpon>ManagementOption.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TenantInfo.resx">
       <DependentUpon>TenantInfo.vb</DependentUpon>
