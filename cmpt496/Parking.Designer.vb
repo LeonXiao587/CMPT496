@@ -24,28 +24,34 @@ Partial Class Parking
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Parking))
         Me.ParkingType = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Building = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Parkinglist = New System.Windows.Forms.DataGridView()
         Me.searchbox = New System.Windows.Forms.TextBox()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Statusbox = New System.Windows.Forms.ComboBox()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Crate = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Orate = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Parkinglist, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ParkingType
@@ -58,33 +64,6 @@ Partial Class Parking
         Me.ParkingType.Name = "ParkingType"
         Me.ParkingType.Size = New System.Drawing.Size(106, 20)
         Me.ParkingType.TabIndex = 17
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(397, 422)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(90, 23)
-        Me.Button3.TabIndex = 15
-        Me.Button3.Text = "Rate Adjust"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(750, 416)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 14
-        Me.Button2.Text = "Edit"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(47, 48)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 12
-        Me.Button1.Text = "Room"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -114,7 +93,7 @@ Partial Class Parking
         Me.Building.AutoSize = True
         Me.Building.BackColor = System.Drawing.Color.Transparent
         Me.Building.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!)
-        Me.Building.Location = New System.Drawing.Point(155, 424)
+        Me.Building.Location = New System.Drawing.Point(252, 419)
         Me.Building.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Building.Name = "Building"
         Me.Building.Size = New System.Drawing.Size(0, 20)
@@ -125,7 +104,7 @@ Partial Class Parking
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!)
-        Me.Label3.Location = New System.Drawing.Point(94, 424)
+        Me.Label3.Location = New System.Drawing.Point(191, 419)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 20)
@@ -136,7 +115,7 @@ Partial Class Parking
         '
         Me.Parkinglist.BackgroundColor = System.Drawing.Color.White
         Me.Parkinglist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Parkinglist.Location = New System.Drawing.Point(191, 107)
+        Me.Parkinglist.Location = New System.Drawing.Point(172, 111)
         Me.Parkinglist.Name = "Parkinglist"
         Me.Parkinglist.RowTemplate.Height = 23
         Me.Parkinglist.Size = New System.Drawing.Size(631, 253)
@@ -150,17 +129,6 @@ Partial Class Parking
         Me.searchbox.Name = "searchbox"
         Me.searchbox.Size = New System.Drawing.Size(75, 21)
         Me.searchbox.TabIndex = 83
-        '
-        'Button4
-        '
-        Me.Button4.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button4.Location = New System.Drawing.Point(47, 153)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(71, 27)
-        Me.Button4.TabIndex = 82
-        Me.Button4.Text = "Search"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -221,21 +189,10 @@ Partial Class Parking
         Me.Statusbox.Size = New System.Drawing.Size(106, 20)
         Me.Statusbox.TabIndex = 87
         '
-        'Button5
-        '
-        Me.Button5.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Button5.Location = New System.Drawing.Point(47, 333)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(71, 27)
-        Me.Button5.TabIndex = 89
-        Me.Button5.Text = "Search"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Crate
         '
         Me.Crate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Crate.Location = New System.Drawing.Point(191, 424)
+        Me.Crate.Location = New System.Drawing.Point(288, 419)
         Me.Crate.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Crate.Name = "Crate"
         Me.Crate.Size = New System.Drawing.Size(75, 21)
@@ -246,7 +203,7 @@ Partial Class Parking
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(187, 402)
+        Me.Label7.Location = New System.Drawing.Point(284, 397)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 20)
@@ -256,7 +213,7 @@ Partial Class Parking
         'Orate
         '
         Me.Orate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Orate.Location = New System.Drawing.Point(306, 424)
+        Me.Orate.Location = New System.Drawing.Point(403, 419)
         Me.Orate.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Orate.Name = "Orate"
         Me.Orate.Size = New System.Drawing.Size(75, 21)
@@ -267,12 +224,126 @@ Partial Class Parking
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(302, 402)
+        Me.Label8.Location = New System.Drawing.Point(399, 397)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(61, 20)
         Me.Label8.TabIndex = 93
         Me.Label8.Text = "Outside"
+        '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape2.CornerRadius = 11
+        Me.RectangleShape2.Location = New System.Drawing.Point(498, 411)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape2.Size = New System.Drawing.Size(107, 40)
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape1, Me.RectangleShape2})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(872, 511)
+        Me.ShapeContainer1.TabIndex = 94
+        Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape4
+        '
+        Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape4.CornerRadius = 11
+        Me.RectangleShape4.Location = New System.Drawing.Point(694, 408)
+        Me.RectangleShape4.Name = "RectangleShape4"
+        Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape4.Size = New System.Drawing.Size(107, 40)
+        '
+        'RectangleShape3
+        '
+        Me.RectangleShape3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape3.CornerRadius = 11
+        Me.RectangleShape3.Location = New System.Drawing.Point(44, 152)
+        Me.RectangleShape3.Name = "RectangleShape3"
+        Me.RectangleShape3.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape3.Size = New System.Drawing.Size(74, 27)
+        '
+        'RectangleShape1
+        '
+        Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape1.CornerRadius = 11
+        Me.RectangleShape1.Location = New System.Drawing.Point(45, 342)
+        Me.RectangleShape1.Name = "RectangleShape1"
+        Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape1.Size = New System.Drawing.Size(72, 27)
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.Location = New System.Drawing.Point(505, 418)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(97, 21)
+        Me.Label9.TabIndex = 95
+        Me.Label9.Text = "Rate Adjust"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.White
+        Me.Label10.Location = New System.Drawing.Point(59, 343)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(47, 21)
+        Me.Label10.TabIndex = 96
+        Me.Label10.Text = "Load"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(47, 35)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 97
+        Me.PictureBox2.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.White
+        Me.Label11.Location = New System.Drawing.Point(50, 154)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(61, 21)
+        Me.Label11.TabIndex = 98
+        Me.Label11.Text = "Search"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.White
+        Me.Label12.Location = New System.Drawing.Point(727, 419)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(39, 21)
+        Me.Label12.TabIndex = 99
+        Me.Label12.Text = "Edit"
         '
         'Parking
         '
@@ -280,54 +351,61 @@ Partial Class Parking
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(872, 511)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Orate)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Crate)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Statusbox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.searchbox)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Parkinglist)
         Me.Controls.Add(Me.Building)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.ParkingType)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Parkinglist)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "Parking"
         Me.Text = "Parking"
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Parkinglist, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ParkingType As ComboBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Building As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Parkinglist As DataGridView
     Friend WithEvents searchbox As TextBox
-    Friend WithEvents Button4 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Statusbox As ComboBox
-    Friend WithEvents Button5 As Button
     Friend WithEvents Crate As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Orate As TextBox
     Friend WithEvents Label8 As Label
+    Friend WithEvents RectangleShape2 As PowerPacks.RectangleShape
+    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RectangleShape3 As PowerPacks.RectangleShape
+    Friend WithEvents Label11 As Label
+    Friend WithEvents RectangleShape4 As PowerPacks.RectangleShape
+    Friend WithEvents Label12 As Label
 End Class

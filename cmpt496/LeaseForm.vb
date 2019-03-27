@@ -2,16 +2,21 @@
     Private Sub parking_SelectedIndexChanged(sender As Object, e As EventArgs) Handles parking.SelectedIndexChanged
         If parking.SelectedIndex <> 0 Then
             login.SQL.ExecQuery("Select top 1 StallID,Rate from ParkRate where BID = " + Main.Building.Text.ToString + " And RentStatus = 'Vacant' and Stalltype = '" + parking.SelectedItem.ToString + "' order by newid()")
+
             If login.SQL.DBDS.Tables(0).Rows.Count = 0 Then
                 Label11.Text = 0
                 stallnumber.Text = "__"
                 ratebox.Text = CInt(Label11.Text) + CInt(Renting.price.Text)
             Else
+                MakeBox1.Enabled = True
+                PlateBox2.Enabled = True
                 stallnumber.Text = login.SQL.DBDS.Tables(0).Rows(0)(0).ToString
                 Label11.Text = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
                 ratebox.Text = CInt(Label11.Text) + CInt(Renting.price.Text)
             End If
         Else
+            MakeBox1.Enabled = False
+            PlateBox2.Enabled = False
             Label11.Text = 0
             stallnumber.Text = "__"
             ratebox.Text = CInt(Label11.Text) + CInt(Renting.price.Text)
@@ -35,7 +40,7 @@
             login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,Monthlyrate) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "')")
         Else
             login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,StallID,Monthlyrate,Note) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + stallnumber.Text.ToString + "," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "')")
-            login.SQL.ExecQuery("update Parking set Rentstatus = 'Occupied' where StallID = " + stallnumber.Text.ToString)
+            login.SQL.ExecQuery("update Parking set Rentstatus = 'Occupied', Make = '" + MakeBox1.Text.ToString + "', Plate = '" + PlateBox2.Text.ToString + "' where StallID = " + stallnumber.Text.ToString)
         End If
         login.SQL.ExecQuery("update Unit set Rentstatus = 'Occupied' where BID = " + Main.Building.Text.ToString + " and DoorNumber = " + unitlable.Text.ToString)
 
