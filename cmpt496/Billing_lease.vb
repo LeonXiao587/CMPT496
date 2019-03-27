@@ -27,39 +27,37 @@ Public Class Billing_lease
     'End Sub
 
     Private Sub LoadGrid()
-        'Dim idsearch As Integer
-        'idsearch = 0
-        'Dim searchstr As String
-        'searchstr = TextBox1.Text.ToString
-        'If (IsNumeric(TextBox1.Text)) Then
-        'idsearch = TextBox1.Text
-        'End If
+        Dim idsearch As Integer
+        idsearch = 0
+        Dim searchstr As String
+        searchstr = TextBox1.Text.ToString
+        If (IsNumeric(TextBox1.Text)) Then
+            idsearch = TextBox1.Text
+        End If
 
+        'Dim f As String
         'Dim t As String
-        'Dim cbox1 = ComboBox1
-        'Dim cbox2 = ComboBox2
-        'Dim cbox3 = ComboBox3
-        't = Replace(DateTimePicker1.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-        'ComboBox1
-        ' stored proc will not compatible with the gridview data update and delete!!! May have to use simpler way
-        'login.SQL.ExecQuery("select * from Lease where LeaseID =" + idsearch.ToString + "," + searchstr)
 
-        'Dim Lease As Integer
-        'Dim Unit As Integer
-        'Dim Tenant As Integer
-
-        Dim f As String
-        Dim t As String
-
-        f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-        t = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+        'f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+        't = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
 
 
         'Lease = ComboBox1.SelectedItem
         'Unit = ComboBox2.SelectedItem
         'Tenant = ComboBox3.SelectedItem
-        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.BID, Unit.DoorNumber, Tenant.First_name, Tenant.Last_name, Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
-                             From Lease,Tenant,Unit Where Lease.TID=Tenant.TID AND Unit.BID = " + Main.Building.Text.ToString + " and Lease.DoorNumber=Unit.DoorNumber")
+        'login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
+        '                     "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
+
+        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, 
+                             Lease.BID, Tenant.First_name, Tenant.Last_name,
+                             Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+                             From Lease,Tenant,Unit
+                             Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
+                             AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString +
+                             "or Lease.DoorNumber like " + idsearch.ToString + "or Lease.BID = " + idsearch.ToString +
+                             "or First_name like '%" + searchstr + "%' or Last_name like '%" + searchstr +
+                             "%' or Monthlyrate like " + idsearch.ToString + " and Startdate >= '%" + Format(CDate(StartDate.Value), "yyyy-mm-dd") +
+                             "%' and Enddate <= '%" + Format(CDate(EndDate.Value), "yyyy-mm-dd") + "%'")
 
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -186,6 +184,15 @@ Public Class Billing_lease
 
     Private Sub RectangleShape5_Click(sender As Object, e As EventArgs) Handles RectangleShape5.Click
 
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        DataGridView1.MultiSelect = False
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
     End Sub
 
     'Private rowIndex As Integer = 0

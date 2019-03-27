@@ -44,9 +44,11 @@ Partial Class Billing_lease
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -64,17 +66,17 @@ Partial Class Billing_lease
         'TextBox1
         '
         Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox1.Location = New System.Drawing.Point(276, 79)
+        Me.TextBox1.Location = New System.Drawing.Point(281, 72)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(258, 21)
+        Me.TextBox1.Size = New System.Drawing.Size(230, 21)
         Me.TextBox1.TabIndex = 17
         Me.TextBox1.Text = "Search Text"
         '
         'StartDate
         '
-        Me.StartDate.Location = New System.Drawing.Point(192, 125)
+        Me.StartDate.Location = New System.Drawing.Point(238, 117)
         Me.StartDate.Name = "StartDate"
-        Me.StartDate.Size = New System.Drawing.Size(108, 21)
+        Me.StartDate.Size = New System.Drawing.Size(123, 21)
         Me.StartDate.TabIndex = 22
         Me.ToolTip1.SetToolTip(Me.StartDate, "This Time Picker is used for choosing Lease Start time.")
         '
@@ -90,9 +92,9 @@ Partial Class Billing_lease
         '
         'EndDate
         '
-        Me.EndDate.Location = New System.Drawing.Point(398, 122)
+        Me.EndDate.Location = New System.Drawing.Point(388, 117)
         Me.EndDate.Name = "EndDate"
-        Me.EndDate.Size = New System.Drawing.Size(108, 21)
+        Me.EndDate.Size = New System.Drawing.Size(123, 21)
         Me.EndDate.TabIndex = 26
         Me.ToolTip2.SetToolTip(Me.EndDate, "This Time picker is used for choosing Lease End time.")
         '
@@ -253,12 +255,25 @@ Partial Class Billing_lease
         Me.PictureBox1.TabIndex = 78
         Me.PictureBox1.TabStop = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(238, 72)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(25, 21)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 79
+        Me.PictureBox3.TabStop = False
+        '
         'Billing_lease
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label6)
@@ -277,6 +292,7 @@ Partial Class Billing_lease
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -301,4 +317,5 @@ Partial Class Billing_lease
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class
