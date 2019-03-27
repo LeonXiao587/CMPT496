@@ -3,24 +3,10 @@
     'Private statusstrip1 As Object
     'Private toolstripstatuslabel1 As Object
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        Renting.Show()
-    End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Signup.Show()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Hide()
-        Billing_lease.Show()
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-        Me.Hide()
-        Management.Show()
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
@@ -48,13 +34,6 @@
     '    Label2.Caption = "label2"
     'End Sub
 
-
-    Private Sub Button2_Click_1(sender As Object, e As EventArgs) 
-        'Me.Hide()
-        Renting.Show()
-        ' LeaseForm.Show()
-    End Sub
-
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         If SQL.HasConnection = True Then
             login.Show()
@@ -69,19 +48,37 @@
         Me.Hide()
         Renting.Show()
     End Sub
-
-    Private Sub managerect_Click(sender As Object, e As EventArgs) Handles managerect.Click
-        Me.Hide()
-        Management.Show()
-    End Sub
-
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Me.Hide()
         Renting.Show()
     End Sub
 
-    Private Sub manageLabel5_Click(sender As Object, e As EventArgs) Handles manageLabel5.Click
+    Private Sub Managerect_Click(sender As Object, e As EventArgs) Handles Managerect.Click
         Me.Hide()
         Management.Show()
+    End Sub
+    Private Sub ManageLabel5_Click(sender As Object, e As EventArgs) Handles ManageLabel5.Click
+        Me.Hide()
+        Management.Show()
+    End Sub
+
+    Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
+        Me.Hide()
+        Billing_lease.Show()
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Me.Hide()
+        Billing_lease.Show()
+    End Sub
+
+    Private Sub RectangleShape3_Click(sender As Object, e As EventArgs) Handles RectangleShape3.Click
+        Me.Hide()
+        Signup.Show()
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Me.Hide()
+        Signup.Show()
     End Sub
 End Class

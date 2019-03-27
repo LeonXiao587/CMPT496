@@ -63,6 +63,7 @@ Partial Class Renting
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!)
         Me.Label1.Location = New System.Drawing.Point(207, 23)
         Me.Label1.Name = "Label1"
@@ -73,6 +74,7 @@ Partial Class Renting
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.Location = New System.Drawing.Point(67, 60)
         Me.Label3.Name = "Label3"
@@ -98,7 +100,7 @@ Partial Class Renting
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Location = New System.Drawing.Point(17, 27)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(116, 174)
         Me.ListBox1.TabIndex = 12
@@ -118,6 +120,7 @@ Partial Class Renting
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(146, 60)
         Me.Label2.Name = "Label2"
@@ -224,6 +227,7 @@ Partial Class Renting
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Map)
         Me.GroupBox1.Controls.Add(Me.BIDLabel)
         Me.GroupBox1.Controls.Add(Me.Label14)
@@ -330,9 +334,10 @@ Partial Class Renting
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(29, 23)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -342,6 +347,7 @@ Partial Class Renting
         'OtherBuild
         '
         Me.OtherBuild.AutoSize = True
+        Me.OtherBuild.BackColor = System.Drawing.Color.Transparent
         Me.OtherBuild.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.OtherBuild.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.OtherBuild.Location = New System.Drawing.Point(211, 80)
@@ -350,7 +356,7 @@ Partial Class Renting
         Me.OtherBuild.Size = New System.Drawing.Size(109, 21)
         Me.OtherBuild.TabIndex = 54
         Me.OtherBuild.Text = "Other Building"
-        Me.OtherBuild.UseVisualStyleBackColor = True
+        Me.OtherBuild.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -424,6 +430,7 @@ Partial Class Renting
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(487, 431)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label4)
@@ -437,6 +444,7 @@ Partial Class Renting
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Renting"
         Me.Text = "Renting"
         Me.GroupBox1.ResumeLayout(False)

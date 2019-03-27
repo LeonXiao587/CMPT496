@@ -1,10 +1,11 @@
 ﻿Public Class TenantInfo
     Private Sub ContractForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim TT As ToolTip
-        TT = New ToolTip()
-        TT.InitialDelay = 0 '出现前的延时（毫秒）
-        TT.AutoPopDelay = 5000 '显示出气泡后的延时时间（毫秒）
-        TT.ToolTipTitle = "提示" '提示信息标题
+        TT = New ToolTip With {
+            .InitialDelay = 0, '出现前的延时（毫秒）
+            .AutoPopDelay = 5000, '显示出气泡后的延时时间（毫秒）
+            .ToolTipTitle = "提示" '提示信息标题
+            }
         TT.SetToolTip(incomeLabel, "Annual Income ")
         unitlable.Text = Renting.ListBox1.SelectedItem(0).ToString
     End Sub

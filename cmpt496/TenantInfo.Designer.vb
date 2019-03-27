@@ -63,6 +63,7 @@ Partial Class TenantInfo
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(28, 25)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
@@ -75,8 +76,9 @@ Partial Class TenantInfo
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(325, 25)
+        Me.Label1.Location = New System.Drawing.Point(325, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 39)
@@ -86,8 +88,9 @@ Partial Class TenantInfo
         'unitlable
         '
         Me.unitlable.AutoSize = True
+        Me.unitlable.BackColor = System.Drawing.Color.Transparent
         Me.unitlable.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.unitlable.Location = New System.Drawing.Point(395, 25)
+        Me.unitlable.Location = New System.Drawing.Point(396, 23)
         Me.unitlable.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.unitlable.Name = "unitlable"
         Me.unitlable.Size = New System.Drawing.Size(134, 39)
@@ -199,6 +202,7 @@ Partial Class TenantInfo
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label14)
@@ -276,8 +280,9 @@ Partial Class TenantInfo
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(286, 19)
+        Me.PictureBox1.Location = New System.Drawing.Point(286, 25)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
@@ -287,6 +292,7 @@ Partial Class TenantInfo
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.incomeBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.addressbox)
@@ -423,6 +429,7 @@ Partial Class TenantInfo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(797, 413)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox2)

@@ -4,14 +4,6 @@
     Public Tenant_ID As String
     Public TEmail As String
     Public PAmount As String
-    Private Sub Back_Click(sender As Object, e As EventArgs) Handles Back.Click
-        Me.Hide()
-        Billing_lease.Show()
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        LoadGrid()
-    End Sub
 
     Private Sub LoadGrid()
         'login.SQL.ExecQuery("select * from Payment")
@@ -19,11 +11,6 @@
         ''login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         'DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
         ''Throw New NotImplementedException()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Me.Close()
-        Email.Show()
     End Sub
 
     'Select distinct Lease.LeaseID, Lease.BID, Unit.UnitID, Tenant.First_name, Tenant.Last_name, Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
@@ -44,4 +31,30 @@
 
     End Sub
 
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Hide()
+        Billing_lease.Show()
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+
+    End Sub
+
+    Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
+        LoadGrid()
+    End Sub
+
+    Private Sub Submit_Click(sender As Object, e As EventArgs) Handles Submit.Click
+        LoadGrid()
+    End Sub
+
+    Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
+        Me.Close()
+        Email.Show()
+    End Sub
+
+    Private Sub SendEmail_Click(sender As Object, e As EventArgs) Handles SendEmail.Click
+        Me.Close()
+        Email.Show()
+    End Sub
 End Class

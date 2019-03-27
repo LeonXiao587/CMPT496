@@ -114,6 +114,7 @@ Partial Class LeaseForm
         '
         'GroupBox1
         '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Notebox)
         Me.GroupBox1.Controls.Add(Me.yearbox)
@@ -233,6 +234,7 @@ Partial Class LeaseForm
         'unitlable
         '
         Me.unitlable.AutoSize = True
+        Me.unitlable.BackColor = System.Drawing.Color.Transparent
         Me.unitlable.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.unitlable.Location = New System.Drawing.Point(320, 31)
         Me.unitlable.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
@@ -244,6 +246,7 @@ Partial Class LeaseForm
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(245, 31)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
@@ -254,6 +257,7 @@ Partial Class LeaseForm
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(19, 19)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
@@ -266,7 +270,7 @@ Partial Class LeaseForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(210, 27)
+        Me.PictureBox1.Location = New System.Drawing.Point(208, 31)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
@@ -312,6 +316,7 @@ Partial Class LeaseForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(663, 413)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox1)
