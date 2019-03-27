@@ -46,6 +46,10 @@ Partial Class LeaseForm
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.MakeBox1 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.PlateBox2 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,7 +58,7 @@ Partial Class LeaseForm
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label12.Location = New System.Drawing.Point(150, 63)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(35, 17)
@@ -64,7 +68,7 @@ Partial Class LeaseForm
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.Location = New System.Drawing.Point(121, 63)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(0, 17)
@@ -73,7 +77,7 @@ Partial Class LeaseForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.Location = New System.Drawing.Point(11, 63)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 17)
@@ -83,7 +87,7 @@ Partial Class LeaseForm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label10.Location = New System.Drawing.Point(111, 63)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(15, 17)
@@ -93,7 +97,7 @@ Partial Class LeaseForm
         'stallnumber
         '
         Me.stallnumber.AutoSize = True
-        Me.stallnumber.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.stallnumber.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.stallnumber.Location = New System.Drawing.Point(190, 63)
         Me.stallnumber.Name = "stallnumber"
         Me.stallnumber.Size = New System.Drawing.Size(18, 17)
@@ -103,7 +107,7 @@ Partial Class LeaseForm
         'parking
         '
         Me.parking.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.parking.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.parking.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.parking.FormattingEnabled = True
         Me.parking.Items.AddRange(New Object() {"No", "Covered", "Outside"})
         Me.parking.Location = New System.Drawing.Point(113, 31)
@@ -115,6 +119,10 @@ Partial Class LeaseForm
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.PlateBox2)
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.MakeBox1)
+        Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Notebox)
         Me.GroupBox1.Controls.Add(Me.yearbox)
@@ -130,12 +138,12 @@ Partial Class LeaseForm
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.ratebox)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(70, 97)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1)
-        Me.GroupBox1.Size = New System.Drawing.Size(526, 212)
+        Me.GroupBox1.Size = New System.Drawing.Size(520, 230)
         Me.GroupBox1.TabIndex = 80
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Lease Information"
@@ -143,8 +151,8 @@ Partial Class LeaseForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(234, 33)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.Location = New System.Drawing.Point(242, 101)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(40, 17)
         Me.Label7.TabIndex = 82
@@ -152,18 +160,18 @@ Partial Class LeaseForm
         '
         'Notebox
         '
-        Me.Notebox.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Notebox.Location = New System.Drawing.Point(274, 29)
+        Me.Notebox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Notebox.Location = New System.Drawing.Point(245, 119)
         Me.Notebox.Margin = New System.Windows.Forms.Padding(1)
         Me.Notebox.Multiline = True
         Me.Notebox.Name = "Notebox"
-        Me.Notebox.Size = New System.Drawing.Size(217, 155)
+        Me.Notebox.Size = New System.Drawing.Size(226, 70)
         Me.Notebox.TabIndex = 81
         '
         'yearbox
         '
         Me.yearbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.yearbox.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.yearbox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.yearbox.FormattingEnabled = True
         Me.yearbox.Items.AddRange(New Object() {"1", "2", "3"})
         Me.yearbox.Location = New System.Drawing.Point(113, 164)
@@ -175,7 +183,7 @@ Partial Class LeaseForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.Location = New System.Drawing.Point(23, 164)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(38, 17)
@@ -184,7 +192,7 @@ Partial Class LeaseForm
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.DateTimePicker1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.DateTimePicker1.Location = New System.Drawing.Point(113, 131)
         Me.DateTimePicker1.Margin = New System.Windows.Forms.Padding(1)
         Me.DateTimePicker1.Name = "DateTimePicker1"
@@ -194,7 +202,7 @@ Partial Class LeaseForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(23, 131)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 17)
@@ -204,7 +212,7 @@ Partial Class LeaseForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.Location = New System.Drawing.Point(23, 31)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(52, 17)
@@ -213,7 +221,7 @@ Partial Class LeaseForm
         '
         'ratebox
         '
-        Me.ratebox.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ratebox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ratebox.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.ratebox.Location = New System.Drawing.Point(113, 95)
         Me.ratebox.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -224,7 +232,7 @@ Partial Class LeaseForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.Location = New System.Drawing.Point(5, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(88, 17)
@@ -235,7 +243,7 @@ Partial Class LeaseForm
         '
         Me.unitlable.AutoSize = True
         Me.unitlable.BackColor = System.Drawing.Color.Transparent
-        Me.unitlable.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.unitlable.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.unitlable.Location = New System.Drawing.Point(320, 31)
         Me.unitlable.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.unitlable.Name = "unitlable"
@@ -247,7 +255,7 @@ Partial Class LeaseForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(245, 31)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
@@ -282,9 +290,9 @@ Partial Class LeaseForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label8.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(290, 333)
+        Me.Label8.Location = New System.Drawing.Point(294, 365)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 21)
@@ -296,10 +304,10 @@ Partial Class LeaseForm
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(273, 328)
+        Me.RectangleShape1.Location = New System.Drawing.Point(275, 361)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.RectangleShape1.Size = New System.Drawing.Size(83, 31)
+        Me.RectangleShape1.Size = New System.Drawing.Size(87, 29)
         '
         'ShapeContainer1
         '
@@ -307,9 +315,49 @@ Partial Class LeaseForm
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(663, 413)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(665, 461)
         Me.ShapeContainer1.TabIndex = 86
         Me.ShapeContainer1.TabStop = False
+        '
+        'MakeBox1
+        '
+        Me.MakeBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.MakeBox1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.MakeBox1.Location = New System.Drawing.Point(325, 33)
+        Me.MakeBox1.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.MakeBox1.Name = "MakeBox1"
+        Me.MakeBox1.Size = New System.Drawing.Size(91, 23)
+        Me.MakeBox1.TabIndex = 84
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.Location = New System.Drawing.Point(242, 33)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(41, 17)
+        Me.Label9.TabIndex = 83
+        Me.Label9.Text = "Make"
+        '
+        'PlateBox2
+        '
+        Me.PlateBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.PlateBox2.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.PlateBox2.Location = New System.Drawing.Point(325, 63)
+        Me.PlateBox2.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
+        Me.PlateBox2.Name = "PlateBox2"
+        Me.PlateBox2.Size = New System.Drawing.Size(91, 23)
+        Me.PlateBox2.TabIndex = 86
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label13.Location = New System.Drawing.Point(242, 66)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(36, 17)
+        Me.Label13.TabIndex = 85
+        Me.Label13.Text = "Plate"
         '
         'LeaseForm
         '
@@ -317,7 +365,7 @@ Partial Class LeaseForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(663, 413)
+        Me.ClientSize = New System.Drawing.Size(665, 461)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
@@ -328,7 +376,7 @@ Partial Class LeaseForm
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Margin = New System.Windows.Forms.Padding(1)
         Me.Name = "LeaseForm"
-        Me.Text = "LeaseForm"
+        Me.Text = "  "
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -361,4 +409,8 @@ Partial Class LeaseForm
     Friend WithEvents Label8 As Label
     Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
+    Friend WithEvents PlateBox2 As TextBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents MakeBox1 As TextBox
+    Friend WithEvents Label9 As Label
 End Class
