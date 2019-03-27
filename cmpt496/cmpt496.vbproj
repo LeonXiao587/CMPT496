@@ -176,12 +176,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Unit_view.Designer.vb">
-      <DependentUpon>Unit_view.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Unit_view.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Billing_lease.resx">
@@ -231,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Signup.resx">
       <DependentUpon>Signup.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Unit_view.resx">
-      <DependentUpon>Unit_view.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -28,8 +28,6 @@ Partial Class Room_view
         Me.Main0 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -46,12 +44,12 @@ Partial Class Room_view
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(381, 48)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(168, 36)
+        Me.Label1.Size = New System.Drawing.Size(144, 36)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Room view"
+        Me.Label1.Text = "Unit view"
         '
         'Button1
         '
@@ -88,23 +86,6 @@ Partial Class Room_view
         Me.Button3.TabIndex = 4
         Me.Button3.Text = "Change I/V"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(473, 90)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(145, 21)
-        Me.DateTimePicker1.TabIndex = 5
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(215, 90)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(148, 20)
-        Me.ComboBox1.TabIndex = 6
-        Me.ComboBox1.Text = "Select Room type"
         '
         'PictureBox1
         '
@@ -163,8 +144,6 @@ Partial Class Room_view
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Main0)
@@ -172,7 +151,7 @@ Partial Class Room_view
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Room_view"
-        Me.Text = "Room_view"
+        Me.Text = "Unit_view"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -188,8 +167,6 @@ Partial Class Room_view
     Friend WithEvents Main0 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents DataGridView1 As DataGridView
