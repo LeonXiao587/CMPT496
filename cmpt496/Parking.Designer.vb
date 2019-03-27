@@ -26,7 +26,6 @@ Partial Class Parking
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Main0 = New System.Windows.Forms.Button()
@@ -72,13 +71,6 @@ Partial Class Parking
         Me.ComboBox1.Size = New System.Drawing.Size(148, 20)
         Me.ComboBox1.TabIndex = 17
         Me.ComboBox1.Text = "Select Parking type"
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(487, 90)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(145, 21)
-        Me.DateTimePicker1.TabIndex = 16
         '
         'Button3
         '
@@ -134,7 +126,6 @@ Partial Class Parking
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Main0)
@@ -153,7 +144,6 @@ Partial Class Parking
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Main0 As Button

@@ -28,7 +28,6 @@ Partial Class Main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
@@ -36,8 +35,10 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Building = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.managerect = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.manageLabel5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -68,7 +69,7 @@ Partial Class Main
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(663, 27)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 31)
         Me.Button1.TabIndex = 3
@@ -80,8 +81,8 @@ Partial Class Main
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(81, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(243, Byte), Integer))
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Default
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Location = New System.Drawing.Point(427, 180)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Button3.Location = New System.Drawing.Point(431, 163)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(98, 30)
         Me.Button3.TabIndex = 5
@@ -89,24 +90,11 @@ Partial Class Main
         Me.ToolTip1.SetToolTip(Me.Button3, "button")
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button4
-        '
-        Me.Button4.BackColor = System.Drawing.Color.FromArgb(CType(CType(81, Byte), Integer), CType(CType(161, Byte), Integer), CType(CType(243, Byte), Integer))
-        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button4.Location = New System.Drawing.Point(427, 229)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(98, 30)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Management"
-        Me.ToolTip1.SetToolTip(Me.Button4, "button")
-        Me.Button4.UseVisualStyleBackColor = False
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(137, 54)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(256, 262)
         Me.PictureBox1.TabIndex = 8
@@ -133,7 +121,7 @@ Partial Class Main
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(50, 34)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -166,20 +154,30 @@ Partial Class Main
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(789, 399)
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.managerect, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(765, 447)
         Me.ShapeContainer1.TabIndex = 14
         Me.ShapeContainer1.TabStop = False
+        '
+        'managerect
+        '
+        Me.managerect.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.managerect.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.managerect.CornerRadius = 11
+        Me.managerect.Location = New System.Drawing.Point(412, 263)
+        Me.managerect.Name = "managerect"
+        Me.managerect.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.managerect.Size = New System.Drawing.Size(133, 35)
         '
         'RectangleShape1
         '
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(427, 106)
+        Me.RectangleShape1.Location = New System.Drawing.Point(410, 105)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.RectangleShape1.Size = New System.Drawing.Size(101, 35)
+        Me.RectangleShape1.Size = New System.Drawing.Size(133, 35)
         '
         'Label4
         '
@@ -194,20 +192,33 @@ Partial Class Main
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Rent"
         '
+        'manageLabel5
+        '
+        Me.manageLabel5.AutoSize = True
+        Me.manageLabel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.manageLabel5.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.manageLabel5.ForeColor = System.Drawing.Color.White
+        Me.manageLabel5.Location = New System.Drawing.Point(423, 270)
+        Me.manageLabel5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.manageLabel5.Name = "manageLabel5"
+        Me.manageLabel5.Size = New System.Drawing.Size(113, 21)
+        Me.manageLabel5.TabIndex = 15
+        Me.manageLabel5.Text = "Management"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(789, 399)
+        Me.ClientSize = New System.Drawing.Size(765, 447)
+        Me.Controls.Add(Me.manageLabel5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Building)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -226,7 +237,6 @@ Partial Class Main
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents ToolTip1 As ToolTip
@@ -236,4 +246,6 @@ Partial Class Main
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
     Friend WithEvents Label4 As Label
+    Friend WithEvents managerect As PowerPacks.RectangleShape
+    Friend WithEvents manageLabel5 As Label
 End Class

@@ -18,7 +18,7 @@
         Billing_lease.Show()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Management.Show()
     End Sub
@@ -70,8 +70,18 @@
         Renting.Show()
     End Sub
 
+    Private Sub managerect_Click(sender As Object, e As EventArgs) Handles managerect.Click
+        Me.Hide()
+        Management.Show()
+    End Sub
+
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Me.Hide()
         Renting.Show()
+    End Sub
+
+    Private Sub manageLabel5_Click(sender As Object, e As EventArgs) Handles manageLabel5.Click
+        Me.Hide()
+        Management.Show()
     End Sub
 End Class

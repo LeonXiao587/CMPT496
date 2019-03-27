@@ -42,6 +42,7 @@
         Me.Close()
         TenantInfo.Close()
         Renting.Close()
+        MsgBox("Sucess!")
         Main.Show()
     End Sub
 
