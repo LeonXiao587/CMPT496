@@ -69,7 +69,7 @@ Partial Class Parking
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(436, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(120, 36)
@@ -92,8 +92,9 @@ Partial Class Parking
         '
         Me.Building.AutoSize = True
         Me.Building.BackColor = System.Drawing.Color.Transparent
-        Me.Building.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!)
-        Me.Building.Location = New System.Drawing.Point(252, 419)
+
+        Me.Building.Font = New System.Drawing.Font("微软雅黑", 10.5!)
+        Me.Building.Location = New System.Drawing.Point(155, 424)
         Me.Building.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Building.Name = "Building"
         Me.Building.Size = New System.Drawing.Size(0, 20)
@@ -103,8 +104,9 @@ Partial Class Parking
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!)
-        Me.Label3.Location = New System.Drawing.Point(191, 419)
+
+        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 10.5!)
+        Me.Label3.Location = New System.Drawing.Point(94, 424)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 20)
@@ -134,7 +136,7 @@ Partial Class Parking
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(47, 97)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -146,7 +148,7 @@ Partial Class Parking
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.Location = New System.Drawing.Point(47, 194)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
@@ -158,7 +160,7 @@ Partial Class Parking
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label5.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.Location = New System.Drawing.Point(47, 232)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
@@ -170,7 +172,7 @@ Partial Class Parking
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.Location = New System.Drawing.Point(47, 278)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
@@ -202,8 +204,9 @@ Partial Class Parking
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(284, 397)
+
+        Me.Label7.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.Location = New System.Drawing.Point(187, 402)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 20)
@@ -223,8 +226,9 @@ Partial Class Parking
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(399, 397)
+
+        Me.Label8.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label8.Location = New System.Drawing.Point(302, 402)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(61, 20)

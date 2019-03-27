@@ -1,5 +1,13 @@
-﻿Imports System.Data.SqlClient
 
+Imports System.Data.SqlClient
+
+
+'﻿Public Class Parking
+
+'Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
+'    Me.Hide()
+'    Main.Show()
+'End Sub
 Public Class Parking
     Private Sub Editfunc()
         Dim intResult As Integer
@@ -47,6 +55,9 @@ Public Class Parking
             Type = "'" + ParkingType.SelectedItem + "'"
         End If
 
+        login.SQL.ExecQuery("Select * from Parking where  BID = " + Building.Text + " and Stalltype = " + Type + "")
+
+
         Dim Search As String
         If searchbox.Text.Length = 0 Then
             Search = "StallID"
@@ -54,6 +65,7 @@ Public Class Parking
             Search = searchbox.Text.ToString
         End If
         login.SQL.ExecQuery("Select StallID, TID, RentStatus, Make, Plate, Stalltype from Parking where  BID = " + Building.Text + " and Stalltype = " + Type + " and StallID = " + Search)
+
         Parkinglist.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 

@@ -110,10 +110,10 @@ Public Class Renting
         End Try
     End Sub
 
-    Private Sub cmdClose_Click()
-        Me.Close()
-        Main.Show()
-    End Sub
+    'Private Sub CmdClose_Click()
+    '    Me.Close()
+    '    Main.Show()
+    'End Sub
 
     Private Sub Filterrect_Click(sender As Object, e As EventArgs) Handles Filterrect.Click
         LoadList()
