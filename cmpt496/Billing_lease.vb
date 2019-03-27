@@ -35,12 +35,28 @@ Public Class Billing_lease
             idsearch = TextBox1.Text
         End If
 
-        'Dim f As String
-        'Dim t As String
+        'With Me.DataGridView1
+        '    Dim cnt As Integer
+        '    For cnt = 0 To .Rows.Count - 1
+        '        If .Rows(cnt).Visible Then
+        '            Dim i As Integer = cnt
+        '            While .Rows(i).Cells("PartNumber").Value = .Rows(i + 1).Cells("PartNumber").Value
+        '                .Rows(i + 1).Visible = False
+        '                i = i + 1
+        '            End While
+        '        End If
+        '    Next
+        'End With
 
-        'f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-        't = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
+        Dim f As Integer
+        Dim t As Integer
 
+        f = CInt(Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", ""))
+        t = CInt(Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", ""))
+
+
+        'f = Format(StartDate.Value, "yyyy-MM-dd")
+        't = Format(EndDate.Value, "yyyy-MM-dd")
 
         'Lease = ComboBox1.SelectedItem
         'Unit = ComboBox2.SelectedItem
@@ -48,16 +64,17 @@ Public Class Billing_lease
         'login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
         '                     "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
 
-        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, 
-                             Lease.BID, Tenant.First_name, Tenant.Last_name,
-                             Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+        login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
+                             Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
+                             Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
                              From Lease,Tenant,Unit
                              Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
                              AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString +
                              "or Lease.DoorNumber like " + idsearch.ToString + "or Lease.BID = " + idsearch.ToString +
-                             "or First_name like '%" + searchstr + "%' or Last_name like '%" + searchstr +
-                             "%' or Monthlyrate like " + idsearch.ToString + " and Startdate >= '%" + Format(CDate(StartDate.Value), "yyyy-mm-dd") +
-                             "%' and Enddate <= '%" + Format(CDate(EndDate.Value), "yyyy-mm-dd") + "%'")
+                             "or Lease.TID =" + idsearch.ToString + "or First_name like '%" + searchstr +
+                             "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
+                             " and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString +
+                             "or Tenant.Email like '%" + searchstr + "%'")
 
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
@@ -129,6 +146,8 @@ Public Class Billing_lease
         StartDate.Refresh()
         EndDate.Refresh()
         TextBox1.Clear()
+        DataGridView1.DataSource = Nothing
+        DataGridView1.Refresh()
         'ComboBox1.Refresh()
         'ComboBox2.Refresh()
         'ComboBox3.Refresh()
@@ -138,6 +157,8 @@ Public Class Billing_lease
         StartDate.Refresh()
         EndDate.Refresh()
         TextBox1.Clear()
+        DataGridView1.DataSource = Nothing
+        DataGridView1.Refresh()
         'ComboBox1.Refresh()
         'ComboBox2.Refresh()
         'ComboBox3.Refresh()
@@ -164,17 +185,17 @@ Public Class Billing_lease
     End Sub
 
     Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click
-        Me.Close()
+        Me.Hide()
         Payment.Show()
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-        Me.Close()
+        Me.Hide()
         Payment.Show()
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Me.Close()
+        Me.Hide()
         Main.Show()
     End Sub
 

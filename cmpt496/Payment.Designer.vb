@@ -98,9 +98,9 @@ Partial Class Payment
         Me.Label5.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.Location = New System.Drawing.Point(69, 173)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(131, 26)
+        Me.Label5.Size = New System.Drawing.Size(142, 26)
         Me.Label5.TabIndex = 7
-        Me.Label5.Text = "Amount due"
+        Me.Label5.Text = "Monthly Rate"
         '
         'Label6
         '

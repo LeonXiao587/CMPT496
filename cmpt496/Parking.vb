@@ -1,12 +1,9 @@
 ﻿Public Class Parking
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
 
-    End Sub
-
-    Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
-        Me.Hide()
-        Main.Show()
-    End Sub
+    'Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
+    '    Me.Hide()
+    '    Main.Show()
+    'End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
@@ -26,7 +23,6 @@
         Else
             Type = "'" + ParkingType.SelectedItem + "'"
         End If
-        Label2.Text = Type
         login.SQL.ExecQuery("Select * from Parking where  BID = " + Building.Text + " and Stalltype = " + Type + "")
         Parkinglist.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
