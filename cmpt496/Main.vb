@@ -55,11 +55,11 @@
 
     Private Sub Managerect_Click(sender As Object, e As EventArgs) Handles Managerect.Click
         Me.Hide()
-        Management.Show()
+        ManagementOption.Show()
     End Sub
     Private Sub ManageLabel5_Click(sender As Object, e As EventArgs) Handles ManageLabel5.Click
         Me.Hide()
-        Management.Show()
+        ManagementOption.Show()
     End Sub
 
     Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click

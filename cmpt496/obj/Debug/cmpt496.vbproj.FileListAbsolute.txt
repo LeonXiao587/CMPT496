@@ -35,7 +35,6 @@ C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Payment.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Renting.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Room_view.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Signup.resources
-C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Unit_view.resources
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.GenerateResource.cache
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CoreCompileInputs.cache
 C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.exe
@@ -79,3 +78,6 @@ C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyCompl
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.exe
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.xml
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.pdb
+C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbprojAssemblyReference.cache
+C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.ManagementOption.resources
+C:\Users\LeonXiao\Desktop\CMPT496\cmpt496\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
