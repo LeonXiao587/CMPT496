@@ -1,13 +1,13 @@
-<<<<<<< HEAD
-﻿Public Class Parking
 
-    'Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
-    '    Me.Hide()
-    '    Main.Show()
-    'End Sub
-=======
-﻿Imports System.Data.SqlClient
+Imports System.Data.SqlClient
 
+
+'﻿Public Class Parking
+
+'Private Sub Main0_Click(sender As Object, e As EventArgs) Handles Main0.Click
+'    Me.Hide()
+'    Main.Show()
+'End Sub
 Public Class Parking
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim intResult As Integer
@@ -27,7 +27,6 @@ Public Class Parking
         Me.Hide()
         Main.Show()
     End Sub
->>>>>>> e01f42a55fc8ff8958da72f3131af0b81388a08a
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
@@ -55,9 +54,9 @@ Public Class Parking
         Else
             Type = "'" + ParkingType.SelectedItem + "'"
         End If
-<<<<<<< HEAD
+
         login.SQL.ExecQuery("Select * from Parking where  BID = " + Building.Text + " and Stalltype = " + Type + "")
-=======
+
 
         Dim Search As String
         If searchbox.Text.Length = 0 Then
@@ -66,7 +65,7 @@ Public Class Parking
             Search = searchbox.Text.ToString
         End If
         login.SQL.ExecQuery("Select StallID, TID, RentStatus, Make, Plate, Stalltype from Parking where  BID = " + Building.Text + " and Stalltype = " + Type + " and StallID = " + Search)
->>>>>>> e01f42a55fc8ff8958da72f3131af0b81388a08a
+
         Parkinglist.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 
