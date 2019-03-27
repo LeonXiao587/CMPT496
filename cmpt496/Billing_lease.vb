@@ -121,7 +121,8 @@ Public Class Billing_lease
         'For i = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
         '    ComboBox3.Items.Add(login.SQL.DBDS.Tables(0).Rows(i)(7).ToString)
         'Next
-
+        DataGridView1.MultiSelect = False
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
     End Sub
 
     'Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -212,8 +213,8 @@ Public Class Billing_lease
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        DataGridView1.MultiSelect = False
-        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        'DataGridView1.MultiSelect = False
+        'DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
     End Sub
 
     'Private rowIndex As Integer = 0
