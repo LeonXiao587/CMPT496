@@ -64,6 +64,11 @@ Public Class Billing_lease
         'login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
         '                     "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
 
+
+        'Name = 
+
+        'MsgBox(Name)
+
         login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
                              Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
                              Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
@@ -75,6 +80,10 @@ Public Class Billing_lease
                              "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
                              " and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString +
                              "or Tenant.Email like '%" + searchstr + "%'")
+        'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
+        'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+        'From Lease,Tenant,Unit
+        'where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID AND Lease.DoorNumber=Unit.DoorNumber")
 
         'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
