@@ -13,4 +13,15 @@
         Me.Close()
         Main.Show()
     End Sub
+
+    Private Sub EmployeeLabel4_Click(sender As Object, e As EventArgs) Handles EmployeeLabel4.Click
+        Management.Show()
+        Me.Close()
+
+    End Sub
+
+    Private Sub Leaselable_Click(sender As Object, e As EventArgs) Handles Leaselable.Click
+        ManageLeases.Show()
+        Me.Close()
+    End Sub
 End Class
