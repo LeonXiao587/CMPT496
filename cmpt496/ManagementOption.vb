@@ -19,4 +19,9 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Leaselable_Click(sender As Object, e As EventArgs) Handles Leaselable.Click
+        ManageLeases.Show()
+        Me.Close()
+    End Sub
 End Class

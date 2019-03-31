@@ -29,8 +29,8 @@ Partial Class ManageLeases
         Me.UnitLabel1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.IDBox7 = New System.Windows.Forms.TextBox()
+        Me.lastnBox1 = New System.Windows.Forms.TextBox()
+        Me.passwordBox7 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.fistnBox6 = New System.Windows.Forms.TextBox()
         Me.emailBox5 = New System.Windows.Forms.TextBox()
@@ -45,7 +45,6 @@ Partial Class ManageLeases
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.lastnBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -55,7 +54,7 @@ Partial Class ManageLeases
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(400, 40)
+        Me.Label1.Location = New System.Drawing.Point(439, 36)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(201, 67)
@@ -76,9 +75,9 @@ Partial Class ManageLeases
         '
         'searchBox1
         '
-        Me.searchBox1.Location = New System.Drawing.Point(313, 161)
+        Me.searchBox1.Location = New System.Drawing.Point(445, 161)
         Me.searchBox1.Name = "searchBox1"
-        Me.searchBox1.Size = New System.Drawing.Size(307, 31)
+        Me.searchBox1.Size = New System.Drawing.Size(189, 31)
         Me.searchBox1.TabIndex = 81
         '
         'UnitLabel1
@@ -98,7 +97,7 @@ Partial Class ManageLeases
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(212, 160)
+        Me.Label4.Location = New System.Drawing.Point(329, 160)
         Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 28)
@@ -109,8 +108,7 @@ Partial Class ManageLeases
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
         Me.GroupBox1.Controls.Add(Me.lastnBox1)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
-        Me.GroupBox1.Controls.Add(Me.IDBox7)
+        Me.GroupBox1.Controls.Add(Me.passwordBox7)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.fistnBox6)
         Me.GroupBox1.Controls.Add(Me.emailBox5)
@@ -133,75 +131,74 @@ Partial Class ManageLeases
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tenant Info"
         '
-        'ListBox1
+        'lastnBox1
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 32
-        Me.ListBox1.Location = New System.Drawing.Point(56, 66)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(144, 260)
-        Me.ListBox1.TabIndex = 94
+        Me.lastnBox1.Location = New System.Drawing.Point(369, 53)
+        Me.lastnBox1.Name = "lastnBox1"
+        Me.lastnBox1.Size = New System.Drawing.Size(115, 40)
+        Me.lastnBox1.TabIndex = 95
+        Me.lastnBox1.Text = "Last"
         '
-        'IDBox7
+        'passwordBox7
         '
-        Me.IDBox7.Enabled = False
-        Me.IDBox7.Location = New System.Drawing.Point(386, 314)
-        Me.IDBox7.Name = "IDBox7"
-        Me.IDBox7.Size = New System.Drawing.Size(183, 40)
-        Me.IDBox7.TabIndex = 93
+        Me.passwordBox7.Enabled = False
+        Me.passwordBox7.Location = New System.Drawing.Point(247, 327)
+        Me.passwordBox7.Name = "passwordBox7"
+        Me.passwordBox7.Size = New System.Drawing.Size(237, 40)
+        Me.passwordBox7.TabIndex = 93
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label6.Location = New System.Drawing.Point(283, 314)
+        Me.Label6.Location = New System.Drawing.Point(99, 327)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(34, 28)
+        Me.Label6.Size = New System.Drawing.Size(108, 28)
         Me.Label6.TabIndex = 92
-        Me.Label6.Text = "ID"
+        Me.Label6.Text = "Password"
         '
         'fistnBox6
         '
-        Me.fistnBox6.Location = New System.Drawing.Point(386, 40)
+        Me.fistnBox6.Location = New System.Drawing.Point(247, 53)
         Me.fistnBox6.Name = "fistnBox6"
-        Me.fistnBox6.Size = New System.Drawing.Size(90, 40)
+        Me.fistnBox6.Size = New System.Drawing.Size(116, 40)
         Me.fistnBox6.TabIndex = 90
         Me.fistnBox6.Text = "First"
         '
         'emailBox5
         '
-        Me.emailBox5.Location = New System.Drawing.Point(386, 94)
+        Me.emailBox5.Location = New System.Drawing.Point(247, 107)
         Me.emailBox5.Name = "emailBox5"
-        Me.emailBox5.Size = New System.Drawing.Size(183, 40)
+        Me.emailBox5.Size = New System.Drawing.Size(237, 40)
         Me.emailBox5.TabIndex = 89
         '
         'CompanyBox4
         '
-        Me.CompanyBox4.Location = New System.Drawing.Point(386, 198)
+        Me.CompanyBox4.Location = New System.Drawing.Point(247, 211)
         Me.CompanyBox4.Name = "CompanyBox4"
-        Me.CompanyBox4.Size = New System.Drawing.Size(183, 40)
+        Me.CompanyBox4.Size = New System.Drawing.Size(237, 40)
         Me.CompanyBox4.TabIndex = 88
         '
         'IncomeBox3
         '
-        Me.IncomeBox3.Location = New System.Drawing.Point(386, 255)
+        Me.IncomeBox3.Location = New System.Drawing.Point(247, 268)
         Me.IncomeBox3.Name = "IncomeBox3"
-        Me.IncomeBox3.Size = New System.Drawing.Size(183, 40)
+        Me.IncomeBox3.Size = New System.Drawing.Size(237, 40)
         Me.IncomeBox3.TabIndex = 87
         '
         'OccupationBox2
         '
-        Me.OccupationBox2.Location = New System.Drawing.Point(386, 148)
+        Me.OccupationBox2.Location = New System.Drawing.Point(247, 161)
         Me.OccupationBox2.Name = "OccupationBox2"
-        Me.OccupationBox2.Size = New System.Drawing.Size(183, 40)
+        Me.OccupationBox2.Size = New System.Drawing.Size(237, 40)
         Me.OccupationBox2.TabIndex = 86
         '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label14.Location = New System.Drawing.Point(264, 47)
+        Me.Label14.Location = New System.Drawing.Point(125, 60)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(73, 28)
@@ -212,7 +209,7 @@ Partial Class ManageLeases
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label10.Location = New System.Drawing.Point(268, 93)
+        Me.Label10.Location = New System.Drawing.Point(129, 106)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(68, 28)
@@ -223,7 +220,7 @@ Partial Class ManageLeases
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label11.Location = New System.Drawing.Point(238, 147)
+        Me.Label11.Location = New System.Drawing.Point(99, 160)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(129, 28)
@@ -244,7 +241,7 @@ Partial Class ManageLeases
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label9.Location = New System.Drawing.Point(248, 197)
+        Me.Label9.Location = New System.Drawing.Point(109, 210)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(108, 28)
@@ -255,7 +252,7 @@ Partial Class ManageLeases
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(259, 255)
+        Me.Label8.Location = New System.Drawing.Point(120, 268)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(87, 28)
@@ -268,7 +265,7 @@ Partial Class ManageLeases
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(886, 581)
+        Me.Label3.Location = New System.Drawing.Point(872, 581)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 36)
@@ -287,14 +284,6 @@ Partial Class ManageLeases
         Me.Label2.Size = New System.Drawing.Size(113, 36)
         Me.Label2.TabIndex = 86
         Me.Label2.Text = "Update"
-        '
-        'lastnBox1
-        '
-        Me.lastnBox1.Location = New System.Drawing.Point(482, 40)
-        Me.lastnBox1.Name = "lastnBox1"
-        Me.lastnBox1.Size = New System.Drawing.Size(87, 40)
-        Me.lastnBox1.TabIndex = 95
-        Me.lastnBox1.Text = "Last"
         '
         'ManageLeases
         '
@@ -336,10 +325,9 @@ Partial Class ManageLeases
     Friend WithEvents Label5 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents IDBox7 As TextBox
+    Friend WithEvents passwordBox7 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ListBox1 As ListBox
     Friend WithEvents lastnBox1 As TextBox
 End Class

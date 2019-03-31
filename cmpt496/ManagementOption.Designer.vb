@@ -82,12 +82,12 @@ Partial Class ManagementOption
         Me.Leaselable.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Leaselable.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Leaselable.ForeColor = System.Drawing.Color.White
-        Me.Leaselable.Location = New System.Drawing.Point(301, 469)
+        Me.Leaselable.Location = New System.Drawing.Point(271, 469)
         Me.Leaselable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Leaselable.Name = "Leaselable"
-        Me.Leaselable.Size = New System.Drawing.Size(89, 36)
+        Me.Leaselable.Size = New System.Drawing.Size(188, 36)
         Me.Leaselable.TabIndex = 14
-        Me.Leaselable.Text = "Lease"
+        Me.Leaselable.Text = "Lease Tenant"
         '
         'RectangleShape1
         '
@@ -144,7 +144,7 @@ Partial Class ManagementOption
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(73, 49)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(68, 60)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -176,7 +176,7 @@ Partial Class ManagementOption
         Me.Controls.Add(Me.UnitLabel1)
         Me.Controls.Add(Me.EmployeeLabel4)
         Me.Controls.Add(Me.ShapeContainer1)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "ManagementOption"
         Me.Text = "ManagementOption"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
