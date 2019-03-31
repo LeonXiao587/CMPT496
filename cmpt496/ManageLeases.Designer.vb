@@ -25,25 +25,27 @@ Partial Class ManageLeases
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManageLeases))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.searchBox1 = New System.Windows.Forms.TextBox()
         Me.UnitLabel1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.IDBox7 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.fistnBox6 = New System.Windows.Forms.TextBox()
+        Me.emailBox5 = New System.Windows.Forms.TextBox()
+        Me.CompanyBox4 = New System.Windows.Forms.TextBox()
+        Me.IncomeBox3 = New System.Windows.Forms.TextBox()
+        Me.OccupationBox2 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lastnBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -72,12 +74,12 @@ Partial Class ManageLeases
         Me.PictureBox2.TabIndex = 79
         Me.PictureBox2.TabStop = False
         '
-        'TextBox1
+        'searchBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(389, 161)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(231, 31)
-        Me.TextBox1.TabIndex = 81
+        Me.searchBox1.Location = New System.Drawing.Point(313, 161)
+        Me.searchBox1.Name = "searchBox1"
+        Me.searchBox1.Size = New System.Drawing.Size(307, 31)
+        Me.searchBox1.TabIndex = 81
         '
         'UnitLabel1
         '
@@ -99,22 +101,22 @@ Partial Class ManageLeases
         Me.Label4.Location = New System.Drawing.Point(212, 160)
         Me.Label4.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(149, 28)
+        Me.Label4.Size = New System.Drawing.Size(76, 28)
         Me.Label4.TabIndex = 83
-        Me.Label4.Text = "Tenant Name"
+        Me.Label4.Text = "Phone"
         '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.TextBox7)
+        Me.GroupBox1.Controls.Add(Me.lastnBox1)
+        Me.GroupBox1.Controls.Add(Me.ListBox1)
+        Me.GroupBox1.Controls.Add(Me.IDBox7)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.fistnBox6)
+        Me.GroupBox1.Controls.Add(Me.emailBox5)
+        Me.GroupBox1.Controls.Add(Me.CompanyBox4)
+        Me.GroupBox1.Controls.Add(Me.IncomeBox3)
+        Me.GroupBox1.Controls.Add(Me.OccupationBox2)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label11)
@@ -131,22 +133,86 @@ Partial Class ManageLeases
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tenant Info"
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 32
+        Me.ListBox1.Location = New System.Drawing.Point(56, 66)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(144, 260)
+        Me.ListBox1.TabIndex = 94
+        '
+        'IDBox7
+        '
+        Me.IDBox7.Enabled = False
+        Me.IDBox7.Location = New System.Drawing.Point(386, 314)
+        Me.IDBox7.Name = "IDBox7"
+        Me.IDBox7.Size = New System.Drawing.Size(183, 40)
+        Me.IDBox7.TabIndex = 93
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Location = New System.Drawing.Point(283, 314)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(34, 28)
+        Me.Label6.TabIndex = 92
+        Me.Label6.Text = "ID"
+        '
+        'fistnBox6
+        '
+        Me.fistnBox6.Location = New System.Drawing.Point(386, 40)
+        Me.fistnBox6.Name = "fistnBox6"
+        Me.fistnBox6.Size = New System.Drawing.Size(90, 40)
+        Me.fistnBox6.TabIndex = 90
+        Me.fistnBox6.Text = "First"
+        '
+        'emailBox5
+        '
+        Me.emailBox5.Location = New System.Drawing.Point(386, 94)
+        Me.emailBox5.Name = "emailBox5"
+        Me.emailBox5.Size = New System.Drawing.Size(183, 40)
+        Me.emailBox5.TabIndex = 89
+        '
+        'CompanyBox4
+        '
+        Me.CompanyBox4.Location = New System.Drawing.Point(386, 198)
+        Me.CompanyBox4.Name = "CompanyBox4"
+        Me.CompanyBox4.Size = New System.Drawing.Size(183, 40)
+        Me.CompanyBox4.TabIndex = 88
+        '
+        'IncomeBox3
+        '
+        Me.IncomeBox3.Location = New System.Drawing.Point(386, 255)
+        Me.IncomeBox3.Name = "IncomeBox3"
+        Me.IncomeBox3.Size = New System.Drawing.Size(183, 40)
+        Me.IncomeBox3.TabIndex = 87
+        '
+        'OccupationBox2
+        '
+        Me.OccupationBox2.Location = New System.Drawing.Point(386, 148)
+        Me.OccupationBox2.Name = "OccupationBox2"
+        Me.OccupationBox2.Size = New System.Drawing.Size(183, 40)
+        Me.OccupationBox2.TabIndex = 86
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label14.Location = New System.Drawing.Point(44, 53)
+        Me.Label14.Location = New System.Drawing.Point(264, 47)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(76, 28)
+        Me.Label14.Size = New System.Drawing.Size(73, 28)
         Me.Label14.TabIndex = 55
-        Me.Label14.Text = "Phone"
+        Me.Label14.Text = "Name"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label10.Location = New System.Drawing.Point(48, 99)
+        Me.Label10.Location = New System.Drawing.Point(268, 93)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(68, 28)
@@ -157,7 +223,7 @@ Partial Class ManageLeases
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label11.Location = New System.Drawing.Point(18, 153)
+        Me.Label11.Location = New System.Drawing.Point(238, 147)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(129, 28)
@@ -178,7 +244,7 @@ Partial Class ManageLeases
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label9.Location = New System.Drawing.Point(28, 203)
+        Me.Label9.Location = New System.Drawing.Point(248, 197)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(108, 28)
@@ -189,60 +255,12 @@ Partial Class ManageLeases
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(39, 261)
+        Me.Label8.Location = New System.Drawing.Point(259, 255)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(87, 28)
         Me.Label8.TabIndex = 45
         Me.Label8.Text = "Income"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(199, 154)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox2.TabIndex = 86
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(199, 261)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox3.TabIndex = 87
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(199, 204)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox4.TabIndex = 88
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(199, 100)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox5.TabIndex = 89
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(199, 46)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox6.TabIndex = 90
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(435, 27)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(113, 36)
-        Me.Label2.TabIndex = 86
-        Me.Label2.Text = "Update"
         '
         'Label3
         '
@@ -250,31 +268,33 @@ Partial Class ManageLeases
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(459, 320)
+        Me.Label3.Location = New System.Drawing.Point(886, 581)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 36)
         Me.Label3.TabIndex = 91
         Me.Label3.Text = "Lease"
         '
-        'TextBox7
+        'Label2
         '
-        Me.TextBox7.Enabled = False
-        Me.TextBox7.Location = New System.Drawing.Point(199, 320)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(150, 40)
-        Me.TextBox7.TabIndex = 93
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(848, 228)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(113, 36)
+        Me.Label2.TabIndex = 86
+        Me.Label2.Text = "Update"
         '
-        'Label6
+        'lastnBox1
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label6.Location = New System.Drawing.Point(63, 320)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(34, 28)
-        Me.Label6.TabIndex = 92
-        Me.Label6.Text = "ID"
+        Me.lastnBox1.Location = New System.Drawing.Point(482, 40)
+        Me.lastnBox1.Name = "lastnBox1"
+        Me.lastnBox1.Size = New System.Drawing.Size(87, 40)
+        Me.lastnBox1.TabIndex = 95
+        Me.lastnBox1.Text = "Last"
         '
         'ManageLeases
         '
@@ -283,8 +303,10 @@ Partial Class ManageLeases
         Me.ClientSize = New System.Drawing.Size(1036, 669)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.UnitLabel1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.searchBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Name = "ManageLeases"
@@ -299,23 +321,25 @@ Partial Class ManageLeases
 
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents searchBox1 As TextBox
     Friend WithEvents UnitLabel1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents fistnBox6 As TextBox
+    Friend WithEvents emailBox5 As TextBox
+    Friend WithEvents CompanyBox4 As TextBox
+    Friend WithEvents IncomeBox3 As TextBox
+    Friend WithEvents OccupationBox2 As TextBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents IDBox7 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lastnBox1 As TextBox
 End Class
