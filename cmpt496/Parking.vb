@@ -39,7 +39,7 @@ Public Class Parking
         login.SQL.ExecQuery("Select * from ParkingRate where  BID = " + Building.Text)
         Crate.Text = login.SQL.DBDS.Tables(0).Rows(0)(2)
         Orate.Text = login.SQL.DBDS.Tables(0).Rows(1)(2)
-
+        Statusbox.SelectedIndex = 0
     End Sub
 
     Private Sub ParkingType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ParkingType.SelectedIndexChanged

@@ -18,11 +18,16 @@
             uname = last_name.Text + unitlable.Text
             Dim pwd As String
             pwd = first_name.Text + unitlable.Text
-            login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values (" + phone.Text + ",'" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")
+            If IsNumeric(phone.Text) Or IsNumeric(id.Text) Then
+
+                login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values ('" + phone.Text.ToString + "','" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text.ToString + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")
+            Else
+                MsgBox("Please input Numbers for ID and Phone Number and Income!")
+            End If
             MsgBox("Your Username: " & uname + vbCrLf + "Password: " + pwd)
-            LeaseForm.Show()
-            Me.Hide()
-        End If
+                LeaseForm.Show()
+                Me.Hide()
+            End If
 
 
     End Sub
@@ -49,4 +54,7 @@
         SubmitTenant()
     End Sub
 
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+        Cosigner.Show()
+    End Sub
 End Class

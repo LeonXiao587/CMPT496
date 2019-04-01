@@ -97,6 +97,12 @@
     <Compile Include="Billing_lease.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cosigner.Designer.vb">
+      <DependentUpon>Cosigner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cosigner.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ManageLeases.Designer.vb">
       <DependentUpon>ManageLeases.vb</DependentUpon>
     </Compile>
@@ -207,6 +213,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Billing_lease.resx">
       <DependentUpon>Billing_lease.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cosigner.resx">
+      <DependentUpon>Cosigner.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageLeases.resx">
       <DependentUpon>ManageLeases.vb</DependentUpon>

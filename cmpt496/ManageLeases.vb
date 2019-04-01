@@ -12,13 +12,26 @@
                 CompanyBox4.Text = login.SQL.DBDS.Tables(0).Rows(0)(4).ToString
                 IncomeBox3.Text = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString
                 passwordBox7.Text = login.SQL.DBDS.Tables(0).Rows(0)(6).ToString
+                PhoneBox1.Text = searchBox1.Text.ToString
             End If
         Else
             MsgBox("Invalid Phone")
         End If
     End Sub
 
-    Private Sub UnitLabel1_Click(sender As Object, e As EventArgs) Handles UnitLabel1.Click
+    Private Sub UnitLabel1_Click(sender As Object, e As EventArgs) Handles UnitLabel1.Click, Label7.Enter
         Loadinfo()
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        login.SQL.ExecQuery("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', Phone = '" + PhoneBox1.Text.ToString + "' where Phone = '" + searchBox1.Text.ToString + "'")
+        'MsgBox("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', phone = '" + PhoneBox1.Text.ToString + "'  where phone = '56565656'")
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Close()
+        ManagementOption.Show()
+
+    End Sub
+
 End Class

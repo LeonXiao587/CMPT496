@@ -37,9 +37,9 @@
         login.SQL.ExecQuery("select TID from tenant where phone = '" + TenantInfo.phone.Text.ToString + "'")
         Dim tid As String = login.SQL.DBDS.Tables(0).Rows(0)(0).ToString
         If parking.SelectedIndex = 0 Then
-            login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,Monthlyrate) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "')")
+            login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,Monthlyrate,Note,CoTID) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "'," + Cosigner.Cid.ToString + ")")
         Else
-            login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,StallID,Monthlyrate,Note) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + stallnumber.Text.ToString + "," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "')")
+            login.SQL.ExecQuery("insert into lease (TID,BID,DoorNumber,Startdate,Enddate,StallID,Monthlyrate,Note,CoTID) values (" + tid + "," + Main.Building.Text.ToString + "," + unitlable.Text.ToString + ",'" + startdate + "','" + enddate + "'," + stallnumber.Text.ToString + "," + ratebox.Text.ToString + ",'" + Notebox.Text.ToString + "'," + Cosigner.Cid.ToString + ")")
             login.SQL.ExecQuery("update Parking set Rentstatus = 'Occupied', Make = '" + MakeBox1.Text.ToString + "', Plate = '" + PlateBox2.Text.ToString + "' where StallID = " + stallnumber.Text.ToString)
         End If
         login.SQL.ExecQuery("update Unit set Rentstatus = 'Occupied' where BID = " + Main.Building.Text.ToString + " and DoorNumber = " + unitlable.Text.ToString)
