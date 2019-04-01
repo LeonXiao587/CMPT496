@@ -43,10 +43,10 @@ Partial Class ManagementOption
         Me.EmployeeLabel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.EmployeeLabel4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.EmployeeLabel4.ForeColor = System.Drawing.Color.White
-        Me.EmployeeLabel4.Location = New System.Drawing.Point(279, 301)
-        Me.EmployeeLabel4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.EmployeeLabel4.Location = New System.Drawing.Point(152, 172)
+        Me.EmployeeLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.EmployeeLabel4.Name = "EmployeeLabel4"
-        Me.EmployeeLabel4.Size = New System.Drawing.Size(146, 36)
+        Me.EmployeeLabel4.Size = New System.Drawing.Size(84, 21)
         Me.EmployeeLabel4.TabIndex = 11
         Me.EmployeeLabel4.Text = "Employee"
         '
@@ -56,10 +56,10 @@ Partial Class ManagementOption
         Me.UnitLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.UnitLabel1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.UnitLabel1.ForeColor = System.Drawing.Color.White
-        Me.UnitLabel1.Location = New System.Drawing.Point(590, 301)
-        Me.UnitLabel1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.UnitLabel1.Location = New System.Drawing.Point(322, 172)
+        Me.UnitLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UnitLabel1.Name = "UnitLabel1"
-        Me.UnitLabel1.Size = New System.Drawing.Size(70, 36)
+        Me.UnitLabel1.Size = New System.Drawing.Size(42, 21)
         Me.UnitLabel1.TabIndex = 12
         Me.UnitLabel1.Text = "Unit"
         '
@@ -69,10 +69,10 @@ Partial Class ManagementOption
         Me.Parkinglable.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Parkinglable.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Parkinglable.ForeColor = System.Drawing.Color.White
-        Me.Parkinglable.Location = New System.Drawing.Point(568, 469)
-        Me.Parkinglable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Parkinglable.Location = New System.Drawing.Point(310, 268)
+        Me.Parkinglable.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Parkinglable.Name = "Parkinglable"
-        Me.Parkinglable.Size = New System.Drawing.Size(115, 36)
+        Me.Parkinglable.Size = New System.Drawing.Size(68, 21)
         Me.Parkinglable.TabIndex = 13
         Me.Parkinglable.Text = "Parking"
         '
@@ -82,10 +82,10 @@ Partial Class ManagementOption
         Me.Leaselable.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Leaselable.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Leaselable.ForeColor = System.Drawing.Color.White
-        Me.Leaselable.Location = New System.Drawing.Point(271, 469)
-        Me.Leaselable.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Leaselable.Location = New System.Drawing.Point(138, 268)
+        Me.Leaselable.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Leaselable.Name = "Leaselable"
-        Me.Leaselable.Size = New System.Drawing.Size(188, 36)
+        Me.Leaselable.Size = New System.Drawing.Size(110, 21)
         Me.Leaselable.TabIndex = 14
         Me.Leaselable.Text = "Lease Tenant"
         '
@@ -105,7 +105,7 @@ Partial Class ManagementOption
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1043, 654)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(569, 374)
         Me.ShapeContainer1.TabIndex = 15
         Me.ShapeContainer1.TabStop = False
         '
@@ -143,10 +143,10 @@ Partial Class ManagementOption
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(73, 49)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Location = New System.Drawing.Point(40, 28)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(68, 60)
+        Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
@@ -156,19 +156,19 @@ Partial Class ManagementOption
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(352, 40)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(192, 23)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(363, 67)
+        Me.Label1.Size = New System.Drawing.Size(208, 39)
         Me.Label1.TabIndex = 78
         Me.Label1.Text = "Management"
         '
         'ManagementOption
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(1043, 654)
+        Me.ClientSize = New System.Drawing.Size(569, 374)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Leaselable)
@@ -176,7 +176,7 @@ Partial Class ManagementOption
         Me.Controls.Add(Me.UnitLabel1)
         Me.Controls.Add(Me.EmployeeLabel4)
         Me.Controls.Add(Me.ShapeContainer1)
-        Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "ManagementOption"
         Me.Text = "ManagementOption"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

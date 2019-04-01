@@ -2,8 +2,8 @@
 
 Public Class Management
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Hide()
-        Main.Show()
+        Me.Close()
+        ManagementOption.Show()
     End Sub
 
     Private Sub Management_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -73,4 +73,5 @@ Public Class Management
             End If
         End If
     End Sub
+
 End Class

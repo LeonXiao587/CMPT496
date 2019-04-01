@@ -2,29 +2,6 @@
 
 Public Class Billing_lease
     Private ReadOnly idsearch As Object
-    'Public SQL As New Sqlcon
-
-
-    ' Private Sub Button1_Click(sender As Object, e As EventArgs)
-
-    'Dim Lease As Integer
-    'Dim Unit As Integer
-    'Dim Tenant As Integer
-
-    'Dim f As String
-    'Dim t As String
-
-    'f = Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-    't = Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-
-
-    'Lease = ComboBox1.SelectedItem
-    'Unit = ComboBox2.SelectedItem
-    'Tenant = ComboBox3.SelectedItem
-    'login.SQL.ExecQuery("select * from Lease")
-
-    'LoadGrid()
-    'End Sub
 
     Private Sub LoadGrid()
         Dim idsearch As Integer
@@ -58,12 +35,6 @@ Public Class Billing_lease
         'f = Format(StartDate.Value, "yyyy-MM-dd")
         't = Format(EndDate.Value, "yyyy-MM-dd")
 
-        'Lease = ComboBox1.SelectedItem
-        'Unit = ComboBox2.SelectedItem
-        'Tenant = ComboBox3.SelectedItem
-        'login.SQL.ExecQuery("select * from Contracts where CID = " + idsearch.ToString + "or FileNum like '%" + searchstr + "%' or ClientID like '%" + searchstr +
-        '                     "%' or Salary like '%" + searchstr + "%' or Renewable like '%" + searchstr + "%' or RenewYear like '%" + searchstr + "%'")
-
 
         'Name = 
 
@@ -74,24 +45,13 @@ Public Class Billing_lease
                              Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
                              From Lease,Tenant,Unit
                              Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
-                             AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString +
-                             "or Lease.DoorNumber like " + idsearch.ToString + "or Lease.BID = " + idsearch.ToString +
-                             "or Lease.TID =" + idsearch.ToString + "or First_name like '%" + searchstr +
-                             "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
-                             " and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString +
-                             "or Tenant.Email like '%" + searchstr + "%'")
+                             AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString + "
+                             or Lease.DoorNumber = " + idsearch.ToString + " or Lease.BID = " + idsearch.ToString + "
+                             or Lease.TID = " + idsearch.ToString + " or First_name like '%" + searchstr + "%' 
+                             or Last_name like '%" + searchstr + "%' or Monthlyrate = " + idsearch.ToString + "
+                             and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString + "
+                             or Tenant.Email like '%" + searchstr + "%'")
 
-        'login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
-        '                     Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
-        '                     Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
-        '                     From Lease,Tenant,Unit
-        '                     Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
-        '                     AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString +
-        '                     "or Lease.DoorNumber like " + idsearch.ToString + "or Lease.BID = " + idsearch.ToString +
-        '                     "or Lease.TID =" + idsearch.ToString + "or First_name like '%" + searchstr +
-        '                     "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
-        '                     " and Startdate >= " + f.ToString + " and Enddate <=" + t.ToString +
-        '                     "or Tenant.Email like '%" + searchstr + "%'")
 
         'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
         'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
@@ -171,9 +131,6 @@ Public Class Billing_lease
         TextBox1.Clear()
         DataGridView1.DataSource = Nothing
         DataGridView1.Refresh()
-        'ComboBox1.Refresh()
-        'ComboBox2.Refresh()
-        'ComboBox3.Refresh()
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
@@ -182,9 +139,6 @@ Public Class Billing_lease
         TextBox1.Clear()
         DataGridView1.DataSource = Nothing
         DataGridView1.Refresh()
-        'ComboBox1.Refresh()
-        'ComboBox2.Refresh()
-        'ComboBox3.Refresh()
     End Sub
 
     Private Sub RectangleShape3_Click(sender As Object, e As EventArgs) Handles RectangleShape3.Click
@@ -227,10 +181,6 @@ Public Class Billing_lease
     End Sub
 
     Private Sub RectangleShape5_Click(sender As Object, e As EventArgs) Handles RectangleShape5.Click
-
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 
