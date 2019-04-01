@@ -53,10 +53,12 @@ Partial Class Email
         '
         'DateTimePicker1
         '
+        Me.DateTimePicker1.AllowDrop = True
         Me.DateTimePicker1.Location = New System.Drawing.Point(305, 100)
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
         Me.DateTimePicker1.TabIndex = 5
+        Me.DateTimePicker1.Value = New Date(2019, 3, 31, 0, 0, 0, 0)
         '
         'DataGridView1
         '

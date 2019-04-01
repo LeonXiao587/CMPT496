@@ -35,11 +35,6 @@ Public Class Billing_lease
         'f = Format(StartDate.Value, "yyyy-MM-dd")
         't = Format(EndDate.Value, "yyyy-MM-dd")
 
-
-        'Name = 
-
-        'MsgBox(Name)
-
         login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
                              Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
                              Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
@@ -52,13 +47,6 @@ Public Class Billing_lease
                              and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString + "
                              or Tenant.Email like '%" + searchstr + "%'")
 
-
-        'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
-        'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
-        'From Lease,Tenant,Unit
-        'where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID AND Lease.DoorNumber=Unit.DoorNumber")
-
-        'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
 
     End Sub
@@ -103,6 +91,13 @@ Public Class Billing_lease
         'For i = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
         '    ComboBox3.Items.Add(login.SQL.DBDS.Tables(0).Rows(i)(7).ToString)
         'Next
+
+        'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
+        'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+        'From Lease,Tenant,Unit
+        'where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID AND Lease.DoorNumber=Unit.DoorNumber")
+        'DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+
         DataGridView1.MultiSelect = False
         DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
     End Sub
@@ -141,26 +136,6 @@ Public Class Billing_lease
         DataGridView1.Refresh()
     End Sub
 
-    Private Sub RectangleShape3_Click(sender As Object, e As EventArgs) Handles RectangleShape3.Click
-        Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-        If intResult = DialogResult.OK Then
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-            login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Changes updated!")
-        End If
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-        Dim intResult As Integer
-        intResult = MessageBox.Show("You sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
-        If intResult = DialogResult.OK Then
-            Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
-            login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Changes updated!")
-        End If
-    End Sub
-
     Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click
         Me.Hide()
         Payment.Show()
@@ -177,11 +152,13 @@ Public Class Billing_lease
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
-
+        Me.Hide()
+        View_Lease.Show()
     End Sub
 
     Private Sub RectangleShape5_Click(sender As Object, e As EventArgs) Handles RectangleShape5.Click
-
+        Me.Hide()
+        View_Lease.Show()
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick

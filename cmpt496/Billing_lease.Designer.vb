@@ -33,13 +33,11 @@ Partial Class Billing_lease
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
-        Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -121,27 +119,17 @@ Partial Class Billing_lease
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape3, Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape2, Me.RectangleShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(834, 511)
         Me.ShapeContainer1.TabIndex = 29
         Me.ShapeContainer1.TabStop = False
-        '
-        'RectangleShape3
-        '
-        Me.RectangleShape3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.RectangleShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
-        Me.RectangleShape3.CornerRadius = 11
-        Me.RectangleShape3.Location = New System.Drawing.Point(169, 446)
-        Me.RectangleShape3.Name = "RectangleShape3"
-        Me.RectangleShape3.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.RectangleShape3.Size = New System.Drawing.Size(133, 35)
         '
         'RectangleShape5
         '
         Me.RectangleShape5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape5.CornerRadius = 11
-        Me.RectangleShape5.Location = New System.Drawing.Point(576, 446)
+        Me.RectangleShape5.Location = New System.Drawing.Point(450, 446)
         Me.RectangleShape5.Name = "RectangleShape5"
         Me.RectangleShape5.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape5.Size = New System.Drawing.Size(133, 35)
@@ -151,7 +139,7 @@ Partial Class Billing_lease
         Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape4.CornerRadius = 11
-        Me.RectangleShape4.Location = New System.Drawing.Point(377, 447)
+        Me.RectangleShape4.Location = New System.Drawing.Point(251, 447)
         Me.RectangleShape4.Name = "RectangleShape4"
         Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape4.Size = New System.Drawing.Size(133, 35)
@@ -192,26 +180,13 @@ Partial Class Billing_lease
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Clear"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(215, 454)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 21)
-        Me.Label4.TabIndex = 33
-        Me.Label4.Text = "Edit"
-        '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(407, 454)
+        Me.Label5.Location = New System.Drawing.Point(284, 453)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(77, 21)
@@ -224,7 +199,7 @@ Partial Class Billing_lease
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(595, 454)
+        Me.Label6.Location = New System.Drawing.Point(471, 453)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(94, 21)
@@ -278,7 +253,6 @@ Partial Class Billing_lease
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DataGridView1)
@@ -311,8 +285,6 @@ Partial Class Billing_lease
     Friend WithEvents Label3 As Label
     Friend WithEvents RectangleShape5 As PowerPacks.RectangleShape
     Friend WithEvents RectangleShape4 As PowerPacks.RectangleShape
-    Friend WithEvents RectangleShape3 As PowerPacks.RectangleShape
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox2 As PictureBox

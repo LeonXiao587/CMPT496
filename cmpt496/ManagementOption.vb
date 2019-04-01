@@ -24,4 +24,8 @@
         ManageLeases.Show()
         Me.Close()
     End Sub
+
+    Private Sub UnitLabel1_Click(sender As Object, e As EventArgs) Handles UnitLabel1.Click
+
+    End Sub
 End Class
