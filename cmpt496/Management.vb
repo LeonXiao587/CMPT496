@@ -45,14 +45,14 @@ Public Class Management
 
 
         Else
-            MessageBox.Show("Please make a selection before removing")
+            MessageBox.Show("Please make a selection before updating")
         End If
 
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim intResult As Integer
-        intResult = MessageBox.Show("Delete this Client?", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+        intResult = MessageBox.Show("Delete it?", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
         If intResult = DialogResult.OK Then
             DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
             Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
@@ -60,7 +60,7 @@ Public Class Management
             MsgBox("Deleted")
 
             If (DataGridView1.SelectedCells.Count > 0) Then
-                intResult = MessageBox.Show("You sure you want to cancel this order", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+                intResult = MessageBox.Show("You sure you want to remove it?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
                 If intResult = DialogResult.OK Then
                     DataGridView1.Rows.RemoveAt(DataGridView1.CurrentCell.RowIndex)
                     Dim bbb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)

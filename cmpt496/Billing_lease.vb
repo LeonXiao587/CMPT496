@@ -147,7 +147,7 @@ Public Class Billing_lease
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
-        Me.Hide()
+        Me.Close()
         Main.Show()
     End Sub
 
