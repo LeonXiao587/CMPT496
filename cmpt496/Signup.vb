@@ -1,9 +1,4 @@
 ﻿Public Class Signup
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Me.Close()
-        Main.Show()
-
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If password.Text = password1.Text Then
@@ -26,5 +21,10 @@
         password1.Clear()
         title.Clear()
         username.Clear()
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Me.Close()
+        Main.Show()
     End Sub
 End Class

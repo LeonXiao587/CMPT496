@@ -1,10 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Management
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Me.Close()
-        ManagementOption.Show()
-    End Sub
 
     Private Sub Management_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         login.SQL.ExecQuery("select * from Management")
@@ -72,5 +68,10 @@ Public Class Management
 
             End If
         End If
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        Me.Close()
+        ManagementOption.Show()
     End Sub
 End Class

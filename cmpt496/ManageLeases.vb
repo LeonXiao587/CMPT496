@@ -24,8 +24,13 @@
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-        login.SQL.ExecQuery("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', Phone = '" + PhoneBox1.Text.ToString + "' where Phone = '" + searchBox1.Text.ToString + "'")
-        'MsgBox("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', phone = '" + PhoneBox1.Text.ToString + "'  where phone = '56565656'")
+        If searchBox1.Text = "" Then
+            MsgBox("No data input")
+        Else
+            login.SQL.ExecQuery("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', Phone = '" + PhoneBox1.Text.ToString + "' where Phone = '" + searchBox1.Text.ToString + "'")
+            'MsgBox("update Tenant set email = '" + emailBox5.Text.ToString + "', Occupation = '" + OccupationBox2.Text.ToString + "', Company = '" + CompanyBox4.Text.ToString + "', income = " + IncomeBox3.Text.ToString + ", password = '" + passwordBox7.Text.ToString + "', phone = '" + PhoneBox1.Text.ToString + "'  where phone = '56565656'")
+
+        End If
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click

@@ -39,89 +39,90 @@ Partial Class login
         'Label2
         '
         Label2.AutoSize = True
-        Label2.Location = New System.Drawing.Point(156, 390)
-        Label2.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Label2.Location = New System.Drawing.Point(99, 223)
         Label2.Name = "Label2"
-        Label2.Size = New System.Drawing.Size(98, 21)
+        Label2.Size = New System.Drawing.Size(53, 12)
         Label2.TabIndex = 1
         Label2.Text = "Username"
         '
         'Label3
         '
         Label3.AutoSize = True
-        Label3.Location = New System.Drawing.Point(156, 466)
-        Label3.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Label3.Location = New System.Drawing.Point(99, 266)
         Label3.Name = "Label3"
-        Label3.Size = New System.Drawing.Size(98, 21)
+        Label3.Size = New System.Drawing.Size(53, 12)
         Label3.TabIndex = 2
         Label3.Text = "Password"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(180, 586)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(100, 335)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(138, 40)
+        Me.Button1.Size = New System.Drawing.Size(75, 36)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Sign in"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(418, 586)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.Location = New System.Drawing.Point(241, 335)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(138, 40)
+        Me.Button2.Size = New System.Drawing.Size(75, 36)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Clear"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(596, 65)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label1.Location = New System.Drawing.Point(325, 37)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 21)
+        Me.Label1.Size = New System.Drawing.Size(35, 12)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "A.M.S"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(2, -2)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.PictureBox1.Location = New System.Drawing.Point(1, -1)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(763, 368)
+        Me.PictureBox1.Size = New System.Drawing.Size(416, 210)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
         'username
         '
-        Me.username.Location = New System.Drawing.Point(402, 387)
-        Me.username.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.username.Location = New System.Drawing.Point(233, 221)
+        Me.username.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.username.Name = "username"
-        Me.username.Size = New System.Drawing.Size(121, 31)
+        Me.username.Size = New System.Drawing.Size(68, 21)
         Me.username.TabIndex = 8
         Me.username.Text = "tt"
         '
         'password
         '
-        Me.password.Location = New System.Drawing.Point(402, 466)
-        Me.password.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.password.Location = New System.Drawing.Point(233, 266)
+        Me.password.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.password.Name = "password"
-        Me.password.Size = New System.Drawing.Size(121, 31)
+        Me.password.Size = New System.Drawing.Size(68, 21)
         Me.password.TabIndex = 9
         Me.password.Text = "ttt"
         Me.password.UseSystemPasswordChar = True
         '
         'login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 21.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(765, 698)
+        Me.ClientSize = New System.Drawing.Size(417, 399)
         Me.Controls.Add(Me.password)
         Me.Controls.Add(Me.username)
         Me.Controls.Add(Me.PictureBox1)
@@ -130,7 +131,6 @@ Partial Class login
         Me.Controls.Add(Label3)
         Me.Controls.Add(Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.Name = "login"
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -111,10 +111,17 @@ Public Class Email
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         Dim EmailMessage As New MailMessage()
         Try
+            EmailMessage.IsBodyHtml = True
             EmailMessage.From = New MailAddress("monthlyhourcollector@gmail.com")
             EmailMessage.To.Add(DataGridView1.SelectedRows(0).Cells(6).Value.ToString)
             EmailMessage.Subject = "Payment Notice"
-            EmailMessage.Body = "Here is your payment information." + "Name:" + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + "Amount:" + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + "Date:" + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + "InvoiveID:" + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + "TID:" + DataGridView1.SelectedRows(0).Cells(1).Value.ToString
+            EmailMessage.Body = "Here is your payment information." + vbCrLf
+            EmailMessage.Body += "Name: " + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + vbCrLf + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + vbCrLf
+            EmailMessage.Body += "Amount Paid: " + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + vbCrLf
+            EmailMessage.Body += "Date: " + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + vbCrLf
+            EmailMessage.Body += "InvoiveID: " + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + vbCrLf
+            EmailMessage.Body += "TID: " + DataGridView1.SelectedRows(0).Cells(1).Value.ToString + vbCrLf
+
             Dim SMTP As New SmtpClient("smtp.gmail.com") With {
                 .Port = 587,
                 .EnableSsl = True,

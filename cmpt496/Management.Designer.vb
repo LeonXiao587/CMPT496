@@ -29,12 +29,13 @@ Partial Class Management
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.View = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -52,7 +53,7 @@ Partial Class Management
         '
         Me.ComboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(308, 116)
+        Me.ComboBox2.Location = New System.Drawing.Point(308, 106)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox2.TabIndex = 5
@@ -62,7 +63,7 @@ Partial Class Management
         '
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(158, 116)
+        Me.ComboBox1.Location = New System.Drawing.Point(158, 106)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 20)
         Me.ComboBox1.TabIndex = 5
@@ -84,7 +85,7 @@ Partial Class Management
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(306, 428)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(75, 30)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Edit"
         Me.Button1.UseVisualStyleBackColor = False
@@ -95,27 +96,16 @@ Partial Class Management
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(501, 428)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(75, 30)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Remove"
         Me.Button2.UseVisualStyleBackColor = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(61, 62)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Main"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'ComboBox3
         '
         Me.ComboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(471, 116)
+        Me.ComboBox3.Location = New System.Drawing.Point(471, 106)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox3.TabIndex = 11
@@ -125,9 +115,9 @@ Partial Class Management
         '
         Me.View.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.View.ForeColor = System.Drawing.Color.White
-        Me.View.Location = New System.Drawing.Point(653, 113)
+        Me.View.Location = New System.Drawing.Point(653, 106)
         Me.View.Name = "View"
-        Me.View.Size = New System.Drawing.Size(75, 23)
+        Me.View.Size = New System.Drawing.Size(75, 30)
         Me.View.TabIndex = 12
         Me.View.Text = "View"
         Me.View.UseVisualStyleBackColor = False
@@ -144,16 +134,28 @@ Partial Class Management
         Me.PictureBox2.TabIndex = 78
         Me.PictureBox2.TabStop = False
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(92, 50)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(37, 35)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 82
+        Me.PictureBox6.TabStop = False
+        '
         'Management
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.View)
         Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
@@ -164,6 +166,7 @@ Partial Class Management
         Me.Text = "Management"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -174,8 +177,8 @@ Partial Class Management
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents View As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
 End Class
