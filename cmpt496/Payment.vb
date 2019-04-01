@@ -59,7 +59,7 @@
 
 
         MessageBox.Show("Add New Payment Done!")
-        TextBox1.Clear()
+        'TextBox1.Clear()
     End Sub
 
     Private Sub Submit_Click(sender As Object, e As EventArgs) Handles Submit.Click
@@ -74,7 +74,7 @@
 
 
         MessageBox.Show("Add New Payment Done!")
-        TextBox1.Clear()
+        'TextBox1.Clear()
 
     End Sub
 

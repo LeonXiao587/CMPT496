@@ -183,7 +183,7 @@ Partial Class Payment
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(252, 443)
+        Me.RectangleShape1.Location = New System.Drawing.Point(207, 445)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape1.Size = New System.Drawing.Size(133, 35)
@@ -203,7 +203,7 @@ Partial Class Payment
         Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape2.CornerRadius = 11
-        Me.RectangleShape2.Location = New System.Drawing.Point(506, 442)
+        Me.RectangleShape2.Location = New System.Drawing.Point(551, 445)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape2.Size = New System.Drawing.Size(133, 35)
@@ -214,7 +214,7 @@ Partial Class Payment
         Me.Submit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Submit.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Submit.ForeColor = System.Drawing.Color.White
-        Me.Submit.Location = New System.Drawing.Point(288, 451)
+        Me.Submit.Location = New System.Drawing.Point(243, 451)
         Me.Submit.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Submit.Name = "Submit"
         Me.Submit.Size = New System.Drawing.Size(64, 21)
@@ -227,7 +227,7 @@ Partial Class Payment
         Me.SendEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SendEmail.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.SendEmail.ForeColor = System.Drawing.Color.White
-        Me.SendEmail.Location = New System.Drawing.Point(524, 449)
+        Me.SendEmail.Location = New System.Drawing.Point(573, 451)
         Me.SendEmail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SendEmail.Name = "SendEmail"
         Me.SendEmail.Size = New System.Drawing.Size(94, 21)
@@ -248,9 +248,9 @@ Partial Class Payment
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(207, 157)
+        Me.GroupBox1.Location = New System.Drawing.Point(66, 157)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(477, 261)
+        Me.GroupBox1.Size = New System.Drawing.Size(763, 261)
         Me.GroupBox1.TabIndex = 82
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment Form"

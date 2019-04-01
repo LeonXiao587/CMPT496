@@ -6,22 +6,17 @@ Public Class Email
 
     'Public list As New List(Of String)
     'Public receiverlist As New List(Of String)
+
     'Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
     '    Dim Emailmessage As New MailMessage
     '    Dim smtp As New SmtpClient
-    '    Dim t As Integer
-
-    '    t = CInt(Replace(DateTimePicker1.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
-    '    login.SQL.ExecQuery("Select * From Payment where replace (Paymentdate, '-', '' ) =" + t.ToString)
-
+    '    login.SQL.ExecQuery("SELECT * from email where duty = 'sendInvoice'")
     '    smtp.Host = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
     '    smtp.UseDefaultCredentials = False
     '    smtp.Port = login.SQL.DBDS.Tables(0).Rows(0)(2)
     '    smtp.EnableSsl = True
     '    smtp.Credentials = New System.Net.NetworkCredential(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString, login.SQL.DBDS.Tables(0).Rows(0)(4).ToString)
     '    Emailmessage.From = New MailAddress(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString)
-
-    '    ' I added the part to read all the emails from the datagridview and add it to the mailing list
 
     '    If receiverlist.Count = 0 Then Return False
     '    For i = 0 To receiverlist.Count - 1
@@ -30,7 +25,6 @@ Public Class Email
 
     '    Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString 'get email field from database
     '    Emailmessage.Body = login.SQL.DBDS.Tables(0).Rows(0)(6).ToString
-
     '    Try
     '        smtp.Send(Emailmessage)
     '        MessageBox.Show("Email Send！")
@@ -45,20 +39,13 @@ Public Class Email
 
     'End Function
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs)
-        LoadGrid()
-    End Sub
-
     Private Sub LoadGrid()
-
         Dim t As Integer
-
-        't = Replace(DateTimePicker1.Value.Date.ToString("yyyy/MM/dd"), "/", "-")
-        'Throw New NotImplementedException()
-
         t = CInt(Replace(DateTimePicker1.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
-
-        login.SQL.ExecQuery("Select * From Payment where replace (Paymentdate, '-', '' ) =" + t.ToString)
+        login.SQL.ExecQuery("Select Payment.InvoiceID, Payment.TID, Payment.Amount, Payment.Paymentdate, 
+                             Tenant.First_name, Tenant.Last_name, Tenant.Email
+                             From Payment, Tenant where Payment.TID = Tenant.TID AND replace (Paymentdate, '-', '' ) =" + t.ToString)
+        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
@@ -72,17 +59,11 @@ Public Class Email
     End Sub
 
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
-        Dim t As Integer
-        t = CInt(Replace(DateTimePicker1.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
-        login.SQL.ExecQuery("Select * From Payment where replace (Paymentdate, '-', '' ) =" + t.ToString)
-        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        LoadGrid()
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-        Dim t As Integer
-        t = CInt(Replace(DateTimePicker1.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
-        login.SQL.ExecQuery("Select * From Payment where replace (Paymentdate, '-', '' ) =" + t.ToString)
-        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        LoadGrid()
     End Sub
 
     Private Sub Email_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -98,23 +79,57 @@ Public Class Email
     Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
         Dim EmailMessage As New MailMessage()
         Try
-            EmailMessage.From = New MailAddress("tianyuhanghao@gmail.com")
-            EmailMessage.To.Add("Apartment Management System")
+            EmailMessage.IsBodyHtml = True
+            EmailMessage.From = New MailAddress("monthlyhourcollector@gmail.com")
+            EmailMessage.To.Add(DataGridView1.SelectedRows(0).Cells(6).Value.ToString)
             EmailMessage.Subject = "Payment Notice"
-            EmailMessage.Body = "Here is your payment information."
-            Dim SMTP As New SmtpClient("smtp.gmail.com")
-            SMTP.Port = 587
-            SMTP.EnableSsl = True
-            SMTP.Credentials = New System.Net.NetworkCredential("tianyuhanghao@gmail.com", "password")
+            EmailMessage.Body = "Here is your payment information." + vbCrLf
+            EmailMessage.Body += "Name: " + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + vbCrLf + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + vbCrLf
+            EmailMessage.Body += "Amount Paid: " + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + vbCrLf
+            EmailMessage.Body += "Date: " + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + vbCrLf
+            EmailMessage.Body += "InvoiveID: " + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + vbCrLf
+            EmailMessage.Body += "TID: " + DataGridView1.SelectedRows(0).Cells(1).Value.ToString + vbCrLf
+
+            Dim SMTP As New SmtpClient("smtp.gmail.com") With {
+                .Port = 587,
+                .EnableSsl = True,
+                .Credentials = New System.Net.NetworkCredential("monthlyhourcollector@gmail.com", "cmpt395test")
+            }
             SMTP.Send(EmailMessage)
 
+            MessageBox.Show("Email has been send!")
+            Me.Close()
+            Billing_lease.Show()
 
         Catch ex As Exception
-
+            MessageBox.Show("Please try again!")
+            Me.Close()
+            Billing_lease.Show()
         End Try
 
     End Sub
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+        Dim EmailMessage As New MailMessage()
+        Try
+            EmailMessage.From = New MailAddress("monthlyhourcollector@gmail.com")
+            EmailMessage.To.Add(DataGridView1.SelectedRows(0).Cells(6).Value.ToString)
+            EmailMessage.Subject = "Payment Notice"
+            EmailMessage.Body = "Here is your payment information." + "Name:" + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + "Amount:" + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + "Date:" + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + "InvoiveID:" + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + "TID:" + DataGridView1.SelectedRows(0).Cells(1).Value.ToString
+            Dim SMTP As New SmtpClient("smtp.gmail.com") With {
+                .Port = 587,
+                .EnableSsl = True,
+                .Credentials = New System.Net.NetworkCredential("monthlyhourcollector@gmail.com", "cmpt395test")
+            }
+            SMTP.Send(EmailMessage)
 
+            MessageBox.Show("Email has been send!")
+            Me.Close()
+            Billing_lease.Show()
+
+        Catch ex As Exception
+            MessageBox.Show("Please try again!")
+            Me.Close()
+            Billing_lease.Show()
+        End Try
     End Sub
 End Class

@@ -35,17 +35,28 @@ Public Class Billing_lease
         'f = Format(StartDate.Value, "yyyy-MM-dd")
         't = Format(EndDate.Value, "yyyy-MM-dd")
 
-        login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
-                             Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
-                             Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
-                             From Lease,Tenant,Unit
-                             Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
-                             AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString + "
-                             or Lease.DoorNumber = " + idsearch.ToString + " or Lease.BID = " + idsearch.ToString + "
-                             or Lease.TID = " + idsearch.ToString + " or First_name like '%" + searchstr + "%' 
+        'login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
+        '                     Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
+        '                     Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
+        '                     From Lease,Tenant,Unit
+        '                     Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
+        '                     AND Lease.DoorNumber=Unit.DoorNumber or Lease.LeaseID = " + idsearch.ToString + "
+        '                     or Lease.DoorNumber = " + idsearch.ToString + " or Lease.BID = " + idsearch.ToString + "
+        '                     or Lease.TID = " + idsearch.ToString + " or Tenant.First_name like '%" + searchstr + "%' 
+        '                     or Tenant.Last_name like '%" + searchstr + "%' or Lease.Monthlyrate = " + idsearch.ToString + "
+        '                     and replace (Lease.Startdate, '-', '' ) >= " + t.ToString + " and replace (Lease.Enddate, '-', '' ) <=" + f.ToString + "
+        '                     or Tenant.Email like '%" + searchstr + "%'")
+        login.SQL.ExecQuery("Select DISTINCT LeaseID, DoorNumber, 
+                             BID, TID, First_name, Last_name,
+                             Monthlyrate, Startdate, Enddate, Email
+                             From billing_view
+                             Where LeaseID = " + idsearch.ToString + "
+                             or DoorNumber = " + idsearch.ToString + " or BID = " + idsearch.ToString + "
+                             or TID = " + idsearch.ToString + " or First_name like '%" + searchstr + "%' 
                              or Last_name like '%" + searchstr + "%' or Monthlyrate = " + idsearch.ToString + "
-                             and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString + "
-                             or Tenant.Email like '%" + searchstr + "%'")
+                             and replace(Startdate, '-', '' ) >= " + t.ToString + " and replace(Enddate, '-', '' ) <=" + f.ToString + "
+                             or Email like '%" + searchstr + "%'")
+
 
         DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
 
