@@ -82,7 +82,7 @@ Public Class Email
             EmailMessage.From = New MailAddress("monthlyhourcollector@gmail.com")
             EmailMessage.To.Add(DataGridView1.SelectedRows(0).Cells(6).Value.ToString)
             EmailMessage.Subject = "Payment Notice"
-            EmailMessage.Body = "Here is your payment information. vbCr" + "Name: " + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + "vbTab" + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + "vbCr Amount: " + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + "vbCr Date: " + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + "vbCr InvoiveID: " + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + "vbCr TID: " + DataGridView1.SelectedRows(0).Cells(1).Value.ToString
+            EmailMessage.Body = "Here is your payment information. vbCr" + "Name: " + DataGridView1.SelectedRows(0).Cells(4).Value.ToString + "vbTab" + DataGridView1.SelectedRows(0).Cells(5).Value.ToString + "vbCr Amount Paid: " + DataGridView1.SelectedRows(0).Cells(2).Value.ToString + "vbCr Date: " + DataGridView1.SelectedRows(0).Cells(3).Value.ToString + "vbCr InvoiveID: " + DataGridView1.SelectedRows(0).Cells(0).Value.ToString + "vbCr TID: " + DataGridView1.SelectedRows(0).Cells(1).Value.ToString
             Dim SMTP As New SmtpClient("smtp.gmail.com") With {
                 .Port = 587,
                 .EnableSsl = True,
