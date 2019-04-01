@@ -144,7 +144,7 @@ Partial Class ManagementOption
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(40, 28)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -176,7 +176,7 @@ Partial Class ManagementOption
         Me.Controls.Add(Me.UnitLabel1)
         Me.Controls.Add(Me.EmployeeLabel4)
         Me.Controls.Add(Me.ShapeContainer1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "ManagementOption"
         Me.Text = "ManagementOption"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
