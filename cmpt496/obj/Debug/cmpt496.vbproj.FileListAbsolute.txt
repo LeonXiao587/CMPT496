@@ -55,3 +55,4 @@ C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyComplete
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.exe
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.xml
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.pdb
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.ManageLeases.resources

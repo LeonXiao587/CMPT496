@@ -74,9 +74,9 @@ Partial Class Billing_lease
         '
         'StartDate
         '
-        Me.StartDate.Location = New System.Drawing.Point(238, 117)
+        Me.StartDate.Location = New System.Drawing.Point(219, 117)
         Me.StartDate.Name = "StartDate"
-        Me.StartDate.Size = New System.Drawing.Size(123, 21)
+        Me.StartDate.Size = New System.Drawing.Size(142, 21)
         Me.StartDate.TabIndex = 22
         Me.ToolTip1.SetToolTip(Me.StartDate, "This Time Picker is used for choosing Lease Start time.")
         '
@@ -94,7 +94,7 @@ Partial Class Billing_lease
         '
         Me.EndDate.Location = New System.Drawing.Point(388, 117)
         Me.EndDate.Name = "EndDate"
-        Me.EndDate.Size = New System.Drawing.Size(123, 21)
+        Me.EndDate.Size = New System.Drawing.Size(138, 21)
         Me.EndDate.TabIndex = 26
         Me.ToolTip2.SetToolTip(Me.EndDate, "This Time picker is used for choosing Lease End time.")
         '

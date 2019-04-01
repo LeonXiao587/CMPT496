@@ -35,19 +35,37 @@ Public Class Email
         LoadGrid()
     End Sub
 
+    Private Sub Email_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Dim currentDate As DateTime = DateTime.Now
+        'login.SQL.ExecQuery("Select distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
+        '                    from Contractors,Contracts
+        '                    where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
+
+        'DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+        'For i As Integer = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
+        '    NewMonthList.Add(login.SQL.DBDS.Tables(0).Rows(i)(0))
+        'Next
+
+        DataGridView1.MultiSelect = False
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+
+        login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name, 
+                             Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+                             From Lease,Tenant,Unit
+                             Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID AND Lease.DoorNumber=Unit.DoorNumber")
+        'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
+        'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
+        'From Lease,Tenant,Unit
+        'where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID AND Lease.DoorNumber=Unit.DoorNumber")
+
+        'login.SQL.ExecQuery("select * from Client where CLientID = " + idsearch.ToString + "or Name like '%" + searchstr + "%' or Pemail like '%" + searchstr + "%'")
+        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
+    End Sub
+
     Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
 
     End Sub
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
 
-    Private Sub Email_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim currentDate As DateTime = DateTime.Now
-        login.SQL.ExecQuery("Select distinct Contractors.CID,Contractors.LName+' '+Contractors.FName as Name,Contractors.Cemail 
-                            from Contractors,Contracts
-                            where  Contractors.CID=Contracts.CID and Contractors.cid not in (select cid from timesheet where Status='emailed' or month =" + currentDate.Month.ToString + ")")
-
-        DataGridView1.DataSource = login.SQL.DBDS.Tables(0)
-        For i As Integer = 0 To login.SQL.DBDS.Tables(0).Rows.Count - 1
-            NewMonthList.Add(login.SQL.DBDS.Tables(0).Rows(i)(0))
-        Next
     End Sub
 End Class

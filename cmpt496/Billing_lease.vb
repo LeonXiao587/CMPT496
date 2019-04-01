@@ -51,8 +51,8 @@ Public Class Billing_lease
         Dim f As Integer
         Dim t As Integer
 
-        f = CInt(Replace(StartDate.Value.Date.ToString("yyyy/MM/dd"), "/", ""))
-        t = CInt(Replace(EndDate.Value.Date.ToString("yyyy/MM/dd"), "/", ""))
+        f = CInt(Replace(StartDate.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
+        t = CInt(Replace(EndDate.Value.Date.ToString("yyyy-MM-dd"), "-", ""))
 
 
         'f = Format(StartDate.Value, "yyyy-MM-dd")
@@ -80,6 +80,19 @@ Public Class Billing_lease
                              "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
                              " and replace (Startdate, '-', '' ) >= " + t.ToString + " and replace (Enddate, '-', '' ) <=" + f.ToString +
                              "or Tenant.Email like '%" + searchstr + "%'")
+
+        'login.SQL.ExecQuery("Select DISTINCT Lease.LeaseID, Lease.DoorNumber, 
+        '                     Lease.BID, Lease.TID, Tenant.First_name, Tenant.Last_name,
+        '                     Lease.Monthlyrate, Lease.Startdate, Lease.Enddate, Tenant.Email
+        '                     From Lease,Tenant,Unit
+        '                     Where Lease.TID=Tenant.TID AND Lease.BID=Unit.BID 
+        '                     AND Lease.DoorNumber=Unit.DoorNumber or LeaseID = " + idsearch.ToString +
+        '                     "or Lease.DoorNumber like " + idsearch.ToString + "or Lease.BID = " + idsearch.ToString +
+        '                     "or Lease.TID =" + idsearch.ToString + "or First_name like '%" + searchstr +
+        '                     "%' or Last_name like '%" + searchstr + "%' or Monthlyrate like " + idsearch.ToString +
+        '                     " and Startdate >= " + f.ToString + " and Enddate <=" + t.ToString +
+        '                     "or Tenant.Email like '%" + searchstr + "%'")
+
         'login.SQL.ExecQuery("Select distinct Lease.LeaseID, Lease.DoorNumber, Lease.BID, Tenant.First_name, Tenant.Last_name,
         'Lease.Monthlyrate, Lease.Startdate, Lease.Enddate
         'From Lease,Tenant,Unit
