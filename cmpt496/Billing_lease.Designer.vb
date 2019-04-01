@@ -68,7 +68,6 @@ Partial Class Billing_lease
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(230, 21)
         Me.TextBox1.TabIndex = 17
-        Me.TextBox1.Text = "Search Text"
         '
         'StartDate
         '
