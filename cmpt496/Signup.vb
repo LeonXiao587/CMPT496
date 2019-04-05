@@ -1,6 +1,7 @@
 ﻿Public Class Signup
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
         If password.Text = password1.Text Then
             login.SQL.ExecQuery("INSERT INTO Management(StaffID, Fname, Lname, Email, SigninPassword, BID, Title, Username)
                              VALUES ('" & staffid.Text & "','" & first_name.Text & "','" & last_name.Text & "','" & email.Text & "','" & password.Text & "','" & BID.Text & "','" & title.Text & "','" & username.Text & "')"
@@ -26,5 +27,9 @@
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
         Me.Close()
         Main.Show()
+    End Sub
+
+    Private Sub Signup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

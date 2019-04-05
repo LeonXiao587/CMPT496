@@ -1,7 +1,7 @@
 ﻿Imports System.Text
 Public Class Renting
     Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Me.Hide()
+        Me.Close()
         Main.Show()
 
     End Sub
@@ -127,11 +127,15 @@ Public Class Renting
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
         Me.Hide()
         TenantInfo.Show()
+        PictureBox1 = Nothing
+        PictureBox2 = Nothing
     End Sub
 
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
         Me.Hide()
         TenantInfo.Show()
+        PictureBox1 = Nothing
+        PictureBox2 = Nothing
     End Sub
 
 End Class

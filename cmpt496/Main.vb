@@ -7,6 +7,9 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Signup.Show()
+        PictureBox1 = Nothing
+        PictureBox2 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
@@ -47,38 +50,54 @@
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
         Me.Hide()
         Renting.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
         Me.Hide()
         Renting.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub Managerect_Click(sender As Object, e As EventArgs) Handles Managerect.Click
         Me.Hide()
         ManagementOption.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
     Private Sub ManageLabel5_Click(sender As Object, e As EventArgs) Handles ManageLabel5.Click
         Me.Hide()
         ManagementOption.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
         Me.Hide()
         Billing_lease.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
         Me.Hide()
         Billing_lease.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub RectangleShape3_Click(sender As Object, e As EventArgs) Handles RectangleShape3.Click
         Me.Hide()
         Signup.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Me.Hide()
         Signup.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 End Class

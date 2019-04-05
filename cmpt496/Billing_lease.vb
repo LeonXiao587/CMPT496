@@ -150,26 +150,36 @@ Public Class Billing_lease
     Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click
         Me.Hide()
         Payment.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
         Me.Hide()
         Payment.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.Close()
         Main.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
         Me.Hide()
         View_Lease.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub RectangleShape5_Click(sender As Object, e As EventArgs) Handles RectangleShape5.Click
         Me.Hide()
         View_Lease.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick

@@ -57,7 +57,7 @@ Partial Class login
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Location = New System.Drawing.Point(100, 335)
         Me.Button1.Name = "Button1"
@@ -69,7 +69,7 @@ Partial Class login
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button2.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Location = New System.Drawing.Point(241, 335)
         Me.Button2.Name = "Button2"
@@ -100,7 +100,7 @@ Partial Class login
         'username
         '
         Me.username.Location = New System.Drawing.Point(233, 221)
-        Me.username.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.username.Margin = New System.Windows.Forms.Padding(2)
         Me.username.Name = "username"
         Me.username.Size = New System.Drawing.Size(68, 21)
         Me.username.TabIndex = 8
@@ -109,7 +109,7 @@ Partial Class login
         'password
         '
         Me.password.Location = New System.Drawing.Point(233, 266)
-        Me.password.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.password.Margin = New System.Windows.Forms.Padding(2)
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(68, 21)
         Me.password.TabIndex = 9
@@ -131,6 +131,7 @@ Partial Class login
         Me.Controls.Add(Label3)
         Me.Controls.Add(Label2)
         Me.Controls.Add(Me.Label1)
+        Me.DoubleBuffered = True
         Me.Name = "login"
         Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

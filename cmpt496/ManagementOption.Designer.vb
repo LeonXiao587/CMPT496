@@ -39,55 +39,55 @@ Partial Class ManagementOption
         '
         'EmployeeLabel4
         '
-        Me.EmployeeLabel4.AutoSize = True
         Me.EmployeeLabel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.EmployeeLabel4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.EmployeeLabel4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.EmployeeLabel4.ForeColor = System.Drawing.Color.White
-        Me.EmployeeLabel4.Location = New System.Drawing.Point(152, 172)
+        Me.EmployeeLabel4.Location = New System.Drawing.Point(141, 166)
         Me.EmployeeLabel4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.EmployeeLabel4.Name = "EmployeeLabel4"
-        Me.EmployeeLabel4.Size = New System.Drawing.Size(84, 21)
+        Me.EmployeeLabel4.Size = New System.Drawing.Size(113, 30)
         Me.EmployeeLabel4.TabIndex = 11
         Me.EmployeeLabel4.Text = "Employee"
+        Me.EmployeeLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'UnitLabel1
         '
-        Me.UnitLabel1.AutoSize = True
         Me.UnitLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.UnitLabel1.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.UnitLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.UnitLabel1.ForeColor = System.Drawing.Color.White
-        Me.UnitLabel1.Location = New System.Drawing.Point(322, 172)
+        Me.UnitLabel1.Location = New System.Drawing.Point(287, 165)
         Me.UnitLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UnitLabel1.Name = "UnitLabel1"
-        Me.UnitLabel1.Size = New System.Drawing.Size(42, 21)
+        Me.UnitLabel1.Size = New System.Drawing.Size(113, 30)
         Me.UnitLabel1.TabIndex = 12
         Me.UnitLabel1.Text = "Unit"
+        Me.UnitLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Parkinglable
         '
-        Me.Parkinglable.AutoSize = True
         Me.Parkinglable.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Parkinglable.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Parkinglable.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Parkinglable.ForeColor = System.Drawing.Color.White
-        Me.Parkinglable.Location = New System.Drawing.Point(310, 268)
+        Me.Parkinglable.Location = New System.Drawing.Point(289, 264)
         Me.Parkinglable.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Parkinglable.Name = "Parkinglable"
-        Me.Parkinglable.Size = New System.Drawing.Size(68, 21)
+        Me.Parkinglable.Size = New System.Drawing.Size(113, 30)
         Me.Parkinglable.TabIndex = 13
         Me.Parkinglable.Text = "Parking"
+        Me.Parkinglable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Leaselable
         '
-        Me.Leaselable.AutoSize = True
         Me.Leaselable.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Leaselable.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Leaselable.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Leaselable.ForeColor = System.Drawing.Color.White
-        Me.Leaselable.Location = New System.Drawing.Point(138, 268)
+        Me.Leaselable.Location = New System.Drawing.Point(137, 263)
         Me.Leaselable.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Leaselable.Name = "Leaselable"
-        Me.Leaselable.Size = New System.Drawing.Size(110, 21)
+        Me.Leaselable.Size = New System.Drawing.Size(113, 30)
         Me.Leaselable.TabIndex = 14
         Me.Leaselable.Text = "Lease Tenant"
+        Me.Leaselable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'RectangleShape1
         '
@@ -155,7 +155,7 @@ Partial Class ManagementOption
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(192, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"

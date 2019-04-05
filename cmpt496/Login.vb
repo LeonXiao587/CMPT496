@@ -41,5 +41,6 @@
     Private Sub Clear_Click(sender As Object, e As EventArgs) Handles Button2.Click
         username.Clear()
         password.Clear()
+        PictureBox1 = Nothing
     End Sub
 End Class

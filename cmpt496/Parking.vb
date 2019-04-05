@@ -122,15 +122,11 @@ Public Class Parking
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
         Me.Close()
-        Main.Show()
+        ManagementOption.Show()
     End Sub
 
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
         SearchFunc()
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click

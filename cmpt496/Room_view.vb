@@ -44,13 +44,23 @@ Public Class Room_view
 
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        PictureBox1 = Nothing
+        PictureBox2 = Nothing
+        PictureBox3 = Nothing
+        PictureBox4 = Nothing
         Me.Close()
+
         Main.Show()
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        PictureBox1 = Nothing
+        PictureBox2 = Nothing
+        PictureBox3 = Nothing
+        PictureBox4 = Nothing
         Me.Close()
         ManagementOption.Show()
+
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
