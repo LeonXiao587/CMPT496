@@ -55,7 +55,7 @@ Partial Class ManagementOption
         Me.UnitLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.UnitLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.UnitLabel1.ForeColor = System.Drawing.Color.White
-        Me.UnitLabel1.Location = New System.Drawing.Point(287, 165)
+        Me.UnitLabel1.Location = New System.Drawing.Point(288, 165)
         Me.UnitLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UnitLabel1.Name = "UnitLabel1"
         Me.UnitLabel1.Size = New System.Drawing.Size(113, 30)

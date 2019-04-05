@@ -145,9 +145,9 @@ Partial Class Cosigner
         Me.GroupBox2.Controls.Add(Me.companyBox5)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(414, 88)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(1)
         Me.GroupBox2.Size = New System.Drawing.Size(293, 197)
         Me.GroupBox2.TabIndex = 91
         Me.GroupBox2.TabStop = False
@@ -169,7 +169,7 @@ Partial Class Cosigner
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(276, 30)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -196,9 +196,9 @@ Partial Class Cosigner
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(78, 88)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Size = New System.Drawing.Size(293, 259)
         Me.GroupBox1.TabIndex = 90
         Me.GroupBox1.TabStop = False
@@ -410,7 +410,8 @@ Partial Class Cosigner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(685, 374)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.ClientSize = New System.Drawing.Size(764, 408)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -418,7 +419,7 @@ Partial Class Cosigner
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.unitlable)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cosigner"
         Me.Text = "Cosigner"
         Me.GroupBox2.ResumeLayout(False)

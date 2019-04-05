@@ -38,6 +38,7 @@
         Me.Close()
     End Sub
 
+
     'Private Sub RectangleShape2_Click(sender As Object, e As EventArgs) Handles RectangleShape2.Click
     '    Room_view.Show()
     '    Me.Close()

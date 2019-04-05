@@ -87,3 +87,4 @@ C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.vbproj.CopyCompl
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.exe
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.xml
 C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.pdb
+C:\Users\0o0\Documents\GitHub\CMPT496\cmpt496\obj\Debug\cmpt496.vbprojAssemblyReference.cache
