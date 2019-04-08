@@ -104,7 +104,7 @@ Partial Class Parking
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!)
-        Me.Label3.Location = New System.Drawing.Point(155, 365)
+        Me.Label3.Location = New System.Drawing.Point(155, 378)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 20)
@@ -115,10 +115,10 @@ Partial Class Parking
         '
         Me.Parkinglist.BackgroundColor = System.Drawing.Color.White
         Me.Parkinglist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Parkinglist.Location = New System.Drawing.Point(176, 68)
+        Me.Parkinglist.Location = New System.Drawing.Point(168, 74)
         Me.Parkinglist.Name = "Parkinglist"
         Me.Parkinglist.RowTemplate.Height = 23
-        Me.Parkinglist.Size = New System.Drawing.Size(631, 253)
+        Me.Parkinglist.Size = New System.Drawing.Size(631, 273)
         Me.Parkinglist.TabIndex = 81
         '
         'searchbox
@@ -192,7 +192,7 @@ Partial Class Parking
         'Crate
         '
         Me.Crate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Crate.Location = New System.Drawing.Point(255, 366)
+        Me.Crate.Location = New System.Drawing.Point(253, 388)
         Me.Crate.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Crate.Name = "Crate"
         Me.Crate.Size = New System.Drawing.Size(73, 21)
@@ -203,7 +203,7 @@ Partial Class Parking
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(258, 342)
+        Me.Label7.Location = New System.Drawing.Point(256, 364)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 20)
@@ -213,7 +213,7 @@ Partial Class Parking
         'Orate
         '
         Me.Orate.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.Orate.Location = New System.Drawing.Point(376, 368)
+        Me.Orate.Location = New System.Drawing.Point(375, 389)
         Me.Orate.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Orate.Name = "Orate"
         Me.Orate.Size = New System.Drawing.Size(73, 21)
@@ -224,7 +224,7 @@ Partial Class Parking
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(384, 344)
+        Me.Label8.Location = New System.Drawing.Point(382, 365)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(61, 20)
@@ -236,7 +236,7 @@ Partial Class Parking
         Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape2.CornerRadius = 11
-        Me.RectangleShape2.Location = New System.Drawing.Point(506, 356)
+        Me.RectangleShape2.Location = New System.Drawing.Point(508, 376)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape2.Size = New System.Drawing.Size(107, 40)
@@ -256,7 +256,7 @@ Partial Class Parking
         Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape4.CornerRadius = 11
-        Me.RectangleShape4.Location = New System.Drawing.Point(674, 354)
+        Me.RectangleShape4.Location = New System.Drawing.Point(671, 374)
         Me.RectangleShape4.Name = "RectangleShape4"
         Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape4.Size = New System.Drawing.Size(107, 40)
@@ -287,7 +287,7 @@ Partial Class Parking
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(509, 367)
+        Me.Label9.Location = New System.Drawing.Point(514, 386)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(97, 21)
@@ -300,7 +300,7 @@ Partial Class Parking
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(59, 343)
+        Me.Label10.Location = New System.Drawing.Point(59, 345)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(47, 21)
@@ -338,7 +338,7 @@ Partial Class Parking
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(707, 363)
+        Me.Label12.Location = New System.Drawing.Point(703, 384)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(39, 21)
