@@ -134,6 +134,7 @@ Partial Class Cosigner
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.incomeBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -144,7 +145,7 @@ Partial Class Cosigner
         Me.GroupBox2.Controls.Add(Me.occupationBox3)
         Me.GroupBox2.Controls.Add(Me.companyBox5)
         Me.GroupBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(414, 88)
+        Me.GroupBox2.Location = New System.Drawing.Point(414, 114)
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(1)
@@ -166,9 +167,10 @@ Partial Class Cosigner
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(276, 30)
+        Me.PictureBox1.Location = New System.Drawing.Point(270, 30)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
@@ -178,6 +180,7 @@ Partial Class Cosigner
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
@@ -195,7 +198,7 @@ Partial Class Cosigner
         Me.GroupBox1.Controls.Add(Me.phone)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(78, 88)
+        Me.GroupBox1.Location = New System.Drawing.Point(78, 114)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1)
@@ -361,7 +364,7 @@ Partial Class Cosigner
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(18, 30)
+        Me.PictureBox2.Location = New System.Drawing.Point(61, 28)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
@@ -371,10 +374,11 @@ Partial Class Cosigner
         '
         'unitlable
         '
+        Me.unitlable.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.unitlable.AutoSize = True
         Me.unitlable.BackColor = System.Drawing.Color.Transparent
         Me.unitlable.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.unitlable.Location = New System.Drawing.Point(386, 28)
+        Me.unitlable.Location = New System.Drawing.Point(380, 28)
         Me.unitlable.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.unitlable.Name = "unitlable"
         Me.unitlable.Size = New System.Drawing.Size(134, 39)
@@ -383,10 +387,11 @@ Partial Class Cosigner
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(314, 28)
+        Me.Label1.Location = New System.Drawing.Point(308, 28)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(92, 39)
@@ -395,11 +400,12 @@ Partial Class Cosigner
         '
         'Label11
         '
+        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(342, 364)
+        Me.Label11.Location = New System.Drawing.Point(342, 390)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(64, 21)
@@ -411,7 +417,7 @@ Partial Class Cosigner
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(764, 408)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.PictureBox1)

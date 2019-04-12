@@ -46,16 +46,19 @@ Partial Class ManageLeases
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(225, 21)
+        Me.Label1.Location = New System.Drawing.Point(332, 32)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 39)
@@ -66,7 +69,7 @@ Partial Class ManageLeases
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(51, 32)
+        Me.PictureBox2.Location = New System.Drawing.Point(98, 37)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
@@ -76,7 +79,8 @@ Partial Class ManageLeases
         '
         'searchBox1
         '
-        Me.searchBox1.Location = New System.Drawing.Point(229, 92)
+        Me.searchBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.searchBox1.Location = New System.Drawing.Point(339, 92)
         Me.searchBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.searchBox1.Name = "searchBox1"
         Me.searchBox1.Size = New System.Drawing.Size(105, 21)
@@ -84,11 +88,12 @@ Partial Class ManageLeases
         '
         'UnitLabel1
         '
+        Me.UnitLabel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.UnitLabel1.AutoSize = True
         Me.UnitLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.UnitLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.UnitLabel1.ForeColor = System.Drawing.Color.White
-        Me.UnitLabel1.Location = New System.Drawing.Point(352, 92)
+        Me.UnitLabel1.Location = New System.Drawing.Point(462, 92)
         Me.UnitLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.UnitLabel1.Name = "UnitLabel1"
         Me.UnitLabel1.Size = New System.Drawing.Size(61, 21)
@@ -97,10 +102,11 @@ Partial Class ManageLeases
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(165, 91)
+        Me.Label4.Location = New System.Drawing.Point(275, 91)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(44, 17)
         Me.Label4.TabIndex = 83
@@ -108,6 +114,7 @@ Partial Class ManageLeases
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.PhoneBox1)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -126,7 +133,7 @@ Partial Class ManageLeases
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 10.71429!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(113, 130)
+        Me.GroupBox1.Location = New System.Drawing.Point(223, 130)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1, 2, 1, 2)
@@ -289,23 +296,38 @@ Partial Class ManageLeases
         '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(249, 399)
+        Me.Label2.Location = New System.Drawing.Point(359, 399)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 21)
         Me.Label2.TabIndex = 86
         Me.Label2.Text = "Update"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(291, 37)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(37, 34)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 87
+        Me.PictureBox1.TabStop = False
+        '
         'ManageLeases
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(565, 469)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.UnitLabel1)
@@ -319,6 +341,7 @@ Partial Class ManageLeases
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -347,4 +370,5 @@ Partial Class ManageLeases
     Friend WithEvents lastnBox1 As TextBox
     Friend WithEvents PhoneBox1 As TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

@@ -40,10 +40,11 @@ Partial Class Management
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(336, 49)
+        Me.Label1.Location = New System.Drawing.Point(318, 49)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(199, 36)
         Me.Label1.TabIndex = 3
@@ -51,9 +52,10 @@ Partial Class Management
         '
         'ComboBox2
         '
+        Me.ComboBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ComboBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(308, 106)
+        Me.ComboBox2.Location = New System.Drawing.Point(290, 106)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox2.TabIndex = 5
@@ -61,9 +63,10 @@ Partial Class Management
         '
         'ComboBox1
         '
+        Me.ComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ComboBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(158, 106)
+        Me.ComboBox1.Location = New System.Drawing.Point(140, 106)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(144, 20)
         Me.ComboBox1.TabIndex = 5
@@ -71,9 +74,10 @@ Partial Class Management
         '
         'DataGridView1
         '
+        Me.DataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(158, 142)
+        Me.DataGridView1.Location = New System.Drawing.Point(140, 142)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 23
         Me.DataGridView1.Size = New System.Drawing.Size(570, 264)
@@ -81,9 +85,10 @@ Partial Class Management
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(306, 428)
+        Me.Button1.Location = New System.Drawing.Point(288, 428)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 30)
         Me.Button1.TabIndex = 8
@@ -92,9 +97,10 @@ Partial Class Management
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(501, 428)
+        Me.Button2.Location = New System.Drawing.Point(483, 428)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 30)
         Me.Button2.TabIndex = 9
@@ -103,9 +109,10 @@ Partial Class Management
         '
         'ComboBox3
         '
+        Me.ComboBox3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ComboBox3.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(471, 106)
+        Me.ComboBox3.Location = New System.Drawing.Point(453, 106)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox3.TabIndex = 11
@@ -113,9 +120,10 @@ Partial Class Management
         '
         'View
         '
+        Me.View.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.View.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.View.ForeColor = System.Drawing.Color.White
-        Me.View.Location = New System.Drawing.Point(653, 106)
+        Me.View.Location = New System.Drawing.Point(635, 106)
         Me.View.Name = "View"
         Me.View.Size = New System.Drawing.Size(75, 30)
         Me.View.TabIndex = 12
@@ -124,9 +132,10 @@ Partial Class Management
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(294, 49)
+        Me.PictureBox2.Location = New System.Drawing.Point(276, 49)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
@@ -138,7 +147,7 @@ Partial Class Management
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(92, 50)
+        Me.PictureBox6.Location = New System.Drawing.Point(74, 50)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(37, 35)
@@ -151,7 +160,7 @@ Partial Class Management
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.View)

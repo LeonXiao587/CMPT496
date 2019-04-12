@@ -38,8 +38,9 @@ Partial Class login
         '
         'Label2
         '
+        Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Label2.AutoSize = True
-        Label2.Location = New System.Drawing.Point(99, 223)
+        Label2.Location = New System.Drawing.Point(291, 271)
         Label2.Name = "Label2"
         Label2.Size = New System.Drawing.Size(53, 12)
         Label2.TabIndex = 1
@@ -47,8 +48,9 @@ Partial Class login
         '
         'Label3
         '
+        Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Label3.AutoSize = True
-        Label3.Location = New System.Drawing.Point(99, 266)
+        Label3.Location = New System.Drawing.Point(291, 314)
         Label3.Name = "Label3"
         Label3.Size = New System.Drawing.Size(53, 12)
         Label3.TabIndex = 2
@@ -56,10 +58,11 @@ Partial Class login
         '
         'Button1
         '
+        Me.Button1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(100, 335)
+        Me.Button1.Location = New System.Drawing.Point(268, 373)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 36)
         Me.Button1.TabIndex = 3
@@ -68,10 +71,11 @@ Partial Class login
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(241, 335)
+        Me.Button2.Location = New System.Drawing.Point(441, 373)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 36)
         Me.Button2.TabIndex = 4
@@ -89,17 +93,19 @@ Partial Class login
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1, -1)
+        Me.PictureBox1.Location = New System.Drawing.Point(177, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(416, 210)
+        Me.PictureBox1.Size = New System.Drawing.Size(430, 235)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
         '
         'username
         '
-        Me.username.Location = New System.Drawing.Point(233, 221)
+        Me.username.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.username.Location = New System.Drawing.Point(425, 269)
         Me.username.Margin = New System.Windows.Forms.Padding(2)
         Me.username.Name = "username"
         Me.username.Size = New System.Drawing.Size(68, 21)
@@ -108,7 +114,8 @@ Partial Class login
         '
         'password
         '
-        Me.password.Location = New System.Drawing.Point(233, 266)
+        Me.password.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.password.Location = New System.Drawing.Point(425, 314)
         Me.password.Margin = New System.Windows.Forms.Padding(2)
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(68, 21)
@@ -122,7 +129,7 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(417, 399)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.password)
         Me.Controls.Add(Me.username)
         Me.Controls.Add(Me.PictureBox1)

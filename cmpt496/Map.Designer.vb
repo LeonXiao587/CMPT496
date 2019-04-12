@@ -29,19 +29,19 @@ Partial Class Mapform
         '
         Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebBrowser1.Location = New System.Drawing.Point(0, 0)
-        Me.WebBrowser1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.WebBrowser1.Margin = New System.Windows.Forms.Padding(2)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(11, 11)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(747, 428)
+        Me.WebBrowser1.Size = New System.Drawing.Size(784, 461)
         Me.WebBrowser1.TabIndex = 0
         '
         'Mapform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(747, 428)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.WebBrowser1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Mapform"
         Me.Text = "Map"
         Me.ResumeLayout(False)

@@ -53,10 +53,11 @@ Partial Class Main
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(319, 13)
+        Me.Label1.Location = New System.Drawing.Point(335, 13)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(152, 55)
@@ -65,9 +66,10 @@ Partial Class Main
         '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(418, 362)
+        Me.Label2.Location = New System.Drawing.Point(442, 362)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 12)
@@ -76,9 +78,10 @@ Partial Class Main
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(153, 82)
+        Me.PictureBox1.Location = New System.Drawing.Point(179, 79)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(296, 241)
@@ -88,9 +91,10 @@ Partial Class Main
         '
         'LinkLabel1
         '
+        Me.LinkLabel1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.LinkLabel1.AutoSize = True
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.Location = New System.Drawing.Point(507, 362)
+        Me.LinkLabel1.Location = New System.Drawing.Point(531, 362)
         Me.LinkLabel1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(53, 12)
@@ -106,7 +110,7 @@ Partial Class Main
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(50, 34)
+        Me.PictureBox2.Location = New System.Drawing.Point(80, 25)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 34)
@@ -117,9 +121,10 @@ Partial Class Main
         '
         'Label3
         '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(177, 362)
+        Me.Label3.Location = New System.Drawing.Point(201, 362)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(65, 12)
@@ -128,9 +133,10 @@ Partial Class Main
         '
         'Building
         '
+        Me.Building.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Building.AutoSize = True
         Me.Building.BackColor = System.Drawing.Color.Transparent
-        Me.Building.Location = New System.Drawing.Point(238, 362)
+        Me.Building.Location = New System.Drawing.Point(262, 362)
         Me.Building.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Building.Name = "Building"
         Me.Building.Size = New System.Drawing.Size(0, 12)
@@ -142,22 +148,24 @@ Partial Class Main
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.Managerect, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(765, 391)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
         Me.ShapeContainer1.TabIndex = 14
         Me.ShapeContainer1.TabStop = False
         '
         'RectangleShape4
         '
+        Me.RectangleShape4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape4.CornerRadius = 11
-        Me.RectangleShape4.Location = New System.Drawing.Point(480, 251)
+        Me.RectangleShape4.Location = New System.Drawing.Point(500, 252)
         Me.RectangleShape4.Name = "RectangleShape4"
         Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape4.Size = New System.Drawing.Size(135, 37)
         '
         'RectangleShape3
         '
+        Me.RectangleShape3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.RectangleShape3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape3.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape3.CornerRadius = 11
@@ -168,41 +176,45 @@ Partial Class Main
         '
         'RectangleShape2
         '
+        Me.RectangleShape2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape2.CornerRadius = 11
-        Me.RectangleShape2.Location = New System.Drawing.Point(478, 144)
+        Me.RectangleShape2.Location = New System.Drawing.Point(498, 144)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.RectangleShape2.Size = New System.Drawing.Size(133, 35)
+        Me.RectangleShape2.Size = New System.Drawing.Size(135, 35)
         '
         'Managerect
         '
+        Me.Managerect.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Managerect.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Managerect.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.Managerect.CornerRadius = 11
-        Me.Managerect.Location = New System.Drawing.Point(478, 196)
+        Me.Managerect.Location = New System.Drawing.Point(498, 198)
         Me.Managerect.Name = "Managerect"
         Me.Managerect.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.Managerect.Size = New System.Drawing.Size(133, 35)
+        Me.Managerect.Size = New System.Drawing.Size(135, 35)
         '
         'RectangleShape1
         '
+        Me.RectangleShape1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(478, 90)
+        Me.RectangleShape1.Location = New System.Drawing.Point(498, 90)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
-        Me.RectangleShape1.Size = New System.Drawing.Size(133, 35)
+        Me.RectangleShape1.Size = New System.Drawing.Size(135, 35)
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(522, 98)
+        Me.Label4.Location = New System.Drawing.Point(542, 99)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(45, 21)
@@ -211,11 +223,12 @@ Partial Class Main
         '
         'ManageLabel5
         '
+        Me.ManageLabel5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ManageLabel5.AutoSize = True
         Me.ManageLabel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ManageLabel5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ManageLabel5.ForeColor = System.Drawing.Color.White
-        Me.ManageLabel5.Location = New System.Drawing.Point(488, 202)
+        Me.ManageLabel5.Location = New System.Drawing.Point(508, 205)
         Me.ManageLabel5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.ManageLabel5.Name = "ManageLabel5"
         Me.ManageLabel5.Size = New System.Drawing.Size(113, 21)
@@ -224,11 +237,12 @@ Partial Class Main
         '
         'Label5
         '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(517, 149)
+        Me.Label5.Location = New System.Drawing.Point(537, 152)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(56, 21)
@@ -237,6 +251,7 @@ Partial Class Main
         '
         'Label6
         '
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
@@ -250,9 +265,10 @@ Partial Class Main
         '
         'PictureBox3
         '
+        Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(278, 24)
+        Me.PictureBox3.Location = New System.Drawing.Point(297, 24)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(37, 35)
@@ -262,11 +278,12 @@ Partial Class Main
         '
         'Label7
         '
+        Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(484, 258)
+        Me.Label7.Location = New System.Drawing.Point(504, 260)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(128, 21)
@@ -279,7 +296,7 @@ Partial Class Main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(765, 391)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label6)

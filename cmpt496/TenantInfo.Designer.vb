@@ -56,6 +56,7 @@ Partial Class TenantInfo
         Me.Label4 = New System.Windows.Forms.Label()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -77,6 +78,7 @@ Partial Class TenantInfo
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
@@ -89,6 +91,7 @@ Partial Class TenantInfo
         '
         'unitlable
         '
+        Me.unitlable.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.unitlable.AutoSize = True
         Me.unitlable.BackColor = System.Drawing.Color.Transparent
         Me.unitlable.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
@@ -204,6 +207,7 @@ Partial Class TenantInfo
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
@@ -282,6 +286,7 @@ Partial Class TenantInfo
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(286, 25)
@@ -294,6 +299,7 @@ Partial Class TenantInfo
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.Label17)
         Me.GroupBox2.Controls.Add(Me.incomeBox1)
@@ -409,11 +415,12 @@ Partial Class TenantInfo
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(366, 363)
+        Me.Label4.Location = New System.Drawing.Point(282, 363)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 21)
@@ -422,10 +429,11 @@ Partial Class TenantInfo
         '
         'RectangleShape1
         '
+        Me.RectangleShape1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(357, 358)
+        Me.RectangleShape1.Location = New System.Drawing.Point(272, 358)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape1.Size = New System.Drawing.Size(83, 31)
@@ -435,18 +443,30 @@ Partial Class TenantInfo
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(797, 410)
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
         Me.ShapeContainer1.TabIndex = 87
         Me.ShapeContainer1.TabStop = False
         '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape2.CornerRadius = 11
+        Me.RectangleShape2.Location = New System.Drawing.Point(462, 358)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape2.Size = New System.Drawing.Size(131, 31)
+        '
         'Label11
         '
+        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(496, 362)
+        Me.Label11.Location = New System.Drawing.Point(468, 363)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(122, 21)
@@ -459,7 +479,7 @@ Partial Class TenantInfo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(797, 410)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox2)
@@ -516,5 +536,6 @@ Partial Class TenantInfo
     Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label17 As Label
+
+    Friend WithEvents RectangleShape2 As PowerPacks.RectangleShape
 End Class
