@@ -64,7 +64,7 @@ Partial Class Renting
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("宋体", 21.85714!)
+        Me.Label1.Font = New System.Drawing.Font("SimSun", 21.85714!)
         Me.Label1.Location = New System.Drawing.Point(207, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 30)
@@ -75,7 +75,7 @@ Partial Class Renting
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.Location = New System.Drawing.Point(67, 60)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 17)
@@ -85,7 +85,7 @@ Partial Class Renting
         'Bedroom
         '
         Me.Bedroom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Bedroom.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Bedroom.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Bedroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bedroom.FormattingEnabled = True
         Me.Bedroom.Items.AddRange(New Object() {"Any", "1", "2", "3", "4"})
@@ -96,7 +96,7 @@ Partial Class Renting
         '
         'ListBox1
         '
-        Me.ListBox1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.ListBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 17
         Me.ListBox1.Location = New System.Drawing.Point(17, 27)
@@ -108,7 +108,7 @@ Partial Class Renting
         'Bathroom
         '
         Me.Bathroom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Bathroom.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Bathroom.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Bathroom.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.Bathroom.FormattingEnabled = True
         Me.Bathroom.Items.AddRange(New Object() {"Any", "1", "2", "3"})
@@ -121,7 +121,7 @@ Partial Class Renting
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(146, 60)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(66, 17)
@@ -140,7 +140,7 @@ Partial Class Renting
         'price
         '
         Me.price.AutoSize = True
-        Me.price.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.price.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.price.Location = New System.Drawing.Point(227, 198)
         Me.price.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.price.Name = "price"
@@ -151,7 +151,7 @@ Partial Class Renting
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.Location = New System.Drawing.Point(161, 198)
         Me.Label6.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label6.Name = "Label6"
@@ -162,7 +162,7 @@ Partial Class Renting
         'patio
         '
         Me.patio.AutoSize = True
-        Me.patio.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.patio.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.patio.Location = New System.Drawing.Point(227, 165)
         Me.patio.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.patio.Name = "patio"
@@ -173,7 +173,7 @@ Partial Class Renting
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label7.Location = New System.Drawing.Point(161, 165)
         Me.Label7.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label7.Name = "Label7"
@@ -184,7 +184,7 @@ Partial Class Renting
         'den
         '
         Me.den.AutoSize = True
-        Me.den.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.den.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.den.Location = New System.Drawing.Point(227, 133)
         Me.den.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.den.Name = "den"
@@ -195,7 +195,7 @@ Partial Class Renting
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label8.Location = New System.Drawing.Point(161, 133)
         Me.Label8.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label8.Name = "Label8"
@@ -206,7 +206,7 @@ Partial Class Renting
         'sq
         '
         Me.sq.AutoSize = True
-        Me.sq.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.sq.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.sq.Location = New System.Drawing.Point(227, 102)
         Me.sq.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.sq.Name = "sq"
@@ -217,7 +217,7 @@ Partial Class Renting
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label9.Location = New System.Drawing.Point(140, 102)
         Me.Label9.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label9.Name = "Label9"
@@ -257,7 +257,7 @@ Partial Class Renting
         'Map
         '
         Me.Map.AutoSize = True
-        Me.Map.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Map.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Map.ForeColor = System.Drawing.SystemColors.Highlight
         Me.Map.Location = New System.Drawing.Point(263, 15)
         Me.Map.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
@@ -269,7 +269,7 @@ Partial Class Renting
         'BIDLabel
         '
         Me.BIDLabel.AutoSize = True
-        Me.BIDLabel.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.BIDLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BIDLabel.Location = New System.Drawing.Point(227, 15)
         Me.BIDLabel.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.BIDLabel.Name = "BIDLabel"
@@ -280,7 +280,7 @@ Partial Class Renting
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label14.Location = New System.Drawing.Point(150, 15)
         Me.Label14.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label14.Name = "Label14"
@@ -291,7 +291,7 @@ Partial Class Renting
         'bedroomLabel4
         '
         Me.bedroomLabel4.AutoSize = True
-        Me.bedroomLabel4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.bedroomLabel4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.bedroomLabel4.Location = New System.Drawing.Point(227, 42)
         Me.bedroomLabel4.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.bedroomLabel4.Name = "bedroomLabel4"
@@ -302,7 +302,7 @@ Partial Class Renting
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label10.Location = New System.Drawing.Point(146, 42)
         Me.Label10.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label10.Name = "Label10"
@@ -313,7 +313,7 @@ Partial Class Renting
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.Location = New System.Drawing.Point(146, 73)
         Me.Label11.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label11.Name = "Label11"
@@ -324,7 +324,7 @@ Partial Class Renting
         'bathroomLabel12
         '
         Me.bathroomLabel12.AutoSize = True
-        Me.bathroomLabel12.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.bathroomLabel12.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.bathroomLabel12.Location = New System.Drawing.Point(227, 73)
         Me.bathroomLabel12.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.bathroomLabel12.Name = "bathroomLabel12"
@@ -349,7 +349,7 @@ Partial Class Renting
         Me.OtherBuild.AutoSize = True
         Me.OtherBuild.BackColor = System.Drawing.Color.Transparent
         Me.OtherBuild.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.OtherBuild.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.OtherBuild.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.OtherBuild.Location = New System.Drawing.Point(211, 80)
         Me.OtherBuild.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.OtherBuild.Name = "OtherBuild"
@@ -403,7 +403,7 @@ Partial Class Renting
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(346, 74)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -416,7 +416,7 @@ Partial Class Renting
         '
         Me.Label12.AutoSize = True
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label12.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
         Me.Label12.Location = New System.Drawing.Point(207, 345)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -446,7 +446,7 @@ Partial Class Renting
         Me.Controls.Add(Me.ShapeContainer1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Renting"
-        Me.Text = "Renting"
+        Me.Text = " n"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
