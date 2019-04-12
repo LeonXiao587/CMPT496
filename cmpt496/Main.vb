@@ -100,4 +100,18 @@
         PictureBox1 = Nothing
         PictureBox3 = Nothing
     End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Me.Hide()
+        Announcement.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
+    End Sub
+
+    Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click
+        Me.Hide()
+        Announcement.Show()
+        PictureBox1 = Nothing
+        PictureBox3 = Nothing
+    End Sub
 End Class

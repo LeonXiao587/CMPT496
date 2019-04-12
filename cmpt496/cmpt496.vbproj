@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Announcement.Designer.vb">
+      <DependentUpon>Announcement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Announcement.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Billing_lease.Designer.vb">
       <DependentUpon>Billing_lease.vb</DependentUpon>
     </Compile>
@@ -211,6 +217,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Announcement.resx">
+      <DependentUpon>Announcement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Billing_lease.resx">
       <DependentUpon>Billing_lease.vb</DependentUpon>
     </EmbeddedResource>

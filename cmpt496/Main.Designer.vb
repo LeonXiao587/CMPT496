@@ -33,6 +33,7 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Building = New System.Windows.Forms.Label()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape3 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Managerect = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
@@ -42,6 +43,9 @@ Partial Class Main
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -137,10 +141,20 @@ Partial Class Main
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape3, Me.RectangleShape2, Me.Managerect, Me.RectangleShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape2, Me.Managerect, Me.RectangleShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(765, 391)
         Me.ShapeContainer1.TabIndex = 14
         Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape4
+        '
+        Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape4.CornerRadius = 11
+        Me.RectangleShape4.Location = New System.Drawing.Point(480, 251)
+        Me.RectangleShape4.Name = "RectangleShape4"
+        Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape4.Size = New System.Drawing.Size(135, 37)
         '
         'RectangleShape3
         '
@@ -157,7 +171,7 @@ Partial Class Main
         Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape2.CornerRadius = 11
-        Me.RectangleShape2.Location = New System.Drawing.Point(478, 181)
+        Me.RectangleShape2.Location = New System.Drawing.Point(478, 144)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape2.Size = New System.Drawing.Size(133, 35)
@@ -167,7 +181,7 @@ Partial Class Main
         Me.Managerect.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Managerect.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.Managerect.CornerRadius = 11
-        Me.Managerect.Location = New System.Drawing.Point(478, 272)
+        Me.Managerect.Location = New System.Drawing.Point(478, 196)
         Me.Managerect.Name = "Managerect"
         Me.Managerect.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.Managerect.Size = New System.Drawing.Size(133, 35)
@@ -201,7 +215,7 @@ Partial Class Main
         Me.ManageLabel5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ManageLabel5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.ManageLabel5.ForeColor = System.Drawing.Color.White
-        Me.ManageLabel5.Location = New System.Drawing.Point(488, 278)
+        Me.ManageLabel5.Location = New System.Drawing.Point(488, 202)
         Me.ManageLabel5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.ManageLabel5.Name = "ManageLabel5"
         Me.ManageLabel5.Size = New System.Drawing.Size(113, 21)
@@ -214,7 +228,7 @@ Partial Class Main
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(517, 188)
+        Me.Label5.Location = New System.Drawing.Point(517, 149)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(56, 21)
@@ -246,6 +260,19 @@ Partial Class Main
         Me.PictureBox3.TabIndex = 78
         Me.PictureBox3.TabStop = False
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(484, 258)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(128, 21)
+        Me.Label7.TabIndex = 79
+        Me.Label7.Text = "Announcement"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -253,6 +280,7 @@ Partial Class Main
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(765, 391)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -294,4 +322,8 @@ Partial Class Main
     Friend WithEvents RectangleShape3 As PowerPacks.RectangleShape
     Friend WithEvents Label6 As Label
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents RectangleShape4 As PowerPacks.RectangleShape
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents Label7 As Label
 End Class

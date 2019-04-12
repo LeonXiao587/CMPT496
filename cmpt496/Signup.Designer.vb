@@ -35,13 +35,11 @@ Partial Class Signup
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.password1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.last_name = New System.Windows.Forms.TextBox()
-        Me.staffid = New System.Windows.Forms.TextBox()
         Me.BID = New System.Windows.Forms.TextBox()
         Me.title = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -67,7 +65,7 @@ Partial Class Signup
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(22, 29)
+        Me.Label2.Location = New System.Drawing.Point(22, 52)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(95, 17)
         Me.Label2.TabIndex = 2
@@ -77,7 +75,7 @@ Partial Class Signup
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.Location = New System.Drawing.Point(22, 79)
+        Me.Label3.Location = New System.Drawing.Point(37, 102)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(64, 17)
         Me.Label3.TabIndex = 3
@@ -87,7 +85,7 @@ Partial Class Signup
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label5.Location = New System.Drawing.Point(22, 171)
+        Me.Label5.Location = New System.Drawing.Point(324, 149)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 17)
         Me.Label5.TabIndex = 5
@@ -97,7 +95,7 @@ Partial Class Signup
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label6.Location = New System.Drawing.Point(318, 29)
+        Me.Label6.Location = New System.Drawing.Point(312, 52)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(68, 17)
         Me.Label6.TabIndex = 6
@@ -107,7 +105,7 @@ Partial Class Signup
         '
         Me.username.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.username.ForeColor = System.Drawing.SystemColors.ButtonShadow
-        Me.username.Location = New System.Drawing.Point(144, 29)
+        Me.username.Location = New System.Drawing.Point(147, 52)
         Me.username.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.username.Name = "username"
         Me.username.Size = New System.Drawing.Size(159, 23)
@@ -118,7 +116,7 @@ Partial Class Signup
         '
         Me.password.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.password.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.password.Location = New System.Drawing.Point(144, 76)
+        Me.password.Location = New System.Drawing.Point(147, 99)
         Me.password.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(159, 23)
@@ -129,7 +127,7 @@ Partial Class Signup
         '
         Me.email.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.email.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.email.Location = New System.Drawing.Point(144, 163)
+        Me.email.Location = New System.Drawing.Point(403, 141)
         Me.email.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.email.Name = "email"
         Me.email.Size = New System.Drawing.Size(159, 23)
@@ -140,7 +138,7 @@ Partial Class Signup
         '
         Me.first_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.first_name.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.first_name.Location = New System.Drawing.Point(403, 29)
+        Me.first_name.Location = New System.Drawing.Point(403, 52)
         Me.first_name.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.first_name.Name = "first_name"
         Me.first_name.Size = New System.Drawing.Size(159, 23)
@@ -175,27 +173,17 @@ Partial Class Signup
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label7.Location = New System.Drawing.Point(318, 79)
+        Me.Label7.Location = New System.Drawing.Point(313, 102)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(67, 17)
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Last name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label8.Location = New System.Drawing.Point(318, 124)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 17)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Staff ID" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label9.Location = New System.Drawing.Point(318, 165)
+        Me.Label9.Location = New System.Drawing.Point(310, 188)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(72, 17)
         Me.Label9.TabIndex = 16
@@ -205,7 +193,7 @@ Partial Class Signup
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label10.Location = New System.Drawing.Point(22, 216)
+        Me.Label10.Location = New System.Drawing.Point(53, 191)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(32, 17)
         Me.Label10.TabIndex = 17
@@ -215,7 +203,7 @@ Partial Class Signup
         '
         Me.password1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.password1.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.password1.Location = New System.Drawing.Point(144, 121)
+        Me.password1.Location = New System.Drawing.Point(147, 144)
         Me.password1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.password1.Name = "password1"
         Me.password1.Size = New System.Drawing.Size(159, 23)
@@ -226,7 +214,7 @@ Partial Class Signup
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(22, 124)
+        Me.Label4.Location = New System.Drawing.Point(13, 147)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(113, 17)
         Me.Label4.TabIndex = 4
@@ -236,29 +224,18 @@ Partial Class Signup
         '
         Me.last_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.last_name.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.last_name.Location = New System.Drawing.Point(403, 76)
+        Me.last_name.Location = New System.Drawing.Point(403, 99)
         Me.last_name.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.last_name.Name = "last_name"
         Me.last_name.Size = New System.Drawing.Size(159, 23)
         Me.last_name.TabIndex = 18
         Me.last_name.Text = "Enter Last Name"
         '
-        'staffid
-        '
-        Me.staffid.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.staffid.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.staffid.Location = New System.Drawing.Point(403, 121)
-        Me.staffid.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
-        Me.staffid.Name = "staffid"
-        Me.staffid.Size = New System.Drawing.Size(159, 23)
-        Me.staffid.TabIndex = 19
-        Me.staffid.Text = "Enter Staff ID"
-        '
         'BID
         '
         Me.BID.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.BID.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.BID.Location = New System.Drawing.Point(403, 162)
+        Me.BID.Location = New System.Drawing.Point(403, 185)
         Me.BID.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.BID.Name = "BID"
         Me.BID.Size = New System.Drawing.Size(159, 23)
@@ -269,7 +246,7 @@ Partial Class Signup
         '
         Me.title.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.title.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.title.Location = New System.Drawing.Point(144, 215)
+        Me.title.Location = New System.Drawing.Point(147, 188)
         Me.title.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.title.Name = "title"
         Me.title.Size = New System.Drawing.Size(159, 23)
@@ -297,7 +274,6 @@ Partial Class Signup
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.BID)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.staffid)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.last_name)
         Me.GroupBox1.Controls.Add(Me.username)
@@ -305,7 +281,6 @@ Partial Class Signup
         Me.GroupBox1.Controls.Add(Me.password)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.password1)
-        Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.first_name)
@@ -364,13 +339,11 @@ Partial Class Signup
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents password1 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents last_name As TextBox
-    Friend WithEvents staffid As TextBox
     Friend WithEvents BID As TextBox
     Friend WithEvents title As TextBox
     Friend WithEvents PictureBox2 As PictureBox

@@ -1,11 +1,14 @@
 ﻿Public Class Signup
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-        If password.Text = password1.Text Then
-            login.SQL.ExecQuery("INSERT INTO Management(StaffID, Fname, Lname, Email, SigninPassword, BID, Title, Username)
-                             VALUES ('" & staffid.Text & "','" & first_name.Text & "','" & last_name.Text & "','" & email.Text & "','" & password.Text & "','" & BID.Text & "','" & title.Text & "','" & username.Text & "')"
-                        )
+        If first_name.Text = "" Or last_name.Text = "" Or email.Text = "" Then
+            MsgBox("Some fields missing!")
+        Else
+            If password.Text = password1.Text Then
+                login.SQL.ExecQuery("INSERT INTO Management(Fname, Lname, Email, SigninPassword, BID, Title, Username)
+                             VALUES (" & first_name.Text & "','" & last_name.Text & "','" & email.Text & "','" & password.Text & "','" & BID.Text & "','" & title.Text & "','" & username.Text & "')"
+                    )
+            End If
         End If
         'login.SQL.ExecQuery("INSERT INTO Management(StaffID, Fname, Lname, Email, SigninPassword, BID, Title, Username)
         'VALUES ('" & staffid.Text & "','" & first_name.Text & "','" & last_name.Text & "','" & email.Text & "','" & password.Text & "','" & BID.Text & "','" & title.Text & "','" & username.Text & "')"
@@ -13,7 +16,6 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        staffid.Clear()
         first_name.Clear()
         last_name.Clear()
         BID.Clear()
