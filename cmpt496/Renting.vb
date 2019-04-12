@@ -125,10 +125,16 @@ Public Class Renting
 
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
-        Me.Hide()
-        TenantInfo.Show()
-        PictureBox1 = Nothing
-        PictureBox2 = Nothing
+        If ListBox1.Items.Count = 0 Then
+            MsgBox("No Result!")
+        Else
+            TenantInfo.Show()
+            PictureBox1 = Nothing
+            PictureBox2 = Nothing
+            Me.Hide()
+        End If
+
+
     End Sub
 
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
