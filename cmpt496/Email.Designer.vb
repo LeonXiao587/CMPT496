@@ -22,6 +22,7 @@ Partial Class Email
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Email))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -34,6 +35,10 @@ Partial Class Email
         Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -98,6 +103,7 @@ Partial Class Email
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 79
         Me.PictureBox3.TabStop = False
+        Me.ToolTip2.SetToolTip(Me.PictureBox3, "Click to go back to Main screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox1
         '
@@ -110,6 +116,7 @@ Partial Class Email
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 80
         Me.PictureBox1.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox1, "Click to go back to Billing." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'RectangleShape1
         '
@@ -171,6 +178,22 @@ Partial Class Email
         Me.Label3.TabIndex = 83
         Me.Label3.Text = "Send Email"
         '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BillingButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "MainButton"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "MainButton"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "MainButton"
+        '
         'Email
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -208,4 +231,8 @@ Partial Class Email
     Friend WithEvents RectangleShape2 As PowerPacks.RectangleShape
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
 End Class

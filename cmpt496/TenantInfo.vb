@@ -1,33 +1,55 @@
-﻿Public Class TenantInfo
+﻿Imports System.Text.RegularExpressions
+
+Public Class TenantInfo
+
+    Dim C_REGULAR_Letters As New Regex("^[A-Za-z]+$")
+
     Private Sub ContractForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim TT As ToolTip
         TT = New ToolTip With {
-            .InitialDelay = 0, '出现前的延时（毫秒）
+            .InitialDelay = 0, 'tip time
             .AutoPopDelay = 5000, '显示出气泡后的延时时间（毫秒）
-            .ToolTipTitle = "提示" '提示信息标题
+            .ToolTipTitle = "Tips" 'tipstitle
             }
         TT.SetToolTip(incomeLabel, "Annual Income ")
         unitlable.Text = Renting.ListBox1.SelectedItem(0).ToString
     End Sub
 
+
+    'check data type and submit to database
     Private Sub SubmitTenant()
-        If first_name.Text = "" Or last_name.Text = "" Or phone.Text = "" Or email.Text = "" Or id.Text = "" Then
-            MsgBox("Input all fields please!")
+
+        'check for name validation
+        If C_REGULAR_Letters.IsMatch(first_name.Text） = False Or C_REGULAR_Letters.IsMatch(last_name.Text） = False Then
+            MsgBox("Input vaild name")
+            Exit Sub
+        End If
+        If first_name.Text = "" Or last_name.Text = "" Or phone.Text = "" Or email.Text = "" Or id.Text = "" Or incomeBox1.Text = "" Then
+            MsgBox("Input All * Information Fields Please!")
         Else
             Dim uname As String
             uname = last_name.Text + unitlable.Text
             Dim pwd As String
             pwd = first_name.Text + unitlable.Text
-            If IsNumeric(phone.Text) Or IsNumeric(id.Text) Then
+            'if the username already exist, add last 4 number of the phonenumber to the username
+            If last_name.Text Or first_name.Text Then
 
-                login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values ('" + phone.Text.ToString + "','" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text.ToString + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")
-            Else
-                MsgBox("Please input Numbers for ID and Phone Number and Income!")
             End If
-            MsgBox("Your Username: " & uname + vbCrLf + "Password: " + pwd)
+
+            If IsNumeric(phone.Text) Or IsNumeric(id.Text) Then
+                login.SQL.ExecQuery("select * from tenant where username = '" + uname + "'")
+                If login.SQL.DBDS.Tables(0).Rows.Count = 0 Then
+                Else
+                    uname = uname + Microsoft.VisualBasic.Right(phone.Text.ToString, 4)
+                End If
+                login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values ('" + phone.Text.ToString + "','" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text.ToString + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")
+                MsgBox("Please Inform Customer:" + vbCrLf + "Username: " & uname + vbCrLf + "Password: " + pwd)
                 LeaseForm.Show()
                 Me.Hide()
+            Else
+                MsgBox("Please Input Number for ID, Phone Number, and Income!")
             End If
+        End If
 
 
     End Sub
@@ -42,12 +64,8 @@
         Main.Show()
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
 
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
-        Me.Hide()
         SubmitTenant()
         PictureBox1 = Nothing
         PictureBox2 = Nothing
@@ -55,7 +73,6 @@
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-        Me.Hide()
         SubmitTenant()
         PictureBox1 = Nothing
         PictureBox2 = Nothing

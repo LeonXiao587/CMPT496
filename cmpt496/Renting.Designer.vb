@@ -66,6 +66,7 @@ Partial Class Renting
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("SimSun", 21.85714!)
+
         Me.Label1.Location = New System.Drawing.Point(361, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 30)
@@ -458,7 +459,7 @@ Partial Class Renting
         Me.Controls.Add(Me.ShapeContainer1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Renting"
-        Me.Text = "Renting"
+        Me.Text = " n"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

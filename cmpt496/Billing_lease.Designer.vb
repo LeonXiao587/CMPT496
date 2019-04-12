@@ -43,6 +43,12 @@ Partial Class Billing_lease
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip8 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,6 +76,7 @@ Partial Class Billing_lease
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(230, 21)
         Me.TextBox1.TabIndex = 17
+        Me.ToolTip3.SetToolTip(Me.TextBox1, "Enter your text to search")
         '
         'StartDate
         '
@@ -175,6 +182,7 @@ Partial Class Billing_lease
         Me.Label2.Size = New System.Drawing.Size(61, 21)
         Me.Label2.TabIndex = 30
         Me.Label2.Text = "Search"
+        Me.ToolTip4.SetToolTip(Me.Label2, "Click to search input text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label3
         '
@@ -189,6 +197,7 @@ Partial Class Billing_lease
         Me.Label3.Size = New System.Drawing.Size(49, 21)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Clear"
+        Me.ToolTip5.SetToolTip(Me.Label3, "Click to clear input text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label5
         '
@@ -197,12 +206,13 @@ Partial Class Billing_lease
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(259, 428)
+        Me.Label5.Location = New System.Drawing.Point(256, 428)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(77, 21)
         Me.Label5.TabIndex = 34
         Me.Label5.Text = "Payment"
+        Me.ToolTip6.SetToolTip(Me.Label5, "Click to view payment information of selected row." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label6
         '
@@ -217,6 +227,7 @@ Partial Class Billing_lease
         Me.Label6.Size = New System.Drawing.Size(94, 21)
         Me.Label6.TabIndex = 35
         Me.Label6.Text = "View Lease"
+        Me.ToolTip7.SetToolTip(Me.Label6, "Click to view lease information." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox2
         '
@@ -229,6 +240,7 @@ Partial Class Billing_lease
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 77
         Me.PictureBox2.TabStop = False
+        Me.ToolTip8.SetToolTip(Me.PictureBox2, "Click to go back to Main screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox1
         '
@@ -255,6 +267,30 @@ Partial Class Billing_lease
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 79
         Me.PictureBox3.TabStop = False
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "Searchbox"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "SearchButton"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "ClearButton"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "PaymentButton"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "LeaseButton"
+        '
+        'ToolTip8
+        '
+        Me.ToolTip8.ToolTipTitle = "MainButton"
         '
         'Billing_lease
         '
@@ -304,4 +340,10 @@ Partial Class Billing_lease
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
+    Friend WithEvents ToolTip8 As ToolTip
 End Class

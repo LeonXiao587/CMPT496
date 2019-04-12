@@ -22,6 +22,7 @@ Partial Class Cosigner
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Cosigner))
         Me.incomeBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -53,6 +54,9 @@ Partial Class Cosigner
         Me.unitlable = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -153,6 +157,7 @@ Partial Class Cosigner
         Me.GroupBox2.TabIndex = 91
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Other information"
+        Me.ToolTip2.SetToolTip(Me.GroupBox2, "Other info." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'companyBox5
         '
@@ -206,6 +211,7 @@ Partial Class Cosigner
         Me.GroupBox1.TabIndex = 90
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Co-signer Information"
+        Me.ToolTip2.SetToolTip(Me.GroupBox1, "Cosigner Form." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label16
         '
@@ -371,6 +377,7 @@ Partial Class Cosigner
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 87
         Me.PictureBox2.TabStop = False
+        Me.ToolTip3.SetToolTip(Me.PictureBox2, "Click to go back." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'unitlable
         '
@@ -411,6 +418,19 @@ Partial Class Cosigner
         Me.Label11.Size = New System.Drawing.Size(64, 21)
         Me.Label11.TabIndex = 94
         Me.Label11.Text = "Submit"
+        Me.ToolTip1.SetToolTip(Me.Label11, "Click to submit the whole form." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "SubmitButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Form Info."
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "BackButton"
         '
         'Cosigner
         '
@@ -468,4 +488,7 @@ Partial Class Cosigner
     Friend WithEvents unitlable As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
 End Class
