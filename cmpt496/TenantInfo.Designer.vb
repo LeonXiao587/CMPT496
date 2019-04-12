@@ -55,6 +55,7 @@ Partial Class TenantInfo
         Me.Label4 = New System.Windows.Forms.Label()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label11 = New System.Windows.Forms.Label()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -76,9 +77,10 @@ Partial Class TenantInfo
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label1.Location = New System.Drawing.Point(325, 23)
         Me.Label1.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.Label1.Name = "Label1"
@@ -88,9 +90,10 @@ Partial Class TenantInfo
         '
         'unitlable
         '
+        Me.unitlable.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.unitlable.AutoSize = True
         Me.unitlable.BackColor = System.Drawing.Color.Transparent
-        Me.unitlable.Font = New System.Drawing.Font("微软雅黑", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.unitlable.Font = New System.Drawing.Font("Microsoft YaHei", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.unitlable.Location = New System.Drawing.Point(396, 23)
         Me.unitlable.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
         Me.unitlable.Name = "unitlable"
@@ -100,7 +103,7 @@ Partial Class TenantInfo
         '
         'phone
         '
-        Me.phone.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.phone.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.phone.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.phone.Location = New System.Drawing.Point(117, 165)
         Me.phone.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -110,7 +113,7 @@ Partial Class TenantInfo
         '
         'id
         '
-        Me.id.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.id.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.id.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.id.Location = New System.Drawing.Point(117, 125)
         Me.id.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -120,7 +123,7 @@ Partial Class TenantInfo
         '
         'last_name
         '
-        Me.last_name.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.last_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.last_name.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.last_name.Location = New System.Drawing.Point(117, 83)
         Me.last_name.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -132,7 +135,7 @@ Partial Class TenantInfo
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label9.Location = New System.Drawing.Point(32, 168)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 17)
@@ -142,7 +145,7 @@ Partial Class TenantInfo
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label8.Location = New System.Drawing.Point(21, 128)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(73, 17)
@@ -152,7 +155,7 @@ Partial Class TenantInfo
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label7.Location = New System.Drawing.Point(21, 85)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(67, 17)
@@ -161,7 +164,7 @@ Partial Class TenantInfo
         '
         'first_name
         '
-        Me.first_name.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.first_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.first_name.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.first_name.Location = New System.Drawing.Point(117, 43)
         Me.first_name.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -173,7 +176,7 @@ Partial Class TenantInfo
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.Location = New System.Drawing.Point(21, 43)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(68, 17)
@@ -182,7 +185,7 @@ Partial Class TenantInfo
         '
         'email
         '
-        Me.email.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.email.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.email.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.email.Location = New System.Drawing.Point(117, 205)
         Me.email.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -194,7 +197,7 @@ Partial Class TenantInfo
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(32, 208)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(39, 17)
@@ -203,6 +206,7 @@ Partial Class TenantInfo
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
@@ -219,11 +223,11 @@ Partial Class TenantInfo
         Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.phone)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(84, 83)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(1)
         Me.GroupBox1.Size = New System.Drawing.Size(293, 259)
         Me.GroupBox1.TabIndex = 75
         Me.GroupBox1.TabStop = False
@@ -232,7 +236,7 @@ Partial Class TenantInfo
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label16.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label16.Location = New System.Drawing.Point(101, 208)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(13, 17)
@@ -242,7 +246,7 @@ Partial Class TenantInfo
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label15.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label15.Location = New System.Drawing.Point(101, 165)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(13, 17)
@@ -252,7 +256,7 @@ Partial Class TenantInfo
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label14.Location = New System.Drawing.Point(101, 128)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(13, 17)
@@ -262,7 +266,7 @@ Partial Class TenantInfo
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label13.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label13.Location = New System.Drawing.Point(101, 84)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(13, 17)
@@ -272,7 +276,7 @@ Partial Class TenantInfo
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label12.Location = New System.Drawing.Point(101, 43)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(13, 17)
@@ -281,10 +285,11 @@ Partial Class TenantInfo
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(286, 25)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(1)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(35, 35)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -293,6 +298,7 @@ Partial Class TenantInfo
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox2.Controls.Add(Me.incomeBox1)
         Me.GroupBox2.Controls.Add(Me.Label3)
@@ -302,11 +308,11 @@ Partial Class TenantInfo
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.occupationBox3)
         Me.GroupBox2.Controls.Add(Me.companyBox5)
-        Me.GroupBox2.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(420, 83)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(1)
         Me.GroupBox2.Size = New System.Drawing.Size(293, 259)
         Me.GroupBox2.TabIndex = 76
         Me.GroupBox2.TabStop = False
@@ -314,7 +320,7 @@ Partial Class TenantInfo
         '
         'incomeBox1
         '
-        Me.incomeBox1.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.incomeBox1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.incomeBox1.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.incomeBox1.Location = New System.Drawing.Point(117, 79)
         Me.incomeBox1.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -326,7 +332,7 @@ Partial Class TenantInfo
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.Location = New System.Drawing.Point(4, 43)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(109, 17)
@@ -335,7 +341,7 @@ Partial Class TenantInfo
         '
         'addressbox
         '
-        Me.addressbox.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.addressbox.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.addressbox.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.addressbox.Location = New System.Drawing.Point(117, 43)
         Me.addressbox.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -347,7 +353,7 @@ Partial Class TenantInfo
         'incomeLabel
         '
         Me.incomeLabel.AutoSize = True
-        Me.incomeLabel.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.incomeLabel.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.incomeLabel.Location = New System.Drawing.Point(32, 79)
         Me.incomeLabel.Name = "incomeLabel"
         Me.incomeLabel.Size = New System.Drawing.Size(51, 17)
@@ -357,7 +363,7 @@ Partial Class TenantInfo
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.Location = New System.Drawing.Point(21, 119)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(74, 17)
@@ -367,7 +373,7 @@ Partial Class TenantInfo
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label10.Location = New System.Drawing.Point(25, 156)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(63, 17)
@@ -376,7 +382,7 @@ Partial Class TenantInfo
         '
         'occupationBox3
         '
-        Me.occupationBox3.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.occupationBox3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.occupationBox3.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.occupationBox3.Location = New System.Drawing.Point(117, 115)
         Me.occupationBox3.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -387,7 +393,7 @@ Partial Class TenantInfo
         '
         'companyBox5
         '
-        Me.companyBox5.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.companyBox5.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.companyBox5.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.companyBox5.Location = New System.Drawing.Point(117, 154)
         Me.companyBox5.Margin = New System.Windows.Forms.Padding(1, 3, 1, 3)
@@ -398,11 +404,12 @@ Partial Class TenantInfo
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(366, 363)
+        Me.Label4.Location = New System.Drawing.Point(282, 363)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 21)
@@ -411,10 +418,11 @@ Partial Class TenantInfo
         '
         'RectangleShape1
         '
+        Me.RectangleShape1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(357, 358)
+        Me.RectangleShape1.Location = New System.Drawing.Point(272, 358)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape1.Size = New System.Drawing.Size(83, 31)
@@ -424,18 +432,30 @@ Partial Class TenantInfo
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(797, 410)
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
         Me.ShapeContainer1.TabIndex = 87
         Me.ShapeContainer1.TabStop = False
         '
+        'RectangleShape2
+        '
+        Me.RectangleShape2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape2.CornerRadius = 11
+        Me.RectangleShape2.Location = New System.Drawing.Point(462, 358)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape2.Size = New System.Drawing.Size(131, 31)
+        '
         'Label11
         '
+        Me.Label11.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label11.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(496, 362)
+        Me.Label11.Location = New System.Drawing.Point(468, 363)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(122, 21)
@@ -448,7 +468,7 @@ Partial Class TenantInfo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(797, 410)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox2)
@@ -458,7 +478,7 @@ Partial Class TenantInfo
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.ShapeContainer1)
-        Me.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
+        Me.Margin = New System.Windows.Forms.Padding(1)
         Me.Name = "TenantInfo"
         Me.Text = " "
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -505,4 +525,5 @@ Partial Class TenantInfo
     Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents Label11 As Label
+    Friend WithEvents RectangleShape2 As PowerPacks.RectangleShape
 End Class

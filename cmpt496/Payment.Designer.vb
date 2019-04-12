@@ -49,10 +49,11 @@ Partial Class Payment
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Font = New System.Drawing.Font("微软雅黑", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(380, 72)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label1.Location = New System.Drawing.Point(371, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(137, 36)
         Me.Label1.TabIndex = 0
@@ -62,7 +63,7 @@ Partial Class Payment
         '
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.Location = New System.Drawing.Point(100, 35)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 26)
@@ -73,7 +74,7 @@ Partial Class Payment
         '
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.Location = New System.Drawing.Point(98, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(73, 26)
@@ -84,7 +85,7 @@ Partial Class Payment
         '
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.Location = New System.Drawing.Point(85, 81)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(99, 26)
@@ -95,7 +96,7 @@ Partial Class Payment
         '
         Me.Label5.AutoSize = True
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label5.Location = New System.Drawing.Point(69, 173)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(142, 26)
@@ -106,7 +107,7 @@ Partial Class Payment
         '
         Me.Label6.AutoSize = True
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.Location = New System.Drawing.Point(107, 219)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(54, 26)
@@ -117,7 +118,7 @@ Partial Class Payment
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label7.Font = New System.Drawing.Font("SimSun", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label7.Location = New System.Drawing.Point(334, 39)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(49, 19)
@@ -128,7 +129,7 @@ Partial Class Payment
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label8.Font = New System.Drawing.Font("SimSun", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label8.Location = New System.Drawing.Point(314, 85)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(89, 19)
@@ -138,7 +139,7 @@ Partial Class Payment
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.TextBox1.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("SimSun", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(308, 223)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 29)
@@ -148,7 +149,7 @@ Partial Class Payment
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label10.Font = New System.Drawing.Font("SimSun", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label10.Location = New System.Drawing.Point(324, 177)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(69, 19)
@@ -159,7 +160,7 @@ Partial Class Payment
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("宋体", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label9.Font = New System.Drawing.Font("SimSun", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label9.Location = New System.Drawing.Point(329, 131)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(59, 19)
@@ -170,7 +171,7 @@ Partial Class Payment
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(115, 73)
+        Me.PictureBox2.Location = New System.Drawing.Point(71, 42)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
@@ -180,10 +181,11 @@ Partial Class Payment
         '
         'RectangleShape1
         '
+        Me.RectangleShape1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape1.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape1.CornerRadius = 11
-        Me.RectangleShape1.Location = New System.Drawing.Point(207, 445)
+        Me.RectangleShape1.Location = New System.Drawing.Point(153, 392)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape1.Size = New System.Drawing.Size(133, 35)
@@ -194,27 +196,29 @@ Partial Class Payment
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(891, 558)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
         Me.ShapeContainer1.TabIndex = 79
         Me.ShapeContainer1.TabStop = False
         '
         'RectangleShape2
         '
+        Me.RectangleShape2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape2.CornerRadius = 11
-        Me.RectangleShape2.Location = New System.Drawing.Point(551, 445)
+        Me.RectangleShape2.Location = New System.Drawing.Point(497, 392)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape2.Size = New System.Drawing.Size(133, 35)
         '
         'Submit
         '
+        Me.Submit.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Submit.AutoSize = True
         Me.Submit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Submit.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Submit.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Submit.ForeColor = System.Drawing.Color.White
-        Me.Submit.Location = New System.Drawing.Point(243, 451)
+        Me.Submit.Location = New System.Drawing.Point(190, 399)
         Me.Submit.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Submit.Name = "Submit"
         Me.Submit.Size = New System.Drawing.Size(64, 21)
@@ -223,11 +227,12 @@ Partial Class Payment
         '
         'SendEmail
         '
+        Me.SendEmail.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.SendEmail.AutoSize = True
         Me.SendEmail.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.SendEmail.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.SendEmail.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.SendEmail.ForeColor = System.Drawing.Color.White
-        Me.SendEmail.Location = New System.Drawing.Point(573, 451)
+        Me.SendEmail.Location = New System.Drawing.Point(518, 399)
         Me.SendEmail.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.SendEmail.Name = "SendEmail"
         Me.SendEmail.Size = New System.Drawing.Size(94, 21)
@@ -236,6 +241,7 @@ Partial Class Payment
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -247,19 +253,20 @@ Partial Class Payment
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Font = New System.Drawing.Font("微软雅黑", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(66, 157)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(120, 114)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(763, 261)
+        Me.GroupBox1.Size = New System.Drawing.Size(558, 261)
         Me.GroupBox1.TabIndex = 82
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment Form"
         '
         'PictureBox1
         '
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(341, 73)
+        Me.PictureBox1.Location = New System.Drawing.Point(332, 42)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(37, 35)
@@ -272,7 +279,7 @@ Partial Class Payment
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(891, 558)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.SendEmail)

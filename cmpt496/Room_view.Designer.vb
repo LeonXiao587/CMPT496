@@ -34,6 +34,7 @@ Partial Class Room_view
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,10 +45,11 @@ Partial Class Room_view
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(381, 48)
+        Me.Label1.Location = New System.Drawing.Point(356, 48)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(144, 36)
         Me.Label1.TabIndex = 0
@@ -55,7 +57,8 @@ Partial Class Room_view
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(88, 145)
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.Location = New System.Drawing.Point(63, 145)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(187, 152)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -64,7 +67,8 @@ Partial Class Room_view
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(312, 145)
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox2.Location = New System.Drawing.Point(287, 145)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(202, 152)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -73,7 +77,8 @@ Partial Class Room_view
         '
         'PictureBox3
         '
-        Me.PictureBox3.Location = New System.Drawing.Point(545, 145)
+        Me.PictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox3.Location = New System.Drawing.Point(520, 145)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(202, 152)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -82,9 +87,10 @@ Partial Class Room_view
         '
         'PictureBox4
         '
+        Me.PictureBox4.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(339, 48)
+        Me.PictureBox4.Location = New System.Drawing.Point(314, 48)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(37, 35)
@@ -94,9 +100,10 @@ Partial Class Room_view
         '
         'PictureBox5
         '
+        Me.PictureBox5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(736, 48)
+        Me.PictureBox5.Location = New System.Drawing.Point(697, 49)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(37, 35)
@@ -108,7 +115,7 @@ Partial Class Room_view
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(64, 48)
+        Me.PictureBox6.Location = New System.Drawing.Point(51, 48)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(37, 35)
@@ -118,11 +125,12 @@ Partial Class Room_view
         '
         'Label2
         '
+        Me.Label2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(122, 326)
+        Me.Label2.Location = New System.Drawing.Point(93, 357)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(119, 31)
         Me.Label2.TabIndex = 82
@@ -130,11 +138,12 @@ Partial Class Room_view
         '
         'Label3
         '
+        Me.Label3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(350, 326)
+        Me.Label3.Location = New System.Drawing.Point(321, 357)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(127, 31)
         Me.Label3.TabIndex = 83
@@ -142,11 +151,12 @@ Partial Class Room_view
         '
         'Label4
         '
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(568, 326)
+        Me.Label4.Location = New System.Drawing.Point(539, 357)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(156, 31)
         Me.Label4.TabIndex = 84
@@ -154,19 +164,34 @@ Partial Class Room_view
         '
         'ComboBox1
         '
+        Me.ComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Single Bedroom", "Two Bedrooms", "Others"})
-        Me.ComboBox1.Location = New System.Drawing.Point(301, 106)
+        Me.ComboBox1.Location = New System.Drawing.Point(276, 106)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(233, 20)
         Me.ComboBox1.TabIndex = 85
+        '
+        'Label14
+        '
+        Me.Label14.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label14.Location = New System.Drawing.Point(192, 106)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(1, 0, 1, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(75, 17)
+        Me.Label14.TabIndex = 86
+        Me.Label14.Text = "Room Type"
         '
         'Room_view
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(834, 465)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -203,4 +228,5 @@ Partial Class Room_view
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label14 As Label
 End Class

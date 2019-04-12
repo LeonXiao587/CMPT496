@@ -52,10 +52,11 @@ Partial Class Signup
         '
         'Label1
         '
+        Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label1.Location = New System.Drawing.Point(291, 61)
+        Me.Label1.Location = New System.Drawing.Point(285, 61)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(252, 36)
         Me.Label1.TabIndex = 0
@@ -147,10 +148,11 @@ Partial Class Signup
         '
         'Button2
         '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(232, 359)
+        Me.Button2.Location = New System.Drawing.Point(226, 364)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 32)
         Me.Button2.TabIndex = 12
@@ -159,10 +161,11 @@ Partial Class Signup
         '
         'Button3
         '
+        Me.Button3.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(528, 359)
+        Me.Button3.Location = New System.Drawing.Point(522, 364)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 32)
         Me.Button3.TabIndex = 13
@@ -255,9 +258,10 @@ Partial Class Signup
         '
         'PictureBox2
         '
+        Me.PictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(249, 61)
+        Me.PictureBox2.Location = New System.Drawing.Point(243, 61)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(37, 35)
@@ -267,6 +271,7 @@ Partial Class Signup
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label3)
@@ -285,7 +290,7 @@ Partial Class Signup
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.first_name)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(123, 103)
+        Me.GroupBox1.Location = New System.Drawing.Point(117, 105)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(589, 250)
         Me.GroupBox1.TabIndex = 79
@@ -296,7 +301,7 @@ Partial Class Signup
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(85, 61)
+        Me.PictureBox6.Location = New System.Drawing.Point(79, 61)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(37, 35)
@@ -309,7 +314,7 @@ Partial Class Signup
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.ClientSize = New System.Drawing.Size(834, 511)
+        Me.ClientSize = New System.Drawing.Size(784, 461)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
