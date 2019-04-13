@@ -22,6 +22,7 @@ Partial Class Payment
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Payment))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -42,6 +43,10 @@ Partial Class Payment
         Me.SendEmail = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -178,6 +183,7 @@ Partial Class Payment
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 78
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back to Billing Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'RectangleShape1
         '
@@ -224,6 +230,7 @@ Partial Class Payment
         Me.Submit.Size = New System.Drawing.Size(64, 21)
         Me.Submit.TabIndex = 80
         Me.Submit.Text = "Submit"
+        Me.ToolTip3.SetToolTip(Me.Submit, "Click to Submit Paid Amount." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'SendEmail
         '
@@ -238,6 +245,7 @@ Partial Class Payment
         Me.SendEmail.Size = New System.Drawing.Size(94, 21)
         Me.SendEmail.TabIndex = 81
         Me.SendEmail.Text = "Send Email"
+        Me.ToolTip4.SetToolTip(Me.SendEmail, "Click to View Send Email Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'GroupBox1
         '
@@ -260,6 +268,7 @@ Partial Class Payment
         Me.GroupBox1.TabIndex = 82
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Payment Form"
+        Me.ToolTip2.SetToolTip(Me.GroupBox1, "Payment Information, Please input your Paid Amount." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox1
         '
@@ -273,6 +282,22 @@ Partial Class Payment
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 83
         Me.PictureBox1.TabStop = False
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Payment Form"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "Submit Button"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "SendEmail Button"
         '
         'Payment
         '
@@ -317,4 +342,8 @@ Partial Class Payment
     Friend WithEvents SendEmail As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
 End Class

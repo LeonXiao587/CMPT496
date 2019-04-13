@@ -22,6 +22,7 @@ Partial Class Parking
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Parking))
         Me.ParkingType = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -49,6 +50,13 @@ Partial Class Parking
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Parkinglist, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,6 +123,7 @@ Partial Class Parking
         Me.Label3.Size = New System.Drawing.Size(73, 20)
         Me.Label3.TabIndex = 79
         Me.Label3.Text = "Building: "
+        Me.ToolTip4.SetToolTip(Me.Label3, "Current Building Number." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Parkinglist
         '
@@ -221,6 +230,7 @@ Partial Class Parking
         Me.Label7.Size = New System.Drawing.Size(64, 20)
         Me.Label7.TabIndex = 91
         Me.Label7.Text = "Covered"
+        Me.ToolTip5.SetToolTip(Me.Label7, "Covered Parking Rate." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Orate
         '
@@ -243,6 +253,7 @@ Partial Class Parking
         Me.Label8.Size = New System.Drawing.Size(61, 20)
         Me.Label8.TabIndex = 93
         Me.Label8.Text = "Outside"
+        Me.ToolTip5.SetToolTip(Me.Label8, "Outside Parking Rate." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'RectangleShape2
         '
@@ -311,6 +322,7 @@ Partial Class Parking
         Me.Label9.Size = New System.Drawing.Size(97, 21)
         Me.Label9.TabIndex = 95
         Me.Label9.Text = "Rate Adjust"
+        Me.ToolTip6.SetToolTip(Me.Label9, "Click to Adjust Parking Rate." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label10
         '
@@ -325,6 +337,7 @@ Partial Class Parking
         Me.Label10.Size = New System.Drawing.Size(47, 21)
         Me.Label10.TabIndex = 96
         Me.Label10.Text = "Load"
+        Me.ToolTip3.SetToolTip(Me.Label10, "Click to Load selected Stall Type and Status." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox2
         '
@@ -337,6 +350,7 @@ Partial Class Parking
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 97
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back to Management Option screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label11
         '
@@ -351,6 +365,7 @@ Partial Class Parking
         Me.Label11.Size = New System.Drawing.Size(61, 21)
         Me.Label11.TabIndex = 98
         Me.Label11.Text = "Search"
+        Me.ToolTip2.SetToolTip(Me.Label11, "Click to Search Inputed text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label12
         '
@@ -365,6 +380,35 @@ Partial Class Parking
         Me.Label12.Size = New System.Drawing.Size(39, 21)
         Me.Label12.TabIndex = 99
         Me.Label12.Text = "Edit"
+        Me.ToolTip7.SetToolTip(Me.Label12, "Click to Edit Table information." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "SearchButton"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "LoadButton"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Building"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "Parking Rate"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "Rate Adjust Button"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "EditButton"
         '
         'Parking
         '
@@ -429,4 +473,11 @@ Partial Class Parking
     Friend WithEvents Label11 As Label
     Friend WithEvents RectangleShape4 As PowerPacks.RectangleShape
     Friend WithEvents Label12 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
 End Class

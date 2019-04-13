@@ -22,6 +22,7 @@ Partial Class login
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim Label2 As System.Windows.Forms.Label
         Dim Label3 As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
@@ -31,6 +32,10 @@ Partial Class login
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.username = New System.Windows.Forms.TextBox()
         Me.password = New System.Windows.Forms.TextBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
         Label2 = New System.Windows.Forms.Label()
         Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -67,6 +72,7 @@ Partial Class login
         Me.Button1.Size = New System.Drawing.Size(75, 36)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Sign in"
+        Me.ToolTip3.SetToolTip(Me.Button1, "Click to Sign in." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -80,6 +86,7 @@ Partial Class login
         Me.Button2.Size = New System.Drawing.Size(75, 36)
         Me.Button2.TabIndex = 4
         Me.Button2.Text = "Clear"
+        Me.ToolTip4.SetToolTip(Me.Button2, "Click to Clear input text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label1
@@ -111,6 +118,7 @@ Partial Class login
         Me.username.Size = New System.Drawing.Size(68, 21)
         Me.username.TabIndex = 8
         Me.username.Text = "tt"
+        Me.ToolTip1.SetToolTip(Me.username, "Input your Username.")
         '
         'password
         '
@@ -121,7 +129,24 @@ Partial Class login
         Me.password.Size = New System.Drawing.Size(68, 21)
         Me.password.TabIndex = 9
         Me.password.Text = "ttt"
+        Me.ToolTip2.SetToolTip(Me.password, "Input your Password." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.password.UseSystemPasswordChar = True
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "Username"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Password"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "SigninButton"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "ClearButton"
         '
         'login
         '
@@ -152,4 +177,8 @@ Partial Class login
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents username As TextBox
     Friend WithEvents password As TextBox
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
 End Class

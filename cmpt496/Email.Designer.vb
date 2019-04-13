@@ -39,6 +39,7 @@ Partial Class Email
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -65,6 +66,7 @@ Partial Class Email
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 21)
         Me.DateTimePicker1.TabIndex = 5
+        Me.ToolTip5.SetToolTip(Me.DateTimePicker1, "Select date to view." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.DateTimePicker1.Value = New Date(2019, 3, 31, 0, 0, 0, 0)
         '
         'DataGridView1
@@ -157,12 +159,13 @@ Partial Class Email
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(577, 98)
+        Me.Label2.Location = New System.Drawing.Point(579, 98)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(47, 21)
         Me.Label2.TabIndex = 82
         Me.Label2.Text = "View"
+        Me.ToolTip3.SetToolTip(Me.Label2, "Click to view lease of selected date." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " ")
         '
         'Label3
         '
@@ -177,6 +180,7 @@ Partial Class Email
         Me.Label3.Size = New System.Drawing.Size(94, 21)
         Me.Label3.TabIndex = 83
         Me.Label3.Text = "Send Email"
+        Me.ToolTip4.SetToolTip(Me.Label3, "Click to send email of select row." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'ToolTip1
         '
@@ -188,11 +192,15 @@ Partial Class Email
         '
         'ToolTip3
         '
-        Me.ToolTip3.ToolTipTitle = "MainButton"
+        Me.ToolTip3.ToolTipTitle = "ViewButton"
         '
         'ToolTip4
         '
-        Me.ToolTip4.ToolTipTitle = "MainButton"
+        Me.ToolTip4.ToolTipTitle = "SendButton"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "Date"
         '
         'Email
         '
@@ -235,4 +243,5 @@ Partial Class Email
     Friend WithEvents ToolTip2 As ToolTip
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
 End Class

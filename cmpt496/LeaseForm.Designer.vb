@@ -22,6 +22,7 @@ Partial Class LeaseForm
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LeaseForm))
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -50,6 +51,9 @@ Partial Class LeaseForm
         Me.Label8 = New System.Windows.Forms.Label()
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -148,6 +152,7 @@ Partial Class LeaseForm
         Me.GroupBox1.TabIndex = 80
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Lease Information"
+        Me.ToolTip1.SetToolTip(Me.GroupBox1, "Please input Lease Information.")
         '
         'PlateBox2
         '
@@ -317,6 +322,7 @@ Partial Class LeaseForm
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 76
         Me.PictureBox2.TabStop = False
+        Me.ToolTip2.SetToolTip(Me.PictureBox2, "Click to go back to Main screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox1
         '
@@ -337,12 +343,13 @@ Partial Class LeaseForm
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(365, 365)
+        Me.Label8.Location = New System.Drawing.Point(366, 365)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(54, 21)
         Me.Label8.TabIndex = 85
         Me.Label8.Text = "Finish"
+        Me.ToolTip3.SetToolTip(Me.Label8, "Click to Finish Editing Lease")
         '
         'RectangleShape1
         '
@@ -365,6 +372,18 @@ Partial Class LeaseForm
         Me.ShapeContainer1.TabIndex = 86
         Me.ShapeContainer1.TabStop = False
         '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "Lease Information"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "MainButton"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "FinishButton"
+        '
         'LeaseForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
@@ -382,7 +401,7 @@ Partial Class LeaseForm
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Margin = New System.Windows.Forms.Padding(1)
         Me.Name = "LeaseForm"
-        Me.Text = "  "
+        Me.Text = "  LeaseForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -419,4 +438,7 @@ Partial Class LeaseForm
     Friend WithEvents Label13 As Label
     Friend WithEvents MakeBox1 As TextBox
     Friend WithEvents Label9 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
 End Class

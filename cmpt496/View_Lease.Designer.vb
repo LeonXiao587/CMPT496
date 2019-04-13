@@ -22,6 +22,7 @@ Partial Class View_Lease
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(View_Lease))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -33,6 +34,12 @@ Partial Class View_Lease
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +57,7 @@ Partial Class View_Lease
         Me.Button1.Size = New System.Drawing.Size(90, 31)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Search"
+        Me.ToolTip3.SetToolTip(Me.Button1, "Click to Search Input text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button1.UseVisualStyleBackColor = False
         '
         'DataGridView1
@@ -99,6 +107,7 @@ Partial Class View_Lease
         Me.Button2.Size = New System.Drawing.Size(90, 34)
         Me.Button2.TabIndex = 81
         Me.Button2.Text = "Edit"
+        Me.ToolTip5.SetToolTip(Me.Button2, "Click to Edit Select Row." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button2.UseVisualStyleBackColor = False
         '
         'PictureBox2
@@ -112,6 +121,7 @@ Partial Class View_Lease
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 84
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back to Billing Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox3
         '
@@ -125,6 +135,7 @@ Partial Class View_Lease
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 85
         Me.PictureBox3.TabStop = False
+        Me.ToolTip4.SetToolTip(Me.PictureBox3, "Click to go bakc to Main Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox4
         '
@@ -147,6 +158,7 @@ Partial Class View_Lease
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(230, 21)
         Me.TextBox1.TabIndex = 86
+        Me.ToolTip2.SetToolTip(Me.TextBox1, "Please Input text to Search." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Button3
         '
@@ -158,7 +170,32 @@ Partial Class View_Lease
         Me.Button3.Size = New System.Drawing.Size(90, 34)
         Me.Button3.TabIndex = 88
         Me.Button3.Text = "Remove"
+        Me.ToolTip6.SetToolTip(Me.Button3, "Click to Remove Select Row." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "Back Button"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Search Box"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "Search Button"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Main Button"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "Edit Button"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "Remove Button"
         '
         'View_Lease
         '
@@ -198,4 +235,10 @@ Partial Class View_Lease
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button3 As Button
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
 End Class

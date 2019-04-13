@@ -22,6 +22,7 @@ Partial Class Renting
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Renting))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -54,7 +55,13 @@ Partial Class Renting
         Me.RectangleShape1 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +73,6 @@ Partial Class Renting
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("SimSun", 21.85714!)
-
         Me.Label1.Location = New System.Drawing.Point(361, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(118, 30)
@@ -97,6 +103,7 @@ Partial Class Renting
         Me.Bedroom.Name = "Bedroom"
         Me.Bedroom.Size = New System.Drawing.Size(79, 25)
         Me.Bedroom.TabIndex = 8
+        Me.ToolTip2.SetToolTip(Me.Bedroom, "Select Bedroom." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'ListBox1
         '
@@ -121,6 +128,7 @@ Partial Class Renting
         Me.Bathroom.Name = "Bathroom"
         Me.Bathroom.Size = New System.Drawing.Size(80, 25)
         Me.Bathroom.TabIndex = 14
+        Me.ToolTip2.SetToolTip(Me.Bathroom, "Select Bathroom." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label2
         '
@@ -260,6 +268,7 @@ Partial Class Renting
         Me.GroupBox1.TabIndex = 52
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Unit Info"
+        Me.ToolTip5.SetToolTip(Me.GroupBox1, "View Unit Information." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Map
         '
@@ -272,6 +281,7 @@ Partial Class Renting
         Me.Map.Size = New System.Drawing.Size(35, 17)
         Me.Map.TabIndex = 57
         Me.Map.Text = "Map"
+        Me.ToolTip6.SetToolTip(Me.Map, "Click to view on Map." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'BIDLabel
         '
@@ -350,6 +360,7 @@ Partial Class Renting
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 53
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back to Main Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'OtherBuild
         '
@@ -364,6 +375,7 @@ Partial Class Renting
         Me.OtherBuild.Size = New System.Drawing.Size(109, 21)
         Me.OtherBuild.TabIndex = 54
         Me.OtherBuild.Text = "Other Building"
+        Me.ToolTip3.SetToolTip(Me.OtherBuild, "Select Other Building." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.OtherBuild.UseVisualStyleBackColor = False
         '
         'PictureBox1
@@ -423,6 +435,7 @@ Partial Class Renting
         Me.Label4.Size = New System.Drawing.Size(48, 21)
         Me.Label4.TabIndex = 84
         Me.Label4.Text = "Filter"
+        Me.ToolTip4.SetToolTip(Me.Label4, "Click to Filter Selection.")
         '
         'Label12
         '
@@ -437,6 +450,35 @@ Partial Class Renting
         Me.Label12.Size = New System.Drawing.Size(43, 21)
         Me.Label12.TabIndex = 85
         Me.Label12.Text = "Sign"
+        Me.ToolTip7.SetToolTip(Me.Label12, "Click to Sign." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Select Item"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "OtherBuilding"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Filter Button"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "Unit Information"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "View Map"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "Sign Button"
         '
         'Renting
         '
@@ -459,7 +501,7 @@ Partial Class Renting
         Me.Controls.Add(Me.ShapeContainer1)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Renting"
-        Me.Text = " n"
+        Me.Text = "Renting"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -500,5 +542,11 @@ Partial Class Renting
     Friend WithEvents Label4 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents RectangleShape1 As PowerPacks.RectangleShape
-    Friend WithEvents ColorDialog1 As ColorDialog
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
 End Class

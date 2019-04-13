@@ -22,6 +22,7 @@ Partial Class Management
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Management))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
@@ -33,6 +34,13 @@ Partial Class Management
         Me.View = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,6 +68,7 @@ Partial Class Management
         Me.ComboBox2.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox2.TabIndex = 5
         Me.ComboBox2.Text = "Select Building"
+        Me.ToolTip3.SetToolTip(Me.ComboBox2, "Select Building Number." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'ComboBox1
         '
@@ -71,6 +80,7 @@ Partial Class Management
         Me.ComboBox1.Size = New System.Drawing.Size(144, 20)
         Me.ComboBox1.TabIndex = 5
         Me.ComboBox1.Text = "Select Staff"
+        Me.ToolTip2.SetToolTip(Me.ComboBox1, "Select Staff ID." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'DataGridView1
         '
@@ -93,6 +103,7 @@ Partial Class Management
         Me.Button1.Size = New System.Drawing.Size(75, 30)
         Me.Button1.TabIndex = 8
         Me.Button1.Text = "Edit"
+        Me.ToolTip6.SetToolTip(Me.Button1, "Click to Edit Employee information." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -105,6 +116,7 @@ Partial Class Management
         Me.Button2.Size = New System.Drawing.Size(75, 30)
         Me.Button2.TabIndex = 9
         Me.Button2.Text = "Remove"
+        Me.ToolTip7.SetToolTip(Me.Button2, "Click to Remove selected row in the table." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button2.UseVisualStyleBackColor = False
         '
         'ComboBox3
@@ -117,17 +129,19 @@ Partial Class Management
         Me.ComboBox3.Size = New System.Drawing.Size(157, 20)
         Me.ComboBox3.TabIndex = 11
         Me.ComboBox3.Text = "Select Name"
+        Me.ToolTip4.SetToolTip(Me.ComboBox3, "Select Employee Name." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'View
         '
         Me.View.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.View.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.View.ForeColor = System.Drawing.Color.White
-        Me.View.Location = New System.Drawing.Point(635, 106)
+        Me.View.Location = New System.Drawing.Point(633, 102)
         Me.View.Name = "View"
         Me.View.Size = New System.Drawing.Size(75, 30)
         Me.View.TabIndex = 12
         Me.View.Text = "View"
+        Me.ToolTip5.SetToolTip(Me.View, "Click to View Selected Employee." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.View.UseVisualStyleBackColor = False
         '
         'PictureBox2
@@ -154,6 +168,35 @@ Partial Class Management
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 82
         Me.PictureBox6.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox6, "Click to go back to Management Option." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Select Staff"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "Select Building"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Select Name"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "ViewButton"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "EditButton"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "RemoveButton"
         '
         'Management
         '
@@ -190,4 +233,11 @@ Partial Class Management
     Friend WithEvents View As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
 End Class

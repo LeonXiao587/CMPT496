@@ -46,6 +46,11 @@ Partial Class Main
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip8 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -101,10 +106,11 @@ Partial Class Main
         Me.LinkLabel1.TabIndex = 9
         Me.LinkLabel1.TabStop = True
         Me.LinkLabel1.Text = "Webpages"
+        Me.ToolTip8.SetToolTip(Me.LinkLabel1, "Click to view WebPages." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'ToolTip1
         '
-        Me.ToolTip1.ToolTipTitle = "Tooltip1"
+        Me.ToolTip1.ToolTipTitle = "SignOutButton"
         '
         'PictureBox2
         '
@@ -117,7 +123,7 @@ Partial Class Main
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 11
         Me.PictureBox2.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Back")
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to Sign Out." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label3
         '
@@ -130,6 +136,7 @@ Partial Class Main
         Me.Label3.Size = New System.Drawing.Size(65, 12)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Building: "
+        Me.ToolTip7.SetToolTip(Me.Label3, "Building Number of Current employee." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Building
         '
@@ -220,6 +227,7 @@ Partial Class Main
         Me.Label4.Size = New System.Drawing.Size(45, 21)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Rent"
+        Me.ToolTip3.SetToolTip(Me.Label4, "Click to view Rent Screen.")
         '
         'ManageLabel5
         '
@@ -234,6 +242,7 @@ Partial Class Main
         Me.ManageLabel5.Size = New System.Drawing.Size(113, 21)
         Me.ManageLabel5.TabIndex = 15
         Me.ManageLabel5.Text = "Management"
+        Me.ToolTip5.SetToolTip(Me.ManageLabel5, "Click to view Management Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label5
         '
@@ -248,6 +257,7 @@ Partial Class Main
         Me.Label5.Size = New System.Drawing.Size(56, 21)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Billing"
+        Me.ToolTip4.SetToolTip(Me.Label5, "Click to view Billing Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label6
         '
@@ -256,12 +266,13 @@ Partial Class Main
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(651, 32)
+        Me.Label6.Location = New System.Drawing.Point(649, 32)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(84, 21)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "New User"
+        Me.ToolTip2.SetToolTip(Me.Label6, "Click to Sign Up." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox3
         '
@@ -276,6 +287,14 @@ Partial Class Main
         Me.PictureBox3.TabIndex = 78
         Me.PictureBox3.TabStop = False
         '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "New User Button"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "RentButton"
+        '
         'Label7
         '
         Me.Label7.Anchor = System.Windows.Forms.AnchorStyles.None
@@ -289,6 +308,27 @@ Partial Class Main
         Me.Label7.Size = New System.Drawing.Size(128, 21)
         Me.Label7.TabIndex = 79
         Me.Label7.Text = "Announcement"
+        Me.ToolTip6.SetToolTip(Me.Label7, "Click to view Announcement Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "BillingButton"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "ManagementButton"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "AnnouncementButton"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "BuildingNO."
+        '
+        'ToolTip8
+        '
+        Me.ToolTip8.ToolTipTitle = "View WebPages"
         '
         'Main
         '
@@ -343,4 +383,9 @@ Partial Class Main
     Friend WithEvents ToolTip2 As ToolTip
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents Label7 As Label
+    Friend WithEvents ToolTip7 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip8 As ToolTip
 End Class

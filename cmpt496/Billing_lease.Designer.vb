@@ -312,7 +312,7 @@ Partial Class Billing_lease
         Me.Controls.Add(Me.StartDate)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Name = "Billing_lease"
-        Me.Text = "Billing_lease"
+        Me.Text = "Billing"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -129,8 +129,6 @@ Public Class Renting
             MsgBox("No Result!")
         Else
             TenantInfo.Show()
-            PictureBox1 = Nothing
-            PictureBox2 = Nothing
             Me.Hide()
         End If
 
@@ -140,8 +138,6 @@ Public Class Renting
     Private Sub RectangleShape1_Click(sender As Object, e As EventArgs) Handles RectangleShape1.Click
         Me.Hide()
         TenantInfo.Show()
-        PictureBox1 = Nothing
-        PictureBox2 = Nothing
     End Sub
 
 End Class

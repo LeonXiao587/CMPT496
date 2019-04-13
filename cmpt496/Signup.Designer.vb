@@ -22,6 +22,7 @@ Partial Class Signup
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Signup))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -45,6 +46,10 @@ Partial Class Signup
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -157,6 +162,7 @@ Partial Class Signup
         Me.Button2.Size = New System.Drawing.Size(75, 32)
         Me.Button2.TabIndex = 12
         Me.Button2.Text = "Sign Up"
+        Me.ToolTip3.SetToolTip(Me.Button2, "Click to Sign Up New user." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button3
@@ -170,6 +176,7 @@ Partial Class Signup
         Me.Button3.Size = New System.Drawing.Size(75, 32)
         Me.Button3.TabIndex = 13
         Me.Button3.Text = "Clear"
+        Me.ToolTip4.SetToolTip(Me.Button3, "Click to Clear all inputed Text.")
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Label7
@@ -296,6 +303,7 @@ Partial Class Signup
         Me.GroupBox1.TabIndex = 79
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Sign-up Form"
+        Me.ToolTip2.SetToolTip(Me.GroupBox1, "Please input information to Sign Up Form.")
         '
         'PictureBox6
         '
@@ -308,6 +316,23 @@ Partial Class Signup
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 82
         Me.PictureBox6.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox6, "Click to go back to Main Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "Back Button"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Sign Up Form"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "SignUp Button"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Clear Button"
         '
         'Signup
         '
@@ -354,4 +379,8 @@ Partial Class Signup
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
 End Class

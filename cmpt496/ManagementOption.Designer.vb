@@ -22,6 +22,7 @@ Partial Class ManagementOption
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ManagementOption))
         Me.EmployeeLabel4 = New System.Windows.Forms.Label()
         Me.UnitLabel1 = New System.Windows.Forms.Label()
@@ -36,6 +37,11 @@ Partial Class ManagementOption
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +60,7 @@ Partial Class ManagementOption
         Me.EmployeeLabel4.TabIndex = 11
         Me.EmployeeLabel4.Text = "Employee"
         Me.EmployeeLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTip2.SetToolTip(Me.EmployeeLabel4, "Click to view Employee Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'UnitLabel1
         '
@@ -68,6 +75,7 @@ Partial Class ManagementOption
         Me.UnitLabel1.TabIndex = 12
         Me.UnitLabel1.Text = "Unit"
         Me.UnitLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTip3.SetToolTip(Me.UnitLabel1, "Click to view Unit Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Parkinglable
         '
@@ -82,6 +90,7 @@ Partial Class ManagementOption
         Me.Parkinglable.TabIndex = 13
         Me.Parkinglable.Text = "Parking"
         Me.Parkinglable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTip5.SetToolTip(Me.Parkinglable, "Click to view Parking Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Leaselable
         '
@@ -96,6 +105,7 @@ Partial Class ManagementOption
         Me.Leaselable.TabIndex = 14
         Me.Leaselable.Text = "Lease Tenant"
         Me.Leaselable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ToolTip4.SetToolTip(Me.Leaselable, "Click to view Lease Tenant Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'RectangleShape1
         '
@@ -162,6 +172,7 @@ Partial Class ManagementOption
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 16
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back to Main screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label1
         '
@@ -199,6 +210,26 @@ Partial Class ManagementOption
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 80
         Me.PictureBox3.TabStop = False
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "EmployeeButton"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "UnitButton"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "Lease Teanant Button"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "Parking Button"
         '
         'ManagementOption
         '
@@ -239,4 +270,9 @@ Partial Class ManagementOption
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
 End Class

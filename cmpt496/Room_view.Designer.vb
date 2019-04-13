@@ -22,6 +22,7 @@ Partial Class Room_view
     '不要使用代码编辑器修改它。
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Room_view))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -35,6 +36,12 @@ Partial Class Room_view
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -110,6 +117,7 @@ Partial Class Room_view
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox5.TabIndex = 80
         Me.PictureBox5.TabStop = False
+        Me.ToolTip3.SetToolTip(Me.PictureBox5, "Click to go back to Main Screen." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox6
         '
@@ -122,6 +130,7 @@ Partial Class Room_view
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox6.TabIndex = 81
         Me.PictureBox6.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox6, "Click to go back to Management Option." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label2
         '
@@ -135,6 +144,7 @@ Partial Class Room_view
         Me.Label2.Size = New System.Drawing.Size(119, 31)
         Me.Label2.TabIndex = 82
         Me.Label2.Text = "Bedroom"
+        Me.ToolTip4.SetToolTip(Me.Label2, "Click to View Selected Bedroom." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label3
         '
@@ -148,6 +158,7 @@ Partial Class Room_view
         Me.Label3.Size = New System.Drawing.Size(127, 31)
         Me.Label3.TabIndex = 83
         Me.Label3.Text = "Bathroom"
+        Me.ToolTip5.SetToolTip(Me.Label3, "Click to View Selected Bathroom." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label4
         '
@@ -161,6 +172,7 @@ Partial Class Room_view
         Me.Label4.Size = New System.Drawing.Size(156, 31)
         Me.Label4.TabIndex = 84
         Me.Label4.Text = "Living Room"
+        Me.ToolTip6.SetToolTip(Me.Label4, "Click to View Selected Living Room." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'ComboBox1
         '
@@ -171,6 +183,7 @@ Partial Class Room_view
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(233, 20)
         Me.ComboBox1.TabIndex = 85
+        Me.ToolTip2.SetToolTip(Me.ComboBox1, "Select Room Type." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'Label14
         '
@@ -184,6 +197,30 @@ Partial Class Room_view
         Me.Label14.Size = New System.Drawing.Size(75, 17)
         Me.Label14.TabIndex = 86
         Me.Label14.Text = "Room Type"
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "Select Room Type."
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "Main Button"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "BedroomButton"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "BathroomButton"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "LivingRoom Button"
         '
         'Room_view
         '
@@ -229,4 +266,10 @@ Partial Class Room_view
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label14 As Label
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
 End Class
