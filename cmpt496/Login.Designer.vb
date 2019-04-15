@@ -28,7 +28,6 @@ Partial Class login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.username = New System.Windows.Forms.TextBox()
         Me.password = New System.Windows.Forms.TextBox()
@@ -89,22 +88,13 @@ Partial Class login
         Me.ToolTip4.SetToolTip(Me.Button2, "Click to Clear input text." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(325, 37)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 12)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "A.M.S"
-        '
         'PictureBox1
         '
         Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(177, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(430, 235)
+        Me.PictureBox1.Size = New System.Drawing.Size(760, 260)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 7
         Me.PictureBox1.TabStop = False
@@ -162,7 +152,6 @@ Partial Class login
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Label3)
         Me.Controls.Add(Label2)
-        Me.Controls.Add(Me.Label1)
         Me.DoubleBuffered = True
         Me.Name = "login"
         Me.Text = "Login"
@@ -173,7 +162,6 @@ Partial Class login
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents username As TextBox
     Friend WithEvents password As TextBox

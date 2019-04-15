@@ -36,12 +36,10 @@ Partial Class Signup
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.password1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.last_name = New System.Windows.Forms.TextBox()
-        Me.BID = New System.Windows.Forms.TextBox()
         Me.title = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -110,7 +108,7 @@ Partial Class Signup
         'username
         '
         Me.username.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.username.ForeColor = System.Drawing.SystemColors.ButtonShadow
+        Me.username.ForeColor = System.Drawing.Color.Black
         Me.username.Location = New System.Drawing.Point(147, 52)
         Me.username.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.username.Name = "username"
@@ -121,7 +119,7 @@ Partial Class Signup
         'password
         '
         Me.password.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.password.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.password.ForeColor = System.Drawing.Color.Black
         Me.password.Location = New System.Drawing.Point(147, 99)
         Me.password.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.password.Name = "password"
@@ -132,7 +130,7 @@ Partial Class Signup
         'email
         '
         Me.email.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.email.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.email.ForeColor = System.Drawing.Color.Black
         Me.email.Location = New System.Drawing.Point(403, 141)
         Me.email.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.email.Name = "email"
@@ -143,7 +141,7 @@ Partial Class Signup
         'first_name
         '
         Me.first_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.first_name.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.first_name.ForeColor = System.Drawing.Color.Black
         Me.first_name.Location = New System.Drawing.Point(403, 52)
         Me.first_name.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.first_name.Name = "first_name"
@@ -189,16 +187,6 @@ Partial Class Signup
         Me.Label7.TabIndex = 14
         Me.Label7.Text = "Last name" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label9.Location = New System.Drawing.Point(310, 188)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(72, 17)
-        Me.Label9.TabIndex = 16
-        Me.Label9.Text = "Building ID"
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -212,7 +200,7 @@ Partial Class Signup
         'password1
         '
         Me.password1.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.password1.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.password1.ForeColor = System.Drawing.Color.Black
         Me.password1.Location = New System.Drawing.Point(147, 144)
         Me.password1.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.password1.Name = "password1"
@@ -233,7 +221,7 @@ Partial Class Signup
         'last_name
         '
         Me.last_name.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.last_name.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.last_name.ForeColor = System.Drawing.Color.Black
         Me.last_name.Location = New System.Drawing.Point(403, 99)
         Me.last_name.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.last_name.Name = "last_name"
@@ -241,21 +229,10 @@ Partial Class Signup
         Me.last_name.TabIndex = 18
         Me.last_name.Text = "Enter Last Name"
         '
-        'BID
-        '
-        Me.BID.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.BID.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.BID.Location = New System.Drawing.Point(403, 185)
-        Me.BID.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
-        Me.BID.Name = "BID"
-        Me.BID.Size = New System.Drawing.Size(159, 23)
-        Me.BID.TabIndex = 20
-        Me.BID.Text = "Enter Building ID"
-        '
         'title
         '
         Me.title.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.title.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.title.ForeColor = System.Drawing.Color.Black
         Me.title.Location = New System.Drawing.Point(147, 188)
         Me.title.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.title.Name = "title"
@@ -284,14 +261,12 @@ Partial Class Signup
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.title)
         Me.GroupBox1.Controls.Add(Me.Label4)
-        Me.GroupBox1.Controls.Add(Me.BID)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.last_name)
         Me.GroupBox1.Controls.Add(Me.username)
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.password)
-        Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.password1)
         Me.GroupBox1.Controls.Add(Me.email)
         Me.GroupBox1.Controls.Add(Me.Label7)
@@ -369,12 +344,10 @@ Partial Class Signup
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents password1 As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents last_name As TextBox
-    Friend WithEvents BID As TextBox
     Friend WithEvents title As TextBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
