@@ -307,7 +307,9 @@ Partial Class ParkingChange
     Friend WithEvents Label4 As Label
     Friend WithEvents stallidLabel2 As Label
     Friend WithEvents Label9 As Label
+#Disable Warning BC40004 ' Member conflicts with member in the base type and should be declared 'Shadows'
     Friend WithEvents Cancelbutton As Label
+#Enable Warning BC40004 ' Member conflicts with member in the base type and should be declared 'Shadows'
     Friend WithEvents RectangleShape4 As PowerPacks.RectangleShape
     Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
     Friend WithEvents ShapeContainer2 As PowerPacks.ShapeContainer

@@ -22,6 +22,7 @@ Partial Class Announcement
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Announcement))
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -37,6 +38,14 @@ Partial Class Announcement
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip4 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ToolTip8 = New System.Windows.Forms.ToolTip(Me.components)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -52,6 +61,7 @@ Partial Class Announcement
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 12
         Me.PictureBox2.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox2, "Click to go back" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'PictureBox3
         '
@@ -100,6 +110,7 @@ Partial Class Announcement
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(130, 20)
         Me.ComboBox1.TabIndex = 84
+        Me.ToolTip2.SetToolTip(Me.ComboBox1, "Select a Floor number.")
         '
         'TextBox1
         '
@@ -108,6 +119,7 @@ Partial Class Announcement
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(361, 21)
         Me.TextBox1.TabIndex = 85
+        Me.ToolTip6.SetToolTip(Me.TextBox1, "Please Input your Email Subject.")
         '
         'Label4
         '
@@ -130,6 +142,7 @@ Partial Class Announcement
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(361, 232)
         Me.TextBox2.TabIndex = 89
+        Me.ToolTip7.SetToolTip(Me.TextBox2, "Please enter your Email Body.")
         '
         'Label7
         '
@@ -144,6 +157,7 @@ Partial Class Announcement
         Me.Label7.Size = New System.Drawing.Size(48, 21)
         Me.Label7.TabIndex = 90
         Me.Label7.Text = "Send"
+        Me.ToolTip8.SetToolTip(Me.Label7, "Click to send Email.")
         '
         'Label2
         '
@@ -177,6 +191,7 @@ Partial Class Announcement
         Me.CheckedListBox1.Name = "CheckedListBox1"
         Me.CheckedListBox1.Size = New System.Drawing.Size(130, 132)
         Me.CheckedListBox1.TabIndex = 93
+        Me.ToolTip3.SetToolTip(Me.CheckedListBox1, "Select a Unit Number to send Email.")
         '
         'Label6
         '
@@ -191,6 +206,7 @@ Partial Class Announcement
         Me.Label6.Size = New System.Drawing.Size(79, 21)
         Me.Label6.TabIndex = 94
         Me.Label6.Text = "Select All"
+        Me.ToolTip4.SetToolTip(Me.Label6, "Click to select all in the Check box.")
         '
         'Label8
         '
@@ -205,6 +221,39 @@ Partial Class Announcement
         Me.Label8.Size = New System.Drawing.Size(49, 21)
         Me.Label8.TabIndex = 95
         Me.Label8.Text = "Clear"
+        Me.ToolTip5.SetToolTip(Me.Label8, "Click to unselect All.")
+        '
+        'ToolTip1
+        '
+        Me.ToolTip1.ToolTipTitle = "BackButton"
+        '
+        'ToolTip2
+        '
+        Me.ToolTip2.ToolTipTitle = "SelectFloor"
+        '
+        'ToolTip3
+        '
+        Me.ToolTip3.ToolTipTitle = "SelectUnit"
+        '
+        'ToolTip4
+        '
+        Me.ToolTip4.ToolTipTitle = "SelectAll"
+        '
+        'ToolTip5
+        '
+        Me.ToolTip5.ToolTipTitle = "ClearButton"
+        '
+        'ToolTip6
+        '
+        Me.ToolTip6.ToolTipTitle = "Subject"
+        '
+        'ToolTip7
+        '
+        Me.ToolTip7.ToolTipTitle = "Body"
+        '
+        'ToolTip8
+        '
+        Me.ToolTip8.ToolTipTitle = "SendButton"
         '
         'Announcement
         '
@@ -249,4 +298,12 @@ Partial Class Announcement
     Friend WithEvents CheckedListBox1 As CheckedListBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ToolTip2 As ToolTip
+    Friend WithEvents ToolTip6 As ToolTip
+    Friend WithEvents ToolTip7 As ToolTip
+    Friend WithEvents ToolTip3 As ToolTip
+    Friend WithEvents ToolTip4 As ToolTip
+    Friend WithEvents ToolTip5 As ToolTip
+    Friend WithEvents ToolTip8 As ToolTip
 End Class

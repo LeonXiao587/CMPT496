@@ -89,7 +89,7 @@ Public Class Room_view
         End If
 
         If RoomType = Nothing Then
-            MessageBox.Show("Please SELECT Something in the combo box")
+            MessageBox.Show("Please SELECT a Room Type.")
         End If
 
         'Dim url1 As String = Table.Rows(0)(1)
@@ -127,7 +127,7 @@ Public Class Room_view
         End If
 
         If RoomType = Nothing Then
-            MessageBox.Show("Please SELECT Something in the combo box")
+            MessageBox.Show("Please SELECT a Room Type.")
         End If
 
         'Dim url2 As String = Table.Rows(1)(1)
@@ -164,7 +164,7 @@ Public Class Room_view
         End If
 
         If RoomType = Nothing Then
-            MessageBox.Show("Please SELECT Something in the combo box")
+            MessageBox.Show("Please SELECT a Room Type.")
         End If
 
 

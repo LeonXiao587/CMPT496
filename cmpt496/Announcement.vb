@@ -9,23 +9,28 @@ Public Class Announcement
     Public receiverlist As New List(Of String)
 
     Public Function SendeEmail(ByVal ReceiveAddressList As List(Of String))
-        Dim Emailmessage As New MailMessage
-        Dim smtp As New SmtpClient
-        login.SQL.ExecQuery("SELECT * from email where duty = 'sendInvoice'")
-        smtp.Host = login.SQL.DBDS.Tables(0).Rows(0)(1).ToString
-        smtp.UseDefaultCredentials = False
-        smtp.Port = login.SQL.DBDS.Tables(0).Rows(0)(2)
-        smtp.EnableSsl = True
-        smtp.Credentials = New System.Net.NetworkCredential(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString, login.SQL.DBDS.Tables(0).Rows(0)(4).ToString)
-        Emailmessage.From = New MailAddress(login.SQL.DBDS.Tables(0).Rows(0)(3).ToString)
+        Dim Emailmessage As New MailMessage()
+
+        'login.SQL.ExecQuery("SELECT * from email where duty = 'sendInvoice'")
+        'smtp.Host = 587
+        Dim smtp As New SmtpClient With {
+            .UseDefaultCredentials = False,
+            .Port = 587,
+            .EnableSsl = True,
+            .Host = "smtp.gmail.com",
+            .Credentials = New System.Net.NetworkCredential("monthlyhourcollector@gmail.com", "cmpt395test")
+        }
+
+        Emailmessage.IsBodyHtml = True
+        Emailmessage.From = New MailAddress("monthlyhourcollector@gmail.com")
 
         If receiverlist.Count = 0 Then Return False
         For i = 0 To receiverlist.Count - 1
             Emailmessage.To.Add(receiverlist(i))
         Next
 
-        Emailmessage.Subject = login.SQL.DBDS.Tables(0).Rows(0)(5).ToString 'get email field from database
-        Emailmessage.Body = login.SQL.DBDS.Tables(0).Rows(0)(6).ToString
+        Emailmessage.Subject = TextBox1.Text
+        Emailmessage.Body = TextBox2.Text
         Try
             smtp.Send(Emailmessage)
             MessageBox.Show("Email Send！")
@@ -73,6 +78,28 @@ Public Class Announcement
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        login.SQL.ExecQuery("Select DISTINCT Unit.Floors, Unit.DoorNumber, Tenant.Email
+                             From Unit, Tenant, Lease
+                             Where Unit.DoorNumber = Lease.DoorNumber and Lease.TID = Tenant.TID")
+        If CheckedListBox1.CheckedItems Is Nothing Then
+            MsgBox("Please Select a Unit Number to Send Email.")
+        Else
+            'Dim s As String
+            For i As Integer = 0 To CheckedListBox1.CheckedItems.Count - 1
+                If login.SQL.DBDS.Tables(0).Rows(i)(1).ToString = CheckedListBox1.CheckedItems(0).ToString Then
+                    'MsgBox(CheckedListBox1.CheckedItems(0) + "     " + login.SQL.DBDS.Tables(0).Rows(i)(2).ToString)
+                    list.Add(login.SQL.DBDS.Tables(0).Rows(i)(2).ToString)
+                End If
 
+                'list.Add(login.SQL.DBDS.Tables(0).Rows(i)(2).ToString)
+            Next
+
+            For Each item In list
+                String.Join(",", item)
+                receiverlist.Add(item)
+            Next
+            'MsgBox(receiverlist(0).ToString)
+            SendeEmail(receiverlist)
+        End If
     End Sub
 End Class
