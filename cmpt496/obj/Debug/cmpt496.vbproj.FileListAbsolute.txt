@@ -94,3 +94,4 @@ C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Announcement.resources
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.Cosigner.resources
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.View_Lease.resources
 C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.ParkingChange.resources
+C:\Users\Leon\Desktop\CMPT496\cmpt496\obj\Debug\cmpt496.AddParking.resources

@@ -10,13 +10,13 @@ Imports System.Data.SqlClient
 Public Class Parking
     Private Sub Editfunc()
         Dim intResult As Integer
-        intResult = MessageBox.Show("Are you sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+        intResult = MessageBox.Show("Are you sure you want to save the deleting?", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
 
         If intResult = DialogResult.OK Then
             Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
             login.SQL.DBDA.UpdateCommand = scb.GetUpdateCommand
             login.SQL.DBDA.Update(login.SQL.DBDS)
-            MsgBox("Changes updated!")
+            MsgBox("Deletion Updated!")
         End If
 
     End Sub
@@ -82,8 +82,12 @@ Public Class Parking
         MsgBox("Done")
     End Sub
 
-    Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click
+    Private Sub RectangleShape4_Click(sender As Object, e As EventArgs) Handles RectangleShape4.Click, RectangleShape5.Click
         Editfunc()
+    End Sub
+
+    Private Sub RectangleShape5_Click(sender As Object, e As EventArgs) Handles RectangleShape5.Click
+        AddParking.Show()
     End Sub
 
     Private Sub Loaddata()
@@ -113,9 +117,14 @@ Public Class Parking
 
 
     Private Sub Label9_Click_1(sender As Object, e As EventArgs) Handles Label9.Click
-        login.SQL.ExecQuery("update ParkingRate set Rate = " + Crate.Text.ToString + " where Stalltype = 'Covered' and BID = " + Building.Text)
-        login.SQL.ExecQuery("update ParkingRate set Rate = " + Orate.Text.ToString + " where Stalltype = 'Outside' and BID = " + Building.Text)
-        MsgBox("Done")
+        If IsNumeric(Crate.Text) And IsNumeric(Orate.Text) Then
+            login.SQL.ExecQuery("update ParkingRate set Rate = " + Crate.Text.ToString + " where Stalltype = 'Covered' and BID = " + Building.Text)
+            login.SQL.ExecQuery("update ParkingRate set Rate = " + Orate.Text.ToString + " where Stalltype = 'Outside' and BID = " + Building.Text)
+            MsgBox("Done")
+        Else
+            MsgBox("Wrong Price!")
+        End If
+
     End Sub
 
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -132,6 +141,11 @@ Public Class Parking
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+        AddParking.Show()
 
     End Sub
 End Class

@@ -91,6 +91,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddParking.Designer.vb">
+      <DependentUpon>AddParking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddParking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Announcement.Designer.vb">
       <DependentUpon>Announcement.vb</DependentUpon>
     </Compile>
@@ -223,6 +229,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AddParking.resx">
+      <DependentUpon>AddParking.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Announcement.resx">
       <DependentUpon>Announcement.vb</DependentUpon>
     </EmbeddedResource>

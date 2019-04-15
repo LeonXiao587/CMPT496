@@ -57,6 +57,8 @@ Partial Class Parking
         Me.ToolTip5 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip6 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip7 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Parkinglist, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,8 +133,9 @@ Partial Class Parking
         Me.Parkinglist.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Parkinglist.BackgroundColor = System.Drawing.Color.White
         Me.Parkinglist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.Parkinglist.Location = New System.Drawing.Point(159, 74)
+        Me.Parkinglist.Location = New System.Drawing.Point(168, 77)
         Me.Parkinglist.Name = "Parkinglist"
+        Me.Parkinglist.ReadOnly = True
         Me.Parkinglist.RowTemplate.Height = 23
         Me.Parkinglist.Size = New System.Drawing.Size(589, 273)
         Me.Parkinglist.TabIndex = 81
@@ -152,7 +155,7 @@ Partial Class Parking
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("微软雅黑", 10.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label2.Location = New System.Drawing.Point(37, 89)
+        Me.Label2.Location = New System.Drawing.Point(37, 97)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(101, 20)
@@ -272,7 +275,7 @@ Partial Class Parking
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape1, Me.RectangleShape2})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape5, Me.RectangleShape4, Me.RectangleShape3, Me.RectangleShape1, Me.RectangleShape2})
         Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
         Me.ShapeContainer1.TabIndex = 94
         Me.ShapeContainer1.TabStop = False
@@ -283,7 +286,7 @@ Partial Class Parking
         Me.RectangleShape4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RectangleShape4.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
         Me.RectangleShape4.CornerRadius = 11
-        Me.RectangleShape4.Location = New System.Drawing.Point(649, 374)
+        Me.RectangleShape4.Location = New System.Drawing.Point(649, 366)
         Me.RectangleShape4.Name = "RectangleShape4"
         Me.RectangleShape4.SelectionColor = System.Drawing.SystemColors.GrayText
         Me.RectangleShape4.Size = New System.Drawing.Size(107, 40)
@@ -375,7 +378,7 @@ Partial Class Parking
         Me.Label12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label12.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(673, 383)
+        Me.Label12.Location = New System.Drawing.Point(671, 378)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(66, 21)
@@ -411,12 +414,39 @@ Partial Class Parking
         '
         Me.ToolTip7.ToolTipTitle = "EditButton"
         '
+        'Label13
+        '
+        Me.Label13.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.Label13.AutoSize = True
+        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label13.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(681, 429)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(41, 21)
+        Me.Label13.TabIndex = 100
+        Me.Label13.Text = "Add"
+        Me.ToolTip7.SetToolTip(Me.Label13, "Click to Edit Table information." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'RectangleShape5
+        '
+        Me.RectangleShape5.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RectangleShape5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape5.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape5.CornerRadius = 11
+        Me.RectangleShape5.Location = New System.Drawing.Point(650, 418)
+        Me.RectangleShape5.Name = "RectangleShape5"
+        Me.RectangleShape5.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape5.Size = New System.Drawing.Size(107, 40)
+        '
         'Parking
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(784, 461)
+        Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.PictureBox2)
@@ -481,4 +511,6 @@ Partial Class Parking
     Friend WithEvents ToolTip5 As ToolTip
     Friend WithEvents ToolTip6 As ToolTip
     Friend WithEvents ToolTip7 As ToolTip
+    Friend WithEvents RectangleShape5 As PowerPacks.RectangleShape
+    Friend WithEvents Label13 As Label
 End Class
