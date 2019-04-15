@@ -178,7 +178,7 @@ Partial Class Room_view
         '
         Me.ComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Single Bedroom", "Two Bedrooms", "Others"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Single-Bedroom", "Two-Bedrooms", "Others"})
         Me.ComboBox1.Location = New System.Drawing.Point(276, 106)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(233, 20)

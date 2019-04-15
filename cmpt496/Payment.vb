@@ -52,14 +52,22 @@
         Dim regDate As Date = Date.Now()
         'Dim strDate As String = regDate.ToString("ddMMMyyyy")
         'LoadGrid()
-
-        login.SQL.ExecQuery("INSERT INTO Payment(Amount, TID, Paymentdate)
+        Dim Value As Integer
+        ' is there an (integer) NUMBER in the textbox?
+        If Integer.TryParse(TextBox1.Text, Value) Then
+            If Value > 0 Then
+                login.SQL.ExecQuery("INSERT INTO Payment(Amount, TID, Paymentdate)
                              VALUES ('" & TextBox1.Text & "','" & Label8.Text & "','" & regDate & "')"
                             )
+                MessageBox.Show("Add New Payment Done!")
+                TextBox1.Clear()
+            Else
+                MessageBox.Show("Please Enter Integer Payment Amount.")
+            End If
+        Else
+            MessageBox.Show("Please Enter Integer Payment Amount.")
+        End If
 
-
-        MessageBox.Show("Add New Payment Done!")
-        'TextBox1.Clear()
     End Sub
 
     Private Sub Submit_Click(sender As Object, e As EventArgs) Handles Submit.Click
