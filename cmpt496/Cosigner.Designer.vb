@@ -32,6 +32,7 @@ Partial Class Cosigner
         Me.Label10 = New System.Windows.Forms.Label()
         Me.occupationBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.companyBox5 = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -57,7 +58,8 @@ Partial Class Cosigner
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip2 = New System.Windows.Forms.ToolTip(Me.components)
         Me.ToolTip3 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.RectangleShape2 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
+        Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -159,6 +161,16 @@ Partial Class Cosigner
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Other information"
         Me.ToolTip2.SetToolTip(Me.GroupBox2, "Other info." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
+        Me.Label4.Location = New System.Drawing.Point(101, 82)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(13, 17)
+        Me.Label4.TabIndex = 74
+        Me.Label4.Text = "*"
         '
         'companyBox5
         '
@@ -413,7 +425,7 @@ Partial Class Cosigner
         Me.Label11.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label11.Font = New System.Drawing.Font("微软雅黑", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(342, 390)
+        Me.Label11.Location = New System.Drawing.Point(353, 397)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(64, 21)
@@ -433,15 +445,26 @@ Partial Class Cosigner
         '
         Me.ToolTip3.ToolTipTitle = "BackButton"
         '
-        'Label4
+        'RectangleShape2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("微软雅黑", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label4.Location = New System.Drawing.Point(101, 82)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(13, 17)
-        Me.Label4.TabIndex = 74
-        Me.Label4.Text = "*"
+        Me.RectangleShape2.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.RectangleShape2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RectangleShape2.BackStyle = Microsoft.VisualBasic.PowerPacks.BackStyle.Opaque
+        Me.RectangleShape2.CornerRadius = 11
+        Me.RectangleShape2.Location = New System.Drawing.Point(320, 391)
+        Me.RectangleShape2.Name = "RectangleShape2"
+        Me.RectangleShape2.SelectionColor = System.Drawing.SystemColors.GrayText
+        Me.RectangleShape2.Size = New System.Drawing.Size(131, 31)
+        '
+        'ShapeContainer1
+        '
+        Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
+        Me.ShapeContainer1.Name = "ShapeContainer1"
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2})
+        Me.ShapeContainer1.Size = New System.Drawing.Size(784, 461)
+        Me.ShapeContainer1.TabIndex = 95
+        Me.ShapeContainer1.TabStop = False
         '
         'Cosigner
         '
@@ -456,6 +479,7 @@ Partial Class Cosigner
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.unitlable)
         Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.ShapeContainer1)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Cosigner"
         Me.Text = "Cosigner"
@@ -503,4 +527,6 @@ Partial Class Cosigner
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents ToolTip3 As ToolTip
     Friend WithEvents Label4 As Label
+    Friend WithEvents RectangleShape2 As PowerPacks.RectangleShape
+    Friend WithEvents ShapeContainer1 As PowerPacks.ShapeContainer
 End Class

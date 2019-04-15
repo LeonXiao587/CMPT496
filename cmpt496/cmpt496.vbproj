@@ -121,6 +121,12 @@
     <Compile Include="ManagementOption.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ParkingChange.Designer.vb">
+      <DependentUpon>ParkingChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ParkingChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TenantInfo.Designer.vb">
       <DependentUpon>TenantInfo.vb</DependentUpon>
     </Compile>
@@ -231,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagementOption.resx">
       <DependentUpon>ManagementOption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParkingChange.resx">
+      <DependentUpon>ParkingChange.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TenantInfo.resx">
       <DependentUpon>TenantInfo.vb</DependentUpon>

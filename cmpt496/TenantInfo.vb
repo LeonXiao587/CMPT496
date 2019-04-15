@@ -20,10 +20,7 @@ Public Class TenantInfo
     Private Sub SubmitTenant()
 
         'check for name validation
-        If C_REGULAR_Letters.IsMatch(first_name.Text） = False Or C_REGULAR_Letters.IsMatch(last_name.Text） = False Then
-            MsgBox("Input vaild name")
-            Exit Sub
-        End If
+
         If first_name.Text = "" Or last_name.Text = "" Or phone.Text = "" Or email.Text = "" Or id.Text = "" Or incomeBox1.Text = "" Then
             MsgBox("Input All * Information Fields Please!")
         Else
@@ -31,15 +28,39 @@ Public Class TenantInfo
             uname = last_name.Text + unitlable.Text
             Dim pwd As String
             pwd = first_name.Text + unitlable.Text
-            'if the username already exist, add last 4 number of the phonenumber to the username
-            If last_name.Text Or first_name.Text Then
+
+            If C_REGULAR_Letters.IsMatch(first_name.Text） = False Or C_REGULAR_Letters.IsMatch(last_name.Text） = False Then
+                MsgBox("Input vaild name")
+                Exit Sub
+            End If
+
+            If email.Text Like "*@*.com" Or email.Text Like "*@*.net" Or email.Text Like "*@*.ca" Then
+            Else
+                MsgBox("Input Vaild Email Address")
+                Exit Sub
+            End If
+
+            If Len(phone.Text) = 10 Then
+            Else
+                MsgBox("Input Vaild Phone Number")
+                Exit Sub
 
             End If
 
-            If IsNumeric(phone.Text) Or IsNumeric(id.Text) Then
+            If Len(id.Text) = 9 Then
+            Else
+                MsgBox("Input Vaild ID Number")
+                Exit Sub
+
+            End If
+
+            'Check 3 fields for numbers input
+            If IsNumeric(phone.Text) And IsNumeric(id.Text) And IsNumeric(incomeBox1.Text) Then
                 login.SQL.ExecQuery("select * from tenant where username = '" + uname + "'")
                 If login.SQL.DBDS.Tables(0).Rows.Count = 0 Then
                 Else
+                    'if the username already exist, add last 4 number of the phonenumber to the username
+
                     uname = uname + Microsoft.VisualBasic.Right(phone.Text.ToString, 4)
                 End If
                 login.SQL.ExecQuery("insert into Tenant (Phone,First_name,Last_name,Email, username, password, Credits,ID,PAddress,Income,Occupation,Company) Values ('" + phone.Text.ToString + "','" + first_name.Text + "','" + last_name.Text + "','" + email.Text + "','" + uname + "','" + pwd + "',0," + id.Text.ToString + ",'" + addressbox.Text.ToString + "'," + incomeBox1.Text.ToString + ",'" + occupationBox3.Text.ToString + "','" + companyBox5.Text.ToString + "')")

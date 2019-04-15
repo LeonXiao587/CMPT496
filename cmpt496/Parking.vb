@@ -1,4 +1,3 @@
-
 Imports System.Data.SqlClient
 
 
@@ -12,15 +11,14 @@ Public Class Parking
     Private Sub Editfunc()
         Dim intResult As Integer
         intResult = MessageBox.Show("Are you sure you want to make these changes", "Waring", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk, MessageBoxDefaultButton.Button1)
+
         If intResult = DialogResult.OK Then
             Dim scb As SqlCommandBuilder = New SqlCommandBuilder(login.SQL.DBDA)
+            login.SQL.DBDA.UpdateCommand = scb.GetUpdateCommand
             login.SQL.DBDA.Update(login.SQL.DBDS)
             MsgBox("Changes updated!")
-
-
-        Else
-            MessageBox.Show("Please make a selection before removing")
         End If
+
     End Sub
 
     Private Sub Main0_Click(sender As Object, e As EventArgs)
@@ -131,5 +129,9 @@ Public Class Parking
 
     Private Sub Label12_Click(sender As Object, e As EventArgs) Handles Label12.Click
         Editfunc()
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
     End Sub
 End Class
