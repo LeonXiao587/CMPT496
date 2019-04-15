@@ -64,30 +64,115 @@ Public Class Room_view
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-        Dim url1 As String = Table.Rows(0)(1)
+        Dim RoomType As String = ComboBox1.SelectedItem
 
-        Dim Http As HttpWebRequest = WebRequest.Create(url1)
-        Dim Response As WebResponse = Http.GetResponse
-        Dim Stream As Stream = Response.GetResponseStream()
-        PictureBox1.Image = Image.FromStream(Stream)
+        If RoomType = "Single-Bedroom" Then
+            Dim url1 As String = Table.Rows(0)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url1)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox1.Image = Image.FromStream(Stream)
+        End If
+        If RoomType = "Two-Bedrooms" Then
+            Dim url1 As String = Table.Rows(3)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url1)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox1.Image = Image.FromStream(Stream)
+        End If
+        If RoomType = "Others" Then
+            Dim url1 As String = Table.Rows(6)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url1)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox1.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = Nothing Then
+            MessageBox.Show("Please SELECT Something in the combo box")
+        End If
+
+        'Dim url1 As String = Table.Rows(0)(1)
+        'Dim Http As HttpWebRequest = WebRequest.Create(url1)
+        'Dim Response As WebResponse = Http.GetResponse
+        'Dim Stream As Stream = Response.GetResponseStream()
+        'PictureBox1.Image = Image.FromStream(Stream)
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-        Dim url2 As String = Table.Rows(1)(1)
+        Dim RoomType As String = ComboBox1.SelectedItem
 
-        Dim Http As HttpWebRequest = WebRequest.Create(url2)
-        Dim Response As WebResponse = Http.GetResponse
-        Dim Stream As Stream = Response.GetResponseStream()
-        PictureBox2.Image = Image.FromStream(Stream)
+        If RoomType = "Single-Bedroom" Then
+            Dim url2 As String = Table.Rows(1)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url2)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox2.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = "Two-Bedrooms" Then
+            Dim url2 As String = Table.Rows(4)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url2)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox2.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = "Others" Then
+            Dim url2 As String = Table.Rows(7)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url2)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox2.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = Nothing Then
+            MessageBox.Show("Please SELECT Something in the combo box")
+        End If
+
+        'Dim url2 As String = Table.Rows(1)(1)
+        'Dim Http As HttpWebRequest = WebRequest.Create(url2)
+        'Dim Response As WebResponse = Http.GetResponse
+        'Dim Stream As Stream = Response.GetResponseStream()
+        'PictureBox2.Image = Image.FromStream(Stream)
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-        Dim url3 As String = Table.Rows(2)(1)
+        Dim RoomType As String = ComboBox1.SelectedItem
+        If RoomType = "Single-Bedroom" Then
+            Dim url3 As String = Table.Rows(2)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url3)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox3.Image = Image.FromStream(Stream)
+        End If
 
-        Dim Http As HttpWebRequest = WebRequest.Create(url3)
-        Dim Response As WebResponse = Http.GetResponse
-        Dim Stream As Stream = Response.GetResponseStream()
-        PictureBox3.Image = Image.FromStream(Stream)
+        If RoomType = "Two-Bedrooms" Then
+            Dim url3 As String = Table.Rows(5)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url3)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox3.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = "Others" Then
+            Dim url3 As String = Table.Rows(8)(1)
+            Dim Http As HttpWebRequest = WebRequest.Create(url3)
+            Dim Response As WebResponse = Http.GetResponse
+            Dim Stream As Stream = Response.GetResponseStream()
+            PictureBox3.Image = Image.FromStream(Stream)
+        End If
+
+        If RoomType = Nothing Then
+            MessageBox.Show("Please SELECT Something in the combo box")
+        End If
+
+
+        'Dim url3 As String = Table.Rows(2)(1)
+        'Dim Http As HttpWebRequest = WebRequest.Create(url3)
+        'Dim Response As WebResponse = Http.GetResponse
+        'Dim Stream As Stream = Response.GetResponseStream()
+        'PictureBox3.Image = Image.FromStream(Stream)
     End Sub
 
 
